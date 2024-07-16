@@ -9,8 +9,12 @@ body {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   overflow-x: hidden;
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
 }
 
+body::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in WebKit browsers */
+}
 
 #loading_page {
   display: flex;
@@ -88,10 +92,9 @@ body {
   #in {
     left: 17%;
   }
-  
 }
 
-.wrapper{
+.wrapper {
   width: 100vw;
   height: fit-content;
   display: flex;
@@ -111,8 +114,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
-
 
 #valeur1 {
   opacity: 0;
@@ -219,23 +220,23 @@ body {
     opacity: 0;
     animation: appear 1.5s ease-out 1s forwards;
   }
-  
+
   #valeur2 {
     opacity: 0;
     animation: appear 1.5s ease-out 1s forwards;
   }
-  
+
   #valeur3 {
     opacity: 0;
     animation: appear 1.5s ease-out 1s forwards;
   }
-  
+
   #valeur4 {
     opacity: 0;
     animation: appear 1.5s ease-out 1s forwards;
   }
 
-  .stomp{
+  .stomp {
     font-size: 15px;
     font-weight: 600;
   }
@@ -259,7 +260,7 @@ body {
   cursor: pointer;
 }
 
-#login_page{
+#login_page {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -268,7 +269,7 @@ body {
   background-color: #1bbbe778;
 }
 
-#login_med{
+#login_med {
   background-image: url(images/Médaillon_Candor_Logo.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -278,7 +279,7 @@ body {
   margin-top: -20px;
 }
 
-#login_box{
+#login_box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -292,14 +293,14 @@ body {
   border-radius: 15px;
 }
 
-#login_box label{
+#login_box label {
   font-size: 15px;
   font-weight: 500;
   color: #000000;
   margin: 5px;
 }
 
-#login_box input{
+#login_box input {
   width: 80%;
   height: 30px;
   border: 1px solid #00171e;
@@ -308,7 +309,7 @@ body {
   border-radius: 10px;
 }
 
-#login_button{
+#login_button {
   width: 82%;
   height: 40px;
   border: none;
@@ -322,11 +323,11 @@ body {
   cursor: pointer;
 }
 
-#login_button:hover{
+#login_button:hover {
   background-color: #0c9ac1;
 }
 
-#errorMsg{
+#errorMsg {
   display: none;
   color: red;
   font-size: 13px;
@@ -334,21 +335,19 @@ body {
   margin-top: 10px;
   position: relative;
   top: 1%;
-
 }
 
-
-@media screen and (max-width: 1000px){
-  #login_box{
+@media screen and (max-width: 1000px) {
+  #login_box {
     min-width: 360px;
     height: 55%;
   }
 
-  #login_box label{
+  #login_box label {
     font-size: 15px;
   }
-  
-  #login_box input{
+
+  #login_box input {
     width: 80%;
     height: 35px;
     border: 1px solid #00171e;
@@ -357,7 +356,7 @@ body {
     border-radius: 10px;
   }
 
-  #login_button{
+  #login_button {
     width: 82%;
     height: 45px;
     border: none;
@@ -451,7 +450,7 @@ body {
   background-color: #ffffff;
   z-index: 1000;
   animation: appear 1s ease-out;
-  font-family: Arial, Helvetica, sans-serif; 
+  font-family: Arial, Helvetica, sans-serif;
   color: black;
 }
 
@@ -497,23 +496,23 @@ body {
   color: #1bbce7;
 }
 
-#PGCM{
+#PGCM {
   color: #0b3945;
 }
 
-#ESSM{
+#ESSM {
   color: #ee712d;
 }
 
-#NEMM{
+#NEMM {
   color: #dd3cbd;
 }
 
-#EEM{
+#EEM {
   color: #8cd147;
 }
 
-#SEM{
+#SEM {
   color: #eeb72b;
 }
 
@@ -605,7 +604,7 @@ body {
   background-color: #ffffff;
   z-index: 1000;
   animation: appear 1s ease-out;
-  font-family: Arial, Helvetica, sans-serif; 
+  font-family: Arial, Helvetica, sans-serif;
   color: black;
 }
 
@@ -664,7 +663,7 @@ body {
   background-color: #ffffff;
   z-index: 1000;
   animation: appear 1s ease-out;
-  font-family: Arial, Helvetica, sans-serif; 
+  font-family: Arial, Helvetica, sans-serif;
   color: black;
 }
 
@@ -714,8 +713,7 @@ body {
   transform: scale(1.05);
 }
 
-
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
   #securitySpeach {
     flex-direction: column;
     height: 100%;
@@ -752,7 +750,7 @@ body {
     overflow-y: hidden;
   }
 
-  .leftPart{
+  .leftPart {
     width: 90%;
     height: fit-content;
     padding: 10px;
@@ -760,7 +758,7 @@ body {
     justify-content: center;
   }
 
-  .rightPart{
+  .rightPart {
     width: 90%;
     height: fit-content;
     padding: 10px;
@@ -769,46 +767,45 @@ body {
     justify-content: center;
   }
 
-  .leftPart h2{
+  .leftPart h2 {
     padding-left: 0;
     width: 80%;
     font-size: 2.5vw;
   }
 
-  .stompH2{
+  .stompH2 {
     width: 80%;
     font-size: 2.5vw;
   }
 
-  .leftPart p{
+  .leftPart p {
     padding-left: 0;
     width: 80%;
     font-size: 1.6vw;
     color: black;
   }
 
-  .leftPart h3{
+  .leftPart h3 {
     padding-left: 0;
     width: 80%;
     font-size: 2vw;
   }
 
-  .stompP{
+  .stompP {
     font-size: 1.5vw;
   }
 
-  .rightPart h2{
+  .rightPart h2 {
     padding-left: 0;
     width: 80%;
     font-size: 2.5vw;
   }
 
-  .rightPart p{
+  .rightPart p {
     width: 80%;
     font-size: 1.6vw;
     color: black;
   }
-  
 }
 
 #testZone {
@@ -1022,7 +1019,12 @@ body {
     width: 90%;
     height: 65%;
   }
-  #PGC, #ESS, #NEM, #EE, #SE, #TVC {
+  #PGC,
+  #ESS,
+  #NEM,
+  #EE,
+  #SE,
+  #TVC {
     font-size: 15px;
     width: 80%;
     height: 15%;
@@ -1037,7 +1039,6 @@ body {
     width: 60%;
   }
 }
-
 
 #PGCZone {
   position: relative;
@@ -1697,7 +1698,7 @@ body {
   font-size: 15px;
 }
 
-#ddn{
+#ddn {
   width: 10%;
   height: 20px;
   border: none;
