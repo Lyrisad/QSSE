@@ -15,7 +15,7 @@ body {
 
 #loading_page {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -92,15 +92,28 @@ body {
   
 }
 
+.wrapper{
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
 .valeurs {
   display: flex;
-  padding: 6%;
+  padding: 3%;
+  width: 150px;
   font-size: 17px;
   font-weight: 100;
   flex-direction: column;
+  text-align: center;
   align-items: center;
   justify-content: center;
 }
+
+
 
 #valeur1 {
   opacity: 0;
@@ -135,10 +148,10 @@ body {
 }
 
 #line {
-  position: absolute;
-  border-bottom: 2px solid #1bbce7;
+  position: relative;
   width: 0px;
-  height: 150px;
+  height: 20px;
+  border-bottom: 2px solid #1bbce7;
   animation: lineGrowing 4s ease-out forwards;
   z-index: 1100;
 }
@@ -195,6 +208,22 @@ body {
   animation: appear 3s ease-out 2s forwards;
   box-shadow: 0 2px 4px 0 rgba(1, 0, 0, 0.3);
   border-radius: 90%;
+}
+
+@media screen and (max-width: 1000px) {
+  .valeurs {
+    width: 140px;
+    font-size: 15px;
+  }
+  .stomp{
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .condor_medaillon {
+    width: 150px;
+    height: 150px;
+    top: 50px;
+  }
 }
 
 .condor_logo {
@@ -1865,7 +1894,7 @@ body {
     width: 0;
   }
   100% {
-    width: 1000px;
+    width: 70%;
   }
 }
 
