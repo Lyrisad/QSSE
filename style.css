@@ -215,6 +215,27 @@ body {
     width: 140px;
     font-size: 15px;
   }
+
+  #valeur1 {
+    opacity: 0;
+    animation: appear 1.5s ease-out 1s forwards;
+  }
+  
+  #valeur2 {
+    opacity: 0;
+    animation: appear 1.5s ease-out 1s forwards;
+  }
+  
+  #valeur3 {
+    opacity: 0;
+    animation: appear 1.5s ease-out 1s forwards;
+  }
+  
+  #valeur4 {
+    opacity: 0;
+    animation: appear 1.5s ease-out 1s forwards;
+  }
+
   .stomp{
     font-size: 15px;
     font-weight: 600;
