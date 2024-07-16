@@ -392,6 +392,7 @@ body::-webkit-scrollbar {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
+
 #home_page_image {
   width: 50%;
   height: 100%;
@@ -447,6 +448,41 @@ body::-webkit-scrollbar {
   cursor: pointer;
   color: #0c9ac1;
   transform: scale(1.05);
+}
+
+@media screen and (max-width: 1000px) {
+  #home_page_intro {
+    height: 690px;
+  }
+  #home_page_image {
+    width: 35%;
+    border-radius: 0 0 0 0;
+  }
+
+  #home_page_text {
+    width: 65%;
+  }
+
+  #home_page_text p {
+    width: 90%;
+    font-size: 13px;
+  }
+
+  #home_page_text h1 {
+    width: 90%;
+    font-size: 25px;
+  }
+
+  .stompTitle {
+    font-size: 25px;
+  }
+  
+  #home_page_button {
+    width: 90%;
+    text-align: left;
+    font-size: 13px;
+  }
+
 }
 
 #securitySpeach {
