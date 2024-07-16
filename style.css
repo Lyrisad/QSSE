@@ -249,7 +249,7 @@ body::-webkit-scrollbar {
     width: 80px;
     height: 80px;
     font-size: 20px;
-    bottom: 150px;
+    bottom: 140px;
   }
 }
 
@@ -347,8 +347,8 @@ body::-webkit-scrollbar {
 
 @media screen and (max-width: 1000px) {
   #login_box {
-    min-width: 360px;
-    height: 55%;
+    min-width: 370px;
+    height: 60%;
   }
 
   #login_box label {
