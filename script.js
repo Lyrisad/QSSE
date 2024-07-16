@@ -59,10 +59,10 @@ login_button.addEventListener("click", function () {
   if (auth.value == "MACQSSE2024" && mdp.value == "QSSE#2024Secure!") {
     login_page.style.animation = "disappearToLeft 1s forwards";
     setTimeout(function () {
+      header_module.style.display = "flex";
       login_page.style.display = "none";
       homePage.style.display = "flex";
       homePage.style.animation = "appear 1s forwards";
-      header_module.style.display = "flex";
       header_module.style.animation = "appearFromTop 1s forwards";
     }, 1000);
   } else {

@@ -181,7 +181,6 @@ body::-webkit-scrollbar {
 }
 
 #header_module {
-  position: sticky;
   display: none;
   align-items: center;
   justify-content: center;
