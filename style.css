@@ -1750,6 +1750,7 @@ body::-webkit-scrollbar {
 
 #questionnaireForm {
   display: flex;
+  position: fixed;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -1843,6 +1844,7 @@ body::-webkit-scrollbar {
   #questionnaireForm {
     position: fixed;
     width: 100%;
+    height: fit-content;
     overflow: hidden;
   }
 
