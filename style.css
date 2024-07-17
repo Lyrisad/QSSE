@@ -306,6 +306,8 @@ body::-webkit-scrollbar {
 }
 
 #login_box {
+  position: relative;
+  bottom: 5%;
   display: flex;
   align-items: center;
   justify-content: center;
