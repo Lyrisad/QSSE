@@ -256,7 +256,7 @@ body::-webkit-scrollbar {
     height: 150px;
     top: 50px;
   }
-  #next{
+  #next {
     width: 80px;
     height: 80px;
     font-size: 20px;
@@ -282,7 +282,6 @@ body::-webkit-scrollbar {
     position: absolute;
     right: 1%;
   }
-  
 }
 
 #login_page {
@@ -411,7 +410,6 @@ body::-webkit-scrollbar {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
-
 #home_page_image {
   width: 50%;
   height: 100%;
@@ -496,13 +494,12 @@ body::-webkit-scrollbar {
   .stompTitle {
     font-size: 25px;
   }
-  
+
   #home_page_button {
     width: 90%;
     text-align: left;
     font-size: 13px;
   }
-
 }
 
 #securitySpeach {
@@ -915,12 +912,11 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 1000px) {
-#back {
-  font-size: 35px;
-  width: 35px;
-  height: 35px;
-}
-
+  #back {
+    font-size: 35px;
+    width: 35px;
+    height: 35px;
+  }
 }
 
 #condorLogoDownRight {
@@ -1091,7 +1087,6 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 1000px) {
-
   #condorMed {
     height: 350px;
     width: 350px;
@@ -1831,34 +1826,48 @@ body::-webkit-scrollbar {
   width: 20px;
 }
 
-@media screen and (max-width: 1000px) {
-#questionnaireForm {
-  position: fixed;
-  width: 100%;
-}
-
 #questionnaireForm button {
   display: flex;
-  width: 50%;
+  width: 32%;
   height: 40px;
   border-radius: 15px;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   text-align: center;
+  margin-bottom: 35px;
+  margin-top: 25px;
 }
 
-#questionnaireForm h2 {
-  width: 90%;
-  font-size: 20px;
-}
+@media screen and (max-width: 1000px) {
+  #questionnaireForm {
+    position: fixed;
+    width: 100%;
+  }
 
-#questionnaireForm input {
-  height: 18px;
-}
+  #questionnaireForm button {
+    display: flex;
+    width: 50%;
+    height: 40px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: 25px;
+  }
 
-#questionnaireForm label{
-  font-size: 14px;
-}
+  #questionnaireForm h2 {
+    width: 90%;
+    font-size: 20px;
+  }
+
+  #questionnaireForm input {
+    height: 18px;
+  }
+
+  #questionnaireForm label {
+    font-size: 14px;
+  }
 
   #nom,
   #prenom,
@@ -1875,7 +1884,7 @@ body::-webkit-scrollbar {
     color: black;
   }
 
-  #entite{
+  #entite {
     color: black;
     width: 30%;
   }
@@ -1884,8 +1893,6 @@ body::-webkit-scrollbar {
     color: black;
     width: 75%;
   }
-
-  
 }
 
 #ready {
