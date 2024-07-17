@@ -1430,6 +1430,7 @@ body::-webkit-scrollbar {
 
 #PGCSlide4 {
   display: none;
+  position: fixed;
   align-items: center;
   justify-content: center;
   flex-direction: row;
@@ -1601,6 +1602,8 @@ body::-webkit-scrollbar {
   }
 
   #lesQuatresV {
+    position: relative;
+    bottom: 10%;
     flex-wrap: wrap;
     width: 90%;
     height: 75%;
