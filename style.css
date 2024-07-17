@@ -1870,10 +1870,12 @@ body::-webkit-scrollbar {
   }
 
   #entite{
+    color: black;
     width: 30%;
   }
 
   #cadre {
+    color: black;
     width: 75%;
   }
 
