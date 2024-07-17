@@ -1695,6 +1695,8 @@ body::-webkit-scrollbar {
 
 #TVCzone {
   display: none;
+  position: fixed;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
   justify-content: wrap;
