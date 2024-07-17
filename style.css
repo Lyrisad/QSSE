@@ -1804,21 +1804,6 @@ body::-webkit-scrollbar {
   font-size: 15px;
 }
 
-#submitForm {
-  width: 20px;
-}
-
-#ready {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  justify-content: wrap;
-  flex-direction: column;
-  width: 100%;
-  height: 100vh;
-  animation: appear 1s ease-out;
-}
-
 #entite {
   width: 10%;
   height: 30px;
@@ -1839,6 +1824,71 @@ body::-webkit-scrollbar {
   text-align: center;
   margin-top: 15px;
   font-weight: 600;
+}
+
+#submitForm {
+  width: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+#questionnaireForm {
+  width: 100%;
+}
+
+#questionnaireForm button {
+  display: flex;
+  width: 50%;
+  height: 40px;
+  border-radius: 15px;
+  align-items: center;
+  justify-content:center;
+  text-align: center;
+}
+
+#questionnaireForm h2 {
+  width: 90%;
+  font-size: 20px;
+}
+
+#questionnaireForm input {
+  height: 18px;
+}
+
+#questionnaireForm label{
+  font-size: 14px;
+}
+
+  #nom,
+  #prenom,
+  #email {
+    width: 70%;
+    border-radius: 10px;
+  }
+
+  #ddn {
+    width: 30%;
+  }
+
+  #entite{
+    width: 30%;
+  }
+
+  #cadre {
+    width: 75%;
+  }
+
+  
+}
+
+#ready {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  justify-content: wrap;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  animation: appear 1s ease-out;
 }
 
 #bonneReponse {
