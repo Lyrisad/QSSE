@@ -11,19 +11,19 @@
     <div id="loading_page">
       <div class="condor_medaillon"></div>
       <div class="wrapper">
-      <div class="valeurs" id="valeur1">
-        Progresser <span class="stomp">ensemble</span>
+        <div class="valeurs" id="valeur1">
+          Progresser <span class="stomp">ensemble</span>
+        </div>
+        <div class="valeurs" id="valeur2">
+          Aimer <span class="stomp">rendre service</span>
+        </div>
+        <div class="valeurs" id="valeur3">
+          Considerer <span class="stomp">chacun</span>
+        </div>
+        <div class="valeurs" id="valeur4">
+          Respecter <span class="stomp">ses engagements</span>
+        </div>
       </div>
-      <div class="valeurs" id="valeur2">
-        Aimer <span class="stomp">rendre service</span>
-      </div>
-      <div class="valeurs" id="valeur3">
-        Considerer <span class="stomp">chacun</span>
-      </div>
-      <div class="valeurs" id="valeur4">
-        Respecter <span class="stomp">ses engagements</span>
-      </div>
-    </div>
       <div id="line"></div>
       <div id="next">➔</div>
     </div>
@@ -37,9 +37,9 @@
       <div id="login_box">
         <div id="login_med"></div>
         <label for="text">Clé d'authentification</label>
-        <input type="text" id="auth"/>
+        <input type="text" id="auth" />
         <label for="password">Mot de passe</label>
-        <input type="password" id="mdp"/>
+        <input type="password" id="mdp" />
         <button id="login_button">Se connecter</button>
         <p id="errorMsg"></p>
       </div>
@@ -188,13 +188,13 @@
       <form id="questionnaireForm">
         <h2>Merci de remplir ce formulaire avant de commencer.</h2>
         <label for="nom" style="color: white">Nom</label>
-        <input type="text" id="nom" name="nom" required/>
+        <input type="text" id="nom" name="nom" required />
         <label for="prenom" style="color: white">Prénom</label>
         <input type="text" id="prenom" name="prenom" required />
         <label for="email" style="color: white">Email</label>
         <input type="email" id="email" name="email" required />
         <label for="ddn" style="color: white">Date de Naissance</label>
-        <input type="date" id="ddn" name="ddn" required/>
+        <input type="date" id="ddn" name="ddn" required />
         <label for="entite" style="color: white">Société :</label>
         <select name="entite" id="entite">
           <option value="TERNETT">TERNETT</option>
@@ -260,9 +260,8 @@
         <button id="q4r3">Prévenir oralement</button>
       </div>
       <div id="question5">
-        <h2 id="q5row">
-          Que signifie ce pictogramme : <span id="pictogrammeQ5"></span>
-        </h2>
+        <div id="pictogrammeQ5"></div>
+        <h2 id="q5row">Que signifie ce pictogramme ?</h2>
         <button id="q5r1">Tue</button>
         <button id="q5r2">Pollue</button>
         <button id="q5r3">Flambe</button>

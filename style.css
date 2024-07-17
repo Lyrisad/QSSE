@@ -2077,8 +2077,9 @@ body::-webkit-scrollbar {
 #pictogrammeQ5 {
   display: flex;
   background: url(images/GHS-pictogram-skull.svg);
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: 140px;
+  margin-top: -50px;
   background-size: contain;
   background-repeat: no-repeat;
 }
