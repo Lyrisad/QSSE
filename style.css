@@ -883,6 +883,7 @@ body::-webkit-scrollbar {
   height: 100vh;
   background-color: #30bee5;
   animation: appear 1s ease-out;
+  overflow: hidden;
 }
 
 #back {
