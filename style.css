@@ -1762,6 +1762,7 @@ body::-webkit-scrollbar {
   height: 100vh;
   background-color: #4930e8;
   animation: appear 1s ease-out;
+  overflow: hidden;
 }
 
 #nom {

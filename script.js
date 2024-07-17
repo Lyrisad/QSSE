@@ -73,18 +73,20 @@ login_button.addEventListener("click", function () {
 
 document.addEventListener("keydown", function (e) {
   if (e.key === "Enter") {
-    if (auth.value == "MACQSSE2024" && mdp.value == "QSSE#2024Secure!") {
-      login_page.style.animation = "disappearToLeft 1s forwards";
-      setTimeout(function () {
-        login_page.style.display = "none";
-        homePage.style.display = "flex";
-        homePage.style.animation = "appear 1s forwards";
-         header_module.style.display = "flex";
-        header_module.style.animation = "appearFromTop 1s forwards";
-      }, 1000);
-    } else {
-      errorMsg.textContent = "Identifiants incorrects";
-      errorMsg.style.display = "flex";
+    if (login_page.style.display != "none") {
+      if (auth.value == "MACQSSE2024" && mdp.value == "QSSE#2024Secure!") {
+        login_page.style.animation = "disappearToLeft 1s forwards";
+        setTimeout(function () {
+          login_page.style.display = "none";
+          homePage.style.display = "flex";
+          homePage.style.animation = "appear 1s forwards";
+          header_module.style.display = "flex";
+          header_module.style.animation = "appearFromTop 1s forwards";
+        }, 1000);
+      } else {
+        errorMsg.textContent = "Identifiants incorrects";
+        errorMsg.style.display = "flex";
+      }
     }
   }
 });
