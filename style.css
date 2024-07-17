@@ -1998,7 +1998,6 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 1000px) {
   #bonneReponse, #mauvaiseReponse{
       position: fixed;
-      bottom: 6%;
   }
   
     #bonneReponse h2, #mauvaiseReponse h2{
