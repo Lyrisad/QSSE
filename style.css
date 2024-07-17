@@ -1994,6 +1994,29 @@ body::-webkit-scrollbar {
   transform: scale(1.05);
 }
 
+
+@media screen and (max-width: 1000px) {
+  #bonneReponse, #mauvaiseReponse{
+      position: fixed;
+      bottom: 6%;
+  }
+  
+    #bonneReponse h2, #mauvaiseReponse h2{
+      width: 90%;
+      font-size: 25px;
+    }
+  
+    #bonneReponse p, #mauvaiseReponse p{
+      width: 90%;
+      font-size: 15px;
+    }
+    
+    .nextQuestion{
+      font-size: 17px;
+      margin-top: -5px;
+    }
+  }
+
 #question1 {
   display: none;
   align-items: center;
