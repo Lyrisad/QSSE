@@ -875,6 +875,7 @@ body::-webkit-scrollbar {
 
 #testZone {
   display: none;
+  position: fixed;
   align-items: center;
   justify-content: center;
   justify-content: wrap;
@@ -914,11 +915,17 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 1000px) {
+#back {
+  font-size: 35px;
+  width: 35px;
+  height: 35px;
+}
+
   #condorMed {
     height: 350px;
     width: 350px;
   }
-  
+
 }
 
 #condorLogoDownRight {
