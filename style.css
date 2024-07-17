@@ -1920,6 +1920,14 @@ body::-webkit-scrollbar {
   animation: appear 1s ease-out;
 }
 
+@media screen and (max-width: 1000px) {
+  #ready h2{
+    width: 80%;
+    font-size: 25px
+  }
+  
+}
+
 #bonneReponse {
   display: none;
   align-items: center;
@@ -2096,6 +2104,21 @@ body::-webkit-scrollbar {
 
 #merci p {
   color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  #question1 h2, #question2 h2, #question3 h2, #question4 h2, #question5 h2, #question6 h2, #question7 h2{
+    width: 90%;
+    font-size: 19px;
+  }
+  
+  #question1 button, #question2 button, #question3 button, #question4 button, #question5 button, #question6 button, #question7 button{
+    width: 80%;
+    font-size: 15px;
+    border-radius: 10px;
+    margin: 15px;
+  }
+
 }
 
 @keyframes appearFromTop {
