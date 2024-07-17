@@ -1750,6 +1750,14 @@ body::-webkit-scrollbar {
   transform: scale(1.05);
 }
 
+@media screen and (max-width: 1000px) {
+  #back2 {
+    font-size: 35px;
+    width: 35px;
+    height: 35px;
+  }
+}
+
 #questionnaireForm {
   display: flex;
   position: fixed;
