@@ -1832,6 +1832,7 @@ body::-webkit-scrollbar {
 
 @media screen and (max-width: 1000px) {
 #questionnaireForm {
+  position: fixed;
   width: 100%;
 }
 
@@ -1867,6 +1868,10 @@ body::-webkit-scrollbar {
 
   #ddn {
     width: 30%;
+    height: 10px;
+    padding: 7px;
+    border-radius: 10px;
+    color: black;
   }
 
   #entite{
