@@ -1098,7 +1098,8 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 1000px) {
   #moduleSection {
     width: 90%;
-    height: 60%;
+    height: 40%;
+    justify-content: space-evenly;
   }
   #PGC,
   #ESS,
@@ -1107,10 +1108,10 @@ body::-webkit-scrollbar {
   #SE,
   #TVC {
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    font-size: 15px;
-    width: 85%;
-    height: 13%;
+    border-radius: 15px;
+    font-size: 13px;
+    width: 40%;
+    height: 30%;
     margin: 0;
   }
 
