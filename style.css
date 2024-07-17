@@ -86,11 +86,11 @@ body::-webkit-scrollbar {
   }
 
   #insta {
-    left: 9%;
+    left: 12%;
   }
 
   #in {
-    left: 17%;
+    left: 23%;
   }
 }
 
@@ -263,6 +263,14 @@ body::-webkit-scrollbar {
 
 .condor_logo:hover {
   cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .condor_logo {
+    position: absolute;
+    right: 1%;
+  }
+  
 }
 
 #login_page {
@@ -814,40 +822,40 @@ body::-webkit-scrollbar {
   .leftPart h2 {
     padding-left: 0;
     width: 80%;
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
 
   .stompH2 {
     width: 80%;
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
 
   .leftPart p {
     padding-left: 0;
     width: 80%;
-    font-size: 1.6vw;
+    font-size: 2.2vw;
     color: black;
   }
 
   .leftPart h3 {
     padding-left: 0;
     width: 80%;
-    font-size: 2vw;
+    font-size: 2.1vw;
   }
 
   .stompP {
-    font-size: 1.5vw;
+    font-size: 2.2vw
   }
 
   .rightPart h2 {
     padding-left: 0;
     width: 80%;
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
 
   .rightPart p {
     width: 80%;
-    font-size: 1.6vw;
+    font-size: 2.2vw;
     color: black;
   }
 }
