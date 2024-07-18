@@ -225,6 +225,46 @@ nextPGC5.addEventListener("click", function () {
   PGCZone.style.animation = "disappear 1s forwards";
 });
 
+let EEZone = document.getElementById("EEZone");
+let EE = document.getElementById("EE");
+
+EE.addEventListener("click", function () {
+  setTimeout(function () {
+    testZone.style.display = "none";
+    EESlide1.style.display = "flex";
+    EEZone.style.display = "flex";
+    EEZone.style.animation = "appear 1s forwards";
+  }, 1000);
+  testZone.style.animation = "disappear 1s forwards";
+});
+
+let nextEE = document.getElementById("nextEE");
+let nextEE2 = document.getElementById("nextEE2");
+let backEE = document.getElementById("backEE1");
+let EESlide1 = document.getElementById("EESlide1");
+let EESlide2 = document.getElementById("EESlide2");
+
+nextEE.addEventListener("click", function () {
+  EESlide1.style.display = "none";
+  EESlide2.style.display = "flex";
+});
+
+nextEE2.addEventListener("click", function () {
+  setTimeout(function () {
+    EESlide2.style.display = "none";
+    EEZone.style.display = "none";
+    testZone.style.display = "flex";
+    EEZone.style.animation = "appear 1s forwards";
+    testZone.style.animation = "appear 1s forwards";
+  }, 1000);
+  EEZone.style.animation = "disappear 1s forwards";
+});
+
+backEE.addEventListener("click", function () {
+  EESlide1.style.display = "flex";
+  EESlide2.style.display = "none";
+});
+
 let TVC = document.getElementById("TVC");
 let TVCzone = document.getElementById("TVCzone");
 
