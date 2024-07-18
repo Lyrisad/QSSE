@@ -788,6 +788,12 @@ body::-webkit-scrollbar {
   transform: scale(1.05);
 }
 
+.black{
+  color: black;
+  font-weight: 200;
+  font-size: 13px;
+}
+
 @media screen and (max-width: 1000px) {
   #securitySpeach {
     flex-direction: column;
@@ -863,7 +869,7 @@ body::-webkit-scrollbar {
   .leftPart h3 {
     padding-left: 0;
     width: 90%;
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .stompP {
@@ -2222,7 +2228,7 @@ body::-webkit-scrollbar {
   font-size: 18px;
   font-style: italic;
   font-weight: 600;
-  margin-top: 15px;
+  margin-top: 40px;
 }
 
 #merci {
