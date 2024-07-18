@@ -10,6 +10,7 @@ body {
   -ms-user-select: none; /* Internet Explorer/Edge */
   overflow-x: hidden;
   scrollbar-width: none; /* Hide scrollbar in Firefox */
+  scrollbar-width: 0px;
 }
 
 body::-webkit-scrollbar {
@@ -194,6 +195,8 @@ body::-webkit-scrollbar {
 
 #header_module {
   display: none;
+  position: fixed;
+  top: 0%;
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
@@ -202,6 +205,7 @@ body::-webkit-scrollbar {
   color: #fff;
   text-align: center;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
 .condor_medaillon {
@@ -401,9 +405,10 @@ body::-webkit-scrollbar {
 
 #home_page_intro {
   display: none;
+  position: fixed;
   flex-direction: row;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 15vh;
   width: 100%;
   height: 550px;
   background-color: #ffffff;
@@ -510,6 +515,7 @@ body::-webkit-scrollbar {
   margin-top: 20px;
   width: 100%;
   height: 80%;
+  margin-top: 15vh;
   background-color: #ffffff;
   z-index: 1000;
   animation: appear 1s ease-out;
@@ -838,25 +844,25 @@ body::-webkit-scrollbar {
 
   .leftPart h2 {
     padding-left: 0;
-    width: 80%;
+    width: 90%;
     font-size: 22px;
   }
 
   .stompH2 {
-    width: 80%;
+    width: 90%;
     font-size: 24px;
   }
 
   .leftPart p {
     padding-left: 0;
-    width: 80%;
+    width: 90%;
     font-size: 14px;
     color: black;
   }
 
   .leftPart h3 {
     padding-left: 0;
-    width: 80%;
+    width: 90%;
     font-size: 15px;
   }
 
@@ -865,9 +871,15 @@ body::-webkit-scrollbar {
   }
 
   .rightPart p {
-    width: 80%;
+    width: 90%;
     font-size: 14px;
     color: black;
+  }
+
+  .rightPart h2{
+    padding-left: 0;
+    width: 90%;
+    font-size: 22px;
   }
 }
 
