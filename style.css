@@ -560,29 +560,34 @@ body::-webkit-scrollbar {
 }
 
 #PGCM {
-  color: #0b3945;
+  color: #1bbce7;
+  font-weight: 600;
 }
 
 #ESSM {
-  color: #ee712d;
+  color: #1bbce7;
+  font-weight: 600;
 }
 
 #NEMM {
-  color: #dd3cbd;
+  color: #1bbce7;
+  font-weight: 600;
 }
 
 #EEM {
-  color: #8cd147;
+  color: #1bbce7;
+  font-weight: 600;
 }
 
 #SEM {
-  color: #eeb72b;
+  color: #1bbce7;
+  font-weight: 600;
 }
 
 .stompP {
   font-size: 1.1vw;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 600;
   color: #1bbce7;
 }
 
@@ -834,40 +839,34 @@ body::-webkit-scrollbar {
   .leftPart h2 {
     padding-left: 0;
     width: 80%;
-    font-size: 3vw;
+    font-size: 22px;
   }
 
   .stompH2 {
     width: 80%;
-    font-size: 3vw;
+    font-size: 24px;
   }
 
   .leftPart p {
     padding-left: 0;
     width: 80%;
-    font-size: 2.2vw;
+    font-size: 14px;
     color: black;
   }
 
   .leftPart h3 {
     padding-left: 0;
     width: 80%;
-    font-size: 2.1vw;
+    font-size: 15px;
   }
 
   .stompP {
-    font-size: 2.2vw;
-  }
-
-  .rightPart h2 {
-    padding-left: 0;
-    width: 80%;
-    font-size: 3vw;
+    font-size: 14px;
   }
 
   .rightPart p {
     width: 80%;
-    font-size: 2.2vw;
+    font-size: 14px;
     color: black;
   }
 }
