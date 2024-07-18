@@ -1583,8 +1583,10 @@ body::-webkit-scrollbar {
 
 @media screen and (max-width: 768px) {
   #leader_reg {
-    width: 92%;
-    height: 65vw;
+    width: 95%;
+    height: 67.5vw;
+    position: relative;
+    bottom: 5%;
   }
 
   #backPGC1,
