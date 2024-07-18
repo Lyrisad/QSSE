@@ -876,7 +876,7 @@ body::-webkit-scrollbar {
     color: black;
   }
 
-  .rightPart h2{
+  .rightPart h2 {
     padding-left: 0;
     width: 90%;
     font-size: 22px;
@@ -1217,14 +1217,14 @@ body::-webkit-scrollbar {
 #h1andp h1 {
   margin-top: 150px;
   width: 80%;
-  font-size: clamp(25px, 2.5vw, 2.5vw);
+  font-size: clamp(28px, 2.6vw, 2.8vw);
   font-weight: 800;
   font-style: italic;
 }
 
 #h1andp p {
   width: 70%;
-  font-size: clamp(12px, 1.5vw, 1.1vw);
+  font-size: clamp(15px, 1.5vw, 1.1vw);
   font-weight: 400;
   font-style: italic;
   margin-top: 30px;
@@ -1742,17 +1742,16 @@ body::-webkit-scrollbar {
 }
 
 #nextEE {
-  position: absolute;
-  right: 1%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-top: 425px;
   width: 70px;
   height: 70px;
   border-radius: 180px;
   border: none;
-  background-color: #3f611d;
+  background-color: #253714;
   color: white;
   font-size: 20px;
   z-index: 1000;
@@ -1760,7 +1759,7 @@ body::-webkit-scrollbar {
 
 #nextEE:hover {
   cursor: pointer;
-  background-color: #253714;
+  background-color: #28460c;
 }
 
 #nextEE2 {
@@ -2025,11 +2024,10 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 1000px) {
-  #ready h2{
+  #ready h2 {
     width: 80%;
-    font-size: 25px
+    font-size: 25px;
   }
-  
 }
 
 #bonneReponse {
@@ -2098,28 +2096,30 @@ body::-webkit-scrollbar {
   transform: scale(1.05);
 }
 
-
 @media screen and (max-width: 1000px) {
-  #bonneReponse, #mauvaiseReponse{
-      position: relative;
-      bottom: 4%;
+  #bonneReponse,
+  #mauvaiseReponse {
+    position: relative;
+    bottom: 4%;
   }
-  
-    #bonneReponse h2, #mauvaiseReponse h2{
-      width: 90%;
-      font-size: 25px;
-    }
-  
-    #bonneReponse p, #mauvaiseReponse p{
-      width: 90%;
-      font-size: 15px;
-    }
-    
-    .nextQuestion{
-      font-size: 17px;
-      margin-top: -5px;
-    }
+
+  #bonneReponse h2,
+  #mauvaiseReponse h2 {
+    width: 90%;
+    font-size: 25px;
   }
+
+  #bonneReponse p,
+  #mauvaiseReponse p {
+    width: 90%;
+    font-size: 15px;
+  }
+
+  .nextQuestion {
+    font-size: 17px;
+    margin-top: -5px;
+  }
+}
 
 #question1 {
   display: none;
@@ -2217,6 +2217,14 @@ body::-webkit-scrollbar {
   animation: appear 1s ease-out;
 }
 
+.questionCount{
+  color: white;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
 #merci {
   display: none;
   align-items: center;
@@ -2235,25 +2243,35 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 1000px) {
-
-  #merci h1{
+  #merci h1 {
     text-align: center;
     width: 95%;
     font-size: 23px;
   }
 
-  #question1 h2, #question2 h2, #question3 h2, #question4 h2, #question5 h2, #question6 h2, #question7 h2{
+  #question1 h2,
+  #question2 h2,
+  #question3 h2,
+  #question4 h2,
+  #question5 h2,
+  #question6 h2,
+  #question7 h2 {
     width: 90%;
     font-size: 19px;
   }
-  
-  #question1 button, #question2 button, #question3 button, #question4 button, #question5 button, #question6 button, #question7 button{
+
+  #question1 button,
+  #question2 button,
+  #question3 button,
+  #question4 button,
+  #question5 button,
+  #question6 button,
+  #question7 button {
     width: 80%;
     font-size: 15px;
     border-radius: 10px;
     margin: 15px;
   }
-
 }
 
 @keyframes appearFromTop {
