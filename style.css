@@ -1724,6 +1724,21 @@ body::-webkit-scrollbar {
   animation: appear 1s ease-out;
 }
 
+#EE1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 42.5vw;
+  background-color: #8cd147;
+  background-image: url(images/EEImages/slideEnv.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 #backEE1 {
   position: absolute;
   rotate: 180deg;
@@ -1788,6 +1803,34 @@ body::-webkit-scrollbar {
 #nextEE2:hover {
   cursor: pointer;
   background-color: #003800;
+}
+
+@media screen and (max-width: 768px) {
+  #EE1 {
+    width: 99%;
+    height: 69.5vw;
+    position: relative;
+    bottom: 5%;
+  }
+
+  #backEE1 {
+    bottom: 5%;
+    left: 10%;
+    width: 60px;
+    height: 60px;
+    font-size: 17px;
+    position: fixed;
+  }
+
+  #nextEE2 {
+    bottom: 5%;
+    right: 10%;
+    width: 60px;
+    height: 60px;
+    font-size: 17px;
+    position: fixed;
+  }
+  
 }
 
 #EMZone {
