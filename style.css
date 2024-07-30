@@ -1668,6 +1668,7 @@ body::-webkit-scrollbar {
 
 #ESSZone {
   display: none;
+  position: fixed;	
   align-items: center;
   justify-content: center;
   justify-content: wrap;
@@ -2097,6 +2098,7 @@ body::-webkit-scrollbar {
 }
 
 #EEZone {
+  position: fixed;
   display: none;
   align-items: center;
   justify-content: center;
