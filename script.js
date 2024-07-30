@@ -225,6 +225,110 @@ nextPGC5.addEventListener("click", function () {
   PGCZone.style.animation = "disappear 1s forwards";
 });
 
+let ESSZone = document.getElementById("ESSZone");
+let ESS = document.getElementById("ESS");
+let nextESS = document.getElementById("nextESS");
+let backESS = document.getElementById("backESS");
+let backESS2 = document.getElementById("backESS2");
+let backESS3 = document.getElementById("backESS3");
+let backESS4 = document.getElementById("backESS4");
+let nextESS2 = document.getElementById("nextESS2");
+let nextESS3 = document.getElementById("nextESS3");
+let nextESS4 = document.getElementById("nextESS4");
+let nextESS5 = document.getElementById("nextESS5");
+let ESSSlide1 = document.getElementById("ESSSlide1");
+let ESSSlide2 = document.getElementById("ESSSlide2");
+let ESSSlide3 = document.getElementById("ESSSlide3");
+let ESSSlide4 = document.getElementById("ESSSlide4");
+let ESSSlide5 = document.getElementById("ESSSlide5");
+
+
+ESS.addEventListener("click", function () {
+  setTimeout(function () {
+    testZone.style.display = "none";
+    ESSZone.style.display = "flex";
+    ESSSlide1.style.display = "flex";
+    ESSZone.style.animation = "appear 1s forwards";
+    
+  }, 1000);
+  testZone.style.animation = "disappear 1s forwards";
+});
+
+nextESS.addEventListener("click", function () {
+  ESSSlide1.style.display = "none";
+  ESSSlide2.style.display = "flex";
+  ESSSlide3.style.display = "none";
+  ESSSlide4.style.display = "none";
+  ESSSlide5.style.display = "none";
+});
+
+backESS.addEventListener("click", function () {
+  ESSSlide1.style.display = "flex";
+  ESSSlide2.style.display = "none";
+  ESSSlide3.style.display = "none";
+  ESSSlide4.style.display = "none";
+  ESSSlide5.style.display = "none";
+});
+
+nextESS2.addEventListener("click", function () {
+  ESSSlide1.style.display = "none";
+  ESSSlide2.style.display = "none";
+  ESSSlide3.style.display = "flex";
+  ESSSlide4.style.display = "none";
+  ESSSlide5.style.display = "none";
+});
+
+backESS2.addEventListener("click", function () {
+  ESSSlide1.style.display = "none";
+  ESSSlide2.style.display = "flex";
+  ESSSlide3.style.display = "none";
+  ESSSlide4.style.display = "none";
+  ESSSlide5.style.display = "none";
+});
+
+nextESS3.addEventListener("click", function () {
+  ESSSlide3.style.display = "none";
+  ESSSlide4.style.display = "flex";
+  ESSSlide5.style.display = "none";
+  ESSSlide2.style.display = "none";
+  ESSSlide1.style.display = "none";
+});
+
+backESS3.addEventListener("click", function () {
+  ESSSlide3.style.display = "flex";
+  ESSSlide4.style.display = "none";
+  ESSSlide5.style.display = "none";
+  ESSSlide2.style.display = "none";
+  ESSSlide1.style.display = "none";
+});
+
+nextESS4.addEventListener("click", function () {
+  ESSSlide3.style.display = "none";
+  ESSSlide4.style.display = "none";
+  ESSSlide5.style.display = "flex";
+  ESSSlide2.style.display = "none";
+  ESSSlide1.style.display = "none";
+});
+
+backESS4.addEventListener("click", function () {
+  ESSSlide3.style.display = "none";
+  ESSSlide4.style.display = "flex";
+  ESSSlide5.style.display = "none";
+  ESSSlide2.style.display = "none";
+  ESSSlide1.style.display = "none";
+});
+
+nextESS5.addEventListener("click", function () {
+  setTimeout(function () {
+    ESSSlide5.style.display = "none";
+    ESSZone.style.display = "none";
+    testZone.style.display = "flex";
+    ESSZone.style.animation = "appear 1s forwards";
+    testZone.style.animation = "appear 1s forwards";
+  }, 1000);
+  ESSZone.style.animation = "disappear 1s forwards";
+});
+
 let EEZone = document.getElementById("EEZone");
 let EE = document.getElementById("EE");
 

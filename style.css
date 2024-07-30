@@ -788,7 +788,7 @@ body::-webkit-scrollbar {
   transform: scale(1.05);
 }
 
-.black{
+.black {
   color: black;
   font-weight: 200;
   font-size: 13px;
@@ -869,7 +869,7 @@ body::-webkit-scrollbar {
   .leftPart h3 {
     padding-left: 0;
     width: 90%;
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .stompP {
@@ -1237,7 +1237,7 @@ body::-webkit-scrollbar {
 }
 
 #nextPGC {
-  margin-top: 400px;
+  margin-top: 450px;
   width: 70px;
   height: 70px;
   border-radius: 180px;
@@ -1678,6 +1678,412 @@ body::-webkit-scrollbar {
   animation: appear 1s ease-out;
 }
 
+#ESSSlide1 {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #ee712d;
+  animation: appear 1s ease-out;
+}
+
+#ESSh1 {
+  display: flex;
+  position: relative;
+  bottom: 3%;
+  font-size: 2.5vw;
+  font-weight: 800;
+  font-style: italic;
+  color: white;
+}
+
+#ESS1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 42.5vw;
+  background-color: #ee712d;
+  background-image: url(images/ESSImages/Secu1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#ESS2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 42.5vw;
+  background-color: #ee712d;
+  background-image: url(images/ESSImages/secu2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#ESS3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 42.5vw;
+  background-color: #ee712d;
+  background-image: url(images/ESSImages/secu3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#backESS {
+  position: absolute;
+  rotate: 180deg;
+  left: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 180px;
+  border: none;
+  background-color: #5a2b0d;
+  color: white;
+  font-size: 20px;
+  z-index: 1000;
+}
+
+#backESS1:hover {
+  cursor: pointer;
+  background-color: #3a1b08;
+}
+
+#backESS2 {
+  position: absolute;
+  rotate: 180deg;
+  left: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 180px;
+  border: none;
+  background-color: #5a2b0d;
+  color: white;
+  font-size: 20px;
+  z-index: 1000;
+}
+
+#backESS2:hover {
+  cursor: pointer;
+  background-color: #3a1b08;
+}
+
+#backESS3 {
+  position: absolute;
+  rotate: 180deg;
+  left: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 180px;
+  border: none;
+  background-color: #5a2b0d;
+  color: white;
+  font-size: 20px;
+  z-index: 1000;
+}
+
+#backESS3:hover {
+  cursor: pointer;
+  background-color: #3a1b08;
+}
+
+#backESS4 {
+  position: absolute;
+  rotate: 180deg;
+  left: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 180px;
+  border: none;
+  background-color: #5a2b0d;
+  color: white;
+  font-size: 20px;
+  z-index: 1000;
+}
+
+#backESS4:hover {
+  cursor: pointer;
+  background-color: #3a1b08;
+}
+
+#nextESS {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 450px;
+  width: 70px;
+  height: 70px;
+  border-radius: 180px;
+  border: none;
+  background-color: #3a1b08;
+  color: white;
+  font-size: 20px;
+  z-index: 1000;
+}
+
+#nextESS:hover {
+  cursor: pointer;
+  background-color: #5a2b0d;
+}
+
+#nextESS2 {
+  position: absolute;
+  right: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 180px;
+  border: none;
+  background-color: #5a2b0d;
+  color: white;
+  font-size: 20px;
+  z-index: 1000;
+}
+
+#nextESS2:hover {
+  cursor: pointer;
+  background-color: #3a1b08;
+}
+
+#nextESS3 {
+  position: absolute;
+  right: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 180px;
+  border: none;
+  background-color: #5a2b0d;
+  color: white;
+  font-size: 20px;
+  z-index: 1000;
+}
+
+#nextESS3:hover {
+  cursor: pointer;
+  background-color: #3a1b08;
+}
+
+#nextESS4 {
+  position: absolute;
+  right: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 180px;
+  border: none;
+  background-color: #5a2b0d;
+  color: white;
+  font-size: 20px;
+  z-index: 1000;
+}
+
+#nextESS4:hover {
+  cursor: pointer;
+  background-color: #3a1b08;
+}
+
+#nextESS5 {
+  position: absolute;
+  right: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 180px;
+  border: none;
+  background-color: #007400;
+  color: white;
+  font-size: 20px;
+  z-index: 1000;
+}
+
+#nextESS5:hover {
+  cursor: pointer;
+  background-color: #003800;
+}
+
+#ESSSlide2 {
+  display: none;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #ee712d;
+  animation: appear 1s ease-out;
+}
+
+#ESSSlide3 {
+  display: none;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #ee712d;
+  animation: appear 1s ease-out;
+}
+
+#ESSSlide4 {
+  display: none;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #ee712d;
+  animation: appear 1s ease-out;
+}
+
+#ESSSlide5 {
+  display: none;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #ee712d;
+  animation: appear 1s ease-out;
+}
+
+#secuText{
+  color: white;
+  padding: 15px;
+}
+
+#ESS1  {
+  width: 53.3%;
+  height: 35vw;
+  border-radius: 10px;
+  bottom: 5%;
+}
+
+#ESS2{
+  width: 48.3%;
+  height: 34.9vw;
+  border-radius: 10px;
+  bottom: 5%;
+}
+
+#ESS3{
+  width: 50.9%;
+  height: 35vw;
+  border-radius: 10px;
+  bottom: 5%;
+}
+
+#ESSh1 {
+  bottom: 5.5%;
+  font-size: 2vw;
+}
+
+#ESSSlide5 p{
+  color: white;
+  font-size: 1.3;
+  padding: 15px;
+  font-weight: 400;
+  font-style: italic;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  #ESS1  {
+    width: 98%;
+    height: 64vw;
+    position: relative;
+    border-radius: 10px;
+    bottom: 5%;
+  }
+
+  #ESS2{
+    width: 98%;
+    height: 71.5vw;
+    position: relative;
+    border-radius: 10px;
+    bottom: 5%;
+  }
+  
+  #ESS3{
+    width: 98%;
+    height: 67.2vw;
+    position: relative;
+    bottom: 5%;
+  }
+
+  #ESSh1 {
+    bottom: 5.5%;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  #backESS, #backESS2, #backESS3, #backESS4 {
+    bottom: 5%;
+    left: 10%;
+    width: 60px;
+    height: 60px;
+    font-size: 17px;
+    position: fixed;
+  }
+
+  #nextESS2, #nextESS3, #nextESS4, #nextESS5 {
+    bottom: 5%;
+    right: 10%;
+    width: 60px;
+    height: 60px;
+    font-size: 17px;
+    position: fixed;
+  }
+}
+
 #NEMZone {
   display: none;
   align-items: center;
@@ -1725,11 +2131,11 @@ body::-webkit-scrollbar {
   animation: appear 1s ease-out;
 }
 
-#EEh1{
+#EEh1 {
   display: flex;
   position: relative;
   bottom: 3%;
-  font-size: 2.5vw;
+  font-size: 2.2vw;
   font-weight: 800;
   font-style: italic;
   color: white;
@@ -1739,8 +2145,8 @@ body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60%;
-  height: 42.5vw;
+  width: 50%;
+  height: 35.2vw;
   background-color: #8cd147;
   background-image: url(images/EEImages/slideEnv.png);
   background-size: contain;
@@ -1778,7 +2184,7 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 425px;
+  margin-top: 450px;
   width: 70px;
   height: 70px;
   border-radius: 180px;
@@ -1825,9 +2231,9 @@ body::-webkit-scrollbar {
     bottom: 5%;
   }
 
-  #EEh1{
+  #EEh1 {
     bottom: 5.5%;
-    font-size: 3.5vw;
+    font-size: 22px;
   }
 
   #backEE1 {
@@ -1847,7 +2253,6 @@ body::-webkit-scrollbar {
     font-size: 17px;
     position: fixed;
   }
-  
 }
 
 #EMZone {
@@ -2283,7 +2688,7 @@ body::-webkit-scrollbar {
   animation: appear 1s ease-out;
 }
 
-.questionCount{
+.questionCount {
   color: white;
   font-size: 18px;
   font-style: italic;
