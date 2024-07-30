@@ -2094,6 +2094,7 @@ body::-webkit-scrollbar {
 
 #SEZone {
   display: none;
+  position: fixed;
   align-items: center;
   justify-content: center;
   justify-content: wrap;
