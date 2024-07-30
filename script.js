@@ -242,14 +242,12 @@ let ESSSlide3 = document.getElementById("ESSSlide3");
 let ESSSlide4 = document.getElementById("ESSSlide4");
 let ESSSlide5 = document.getElementById("ESSSlide5");
 
-
 ESS.addEventListener("click", function () {
   setTimeout(function () {
     testZone.style.display = "none";
     ESSZone.style.display = "flex";
     ESSSlide1.style.display = "flex";
     ESSZone.style.animation = "appear 1s forwards";
-    
   }, 1000);
   testZone.style.animation = "disappear 1s forwards";
 });
@@ -367,6 +365,64 @@ nextEE2.addEventListener("click", function () {
 backEE.addEventListener("click", function () {
   EESlide1.style.display = "flex";
   EESlide2.style.display = "none";
+});
+
+let SE = document.getElementById("SE");
+let SEZone = document.getElementById("SEZone");
+let SESlide1 = document.getElementById("SESlide1");
+let SESlide2 = document.getElementById("SESlide2");
+let SESlide3 = document.getElementById("SESlide3");
+let backSE1 = document.getElementById("backSE1");
+let backSE2 = document.getElementById("backSE2");
+let nextSE1 = document.getElementById("nextSE");
+let nextSE2 = document.getElementById("nextSE2");
+let nextSE3 = document.getElementById("nextSE3");
+
+SE.addEventListener("click", function () {
+  setTimeout(function () {
+    testZone.style.display = "none";
+    SESlide1.style.display = "flex";
+    SESlide2.style.display = "none";
+    SESlide3.style.display = "none";
+    SEZone.style.display = "flex";
+    SEZone.style.animation = "appear 1s forwards";
+  }, 1000);
+  testZone.style.animation = "disappear 1s forwards";
+});
+
+nextSE1.addEventListener("click", function () {
+  SESlide1.style.display = "none";
+  SESlide2.style.display = "flex";
+  SESlide3.style.display = "none";
+});
+
+backSE1.addEventListener("click", function () {
+  SESlide1.style.display = "flex";
+  SESlide2.style.display = "none";
+  SESlide3.style.display = "none";
+});
+
+nextSE2.addEventListener("click", function () {
+  SESlide1.style.display = "none";
+  SESlide2.style.display = "none";
+  SESlide3.style.display = "flex";
+});
+
+backSE2.addEventListener("click", function () {
+  SESlide1.style.display = "none";
+  SESlide2.style.display = "flex";
+  SESlide3.style.display = "none";
+});
+
+nextSE3.addEventListener("click", function () {
+  setTimeout(function () {
+    SESlide3.style.display = "none";
+    SEZone.style.display = "none";
+    testZone.style.display = "flex";
+    SEZone.style.animation = "appear 1s forwards";
+    testZone.style.animation = "appear 1s forwards";
+  }, 1000);
+  SEZone.style.animation = "disappear 1s forwards";
 });
 
 let TVC = document.getElementById("TVC");
