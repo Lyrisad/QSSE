@@ -1181,7 +1181,7 @@ body::-webkit-scrollbar {
 
 #medaCandorBlanc {
   position: absolute;
-  top: 29%;
+  top: 24%;
   left: 50%;
   width: 250px;
   height: 250px;
@@ -1581,7 +1581,7 @@ body::-webkit-scrollbar {
 #v3,
 #v4 {
   margin: 10px;
-  border-radius: 25px;
+  border-radius: 10px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   width: 20vw;
   height: 26vw;
