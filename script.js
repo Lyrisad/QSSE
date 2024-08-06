@@ -425,6 +425,64 @@ nextSE3.addEventListener("click", function () {
   SEZone.style.animation = "disappear 1s forwards";
 });
 
+let NEM = document.getElementById("NEM");
+let NEMZone = document.getElementById("NEMZone");
+let NEMSlide1 = document.getElementById("NEMSlide1");
+let NEMSlide2 = document.getElementById("NEMSlide2");
+let NEMSlide3 = document.getElementById("NEMSlide3");
+let nextNEM = document.getElementById("nextNEM");
+let backNEM1 = document.getElementById("backNEM1");
+let backNEM2 = document.getElementById("backNEM2");
+let nextNEM2 = document.getElementById("nextNEM2");
+let nextNEM3 = document.getElementById("nextNEM3");
+
+NEM.addEventListener("click", function () {
+  setTimeout(function () {
+    testZone.style.display = "none";
+    NEMSlide1.style.display = "flex";
+    NEMSlide2.style.display = "none";
+    NEMSlide3.style.display = "none";
+    NEMZone.style.display = "flex";
+    NEMZone.style.animation = "appear 1s forwards";
+  }, 1000);
+  testZone.style.animation = "disappear 1s forwards";
+});
+
+nextNEM.addEventListener("click", function () {
+  NEMSlide1.style.display = "none";
+  NEMSlide2.style.display = "flex";
+  NEMSlide3.style.display = "none";
+});
+
+backNEM1.addEventListener("click", function () {
+  NEMSlide1.style.display = "flex";
+  NEMSlide2.style.display = "none";
+  NEMSlide3.style.display = "none";
+});
+
+nextNEM2.addEventListener("click", function () {
+  NEMSlide1.style.display = "none";
+  NEMSlide2.style.display = "none";
+  NEMSlide3.style.display = "flex";
+});
+
+backNEM2.addEventListener("click", function () {
+  NEMSlide1.style.display = "none";
+  NEMSlide2.style.display = "flex";
+  NEMSlide3.style.display = "none";
+});
+
+nextNEM3.addEventListener("click", function () {
+  setTimeout(function () {
+    NEMSlide3.style.display = "none";
+    NEMZone.style.display = "none";
+    testZone.style.display = "flex";
+    NEMZone.style.animation = "appear 1s forwards";
+    testZone.style.animation = "appear 1s forwards";
+  }, 1000);
+  NEMZone.style.animation = "disappear 1s forwards";
+});
+
 let TVC = document.getElementById("TVC");
 let TVCzone = document.getElementById("TVCzone");
 
