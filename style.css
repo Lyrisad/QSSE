@@ -478,8 +478,6 @@ body::-webkit-scrollbar {
     display: none;
     position: fixed;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 85%;
     border-radius: 0;
     box-shadow: none;
@@ -492,14 +490,16 @@ body::-webkit-scrollbar {
 
   #home_page_text {
     color: white;
+    align-items: start;
     z-index: 1000;
-    width: 90%;
+    width: 80%;
   }
 
   #home_page_text p {
     color: white;
     width: 90%;
     font-size: 14px;
+    margin: 0;
     text-shadow: rgba(0, 0, 0, 0.601) 0px 2px 4px;
   }
 
@@ -518,8 +518,8 @@ body::-webkit-scrollbar {
 
   #home_page_button {
     color: white;
-    width: 60%;
-    height: 30px;
+    width: 70%;
+    height: 33px;
     text-align: center;
     background-color: #1bbce7;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
