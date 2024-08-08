@@ -441,10 +441,11 @@ body::-webkit-scrollbar {
 
 
 .language-switcher {
+  position: fixed;
+  color: black;
   z-index: 2000;
 margin-bottom: 20px;
 margin-left: 10px;
-  position: absolute;
   left: 5px;
   bottom: 25px;
   display: flex;
@@ -454,9 +455,11 @@ margin-left: 10px;
 }
 
 #language-select {
+  position: fixed;
+  color: black;
   border-radius: 15px;
   padding: 15px;
-  font-size: 12px;
+  font-size: 11px;
   font-style: italic;
   border: none;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
@@ -1094,6 +1097,17 @@ margin-left: 10px;
   background-color: #d15f2a;
 }
 
+#ModContainer{
+  display: flex;  
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+}
+
 #NEM {
   display: flex;
   text-align: center;
@@ -1107,6 +1121,7 @@ margin-left: 10px;
 #NEM:hover {
   background-color: #c33aae;
 }
+
 
 #EE {
   display: flex;
@@ -1136,15 +1151,113 @@ margin-left: 10px;
   background-color: #d5a126;
 }
 
+#checkedPGC{
+  border-radius: 180px;
+  background-color: #15d773;
+  position: absolute;
+  top: 13px;
+  right: 3%;
+  display: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  color: white;
+  z-index: 1000;
+  opacity: 0;
+  animation: appear 0.5s ease-out 1s forwards;
+}
+
+#checkedESS{
+  border-radius: 180px;
+  background-color: #15d773;
+  position: absolute;
+  top: 13px;
+  right: 3%;
+  display: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  color: white;
+  z-index: 1000;
+  opacity: 0;
+  animation: appear 0.5s ease-out 1s forwards;
+}
+
+#checkedNEM{
+  border-radius: 180px;
+  background-color: #15d773;
+  position: absolute;
+  top: 13px;
+  right: 3%;
+  display: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  color: white;
+  z-index: 1000;
+  opacity: 0;
+  animation: appear 0.5s ease-out 1s forwards;
+}
+
+#checkedEE{
+  border-radius: 180px;
+  background-color: #15d773;
+  position: absolute;
+  top: 13px;
+  right: 3%;
+  display: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  color: white;
+  z-index: 1000;
+  opacity: 0;
+  animation: appear 0.5s ease-out 1s forwards;
+}
+
+#checkedSE{
+  border-radius: 180px;
+  background-color: #15d773;
+  position: absolute;
+  top: 13px;
+  right: 3%;
+  display: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  color: white;
+  z-index: 1000;
+  opacity: 0;
+  animation: appear 0.5s ease-out 1s forwards;
+}
+
+
 #TVC {
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
+  color: rgba(255, 255, 255, 0.704);
   opacity: 0;
   /*background-color: #4930e8;*/
   background-color: rgba(192, 192, 192, 0.704);
   animation: appearFromTop 0.5s ease-out 1s forwards;
+  cursor:default;
 }
 
 #TVC:hover {
@@ -1213,6 +1326,13 @@ margin-left: 10px;
 }
 
 @media screen and (max-width: 1000px) {
+
+  #checkedPGC, #checkedESS, #checkedNEM, #checkedEE, #checkedSE {
+    top: -10px;
+    right: -5%;
+  }
+  
+
   #condorMed {
     height: 350px;
     width: 350px;
@@ -1225,6 +1345,17 @@ margin-left: 10px;
     height: 50%;
     justify-content: space-evenly;
   }
+
+  #ModContainer{
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    width: 43%;
+    height: 30%;
+    margin: 0;
+    padding: 0;
+  }
+
   #PGC,
   #ESS,
   #NEM,
@@ -1234,8 +1365,8 @@ margin-left: 10px;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     font-size: 14px;
-    width: 43%;
-    height: 30%;
+    width: 100%;
+    height: 100%;
     margin: 0;
   }
 

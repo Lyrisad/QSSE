@@ -50,30 +50,29 @@ condor_logo.addEventListener("click", function () {
   location.href = "https://groupecandor.com/";
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const languageSelect = document.getElementById('language-select');
-  languageSelect.addEventListener('change', switchLanguage);
+document.addEventListener("DOMContentLoaded", () => {
+  const languageSelect = document.getElementById("language-select");
+  languageSelect.addEventListener("change", switchLanguage);
 
   function switchLanguage() {
-      const selectedLanguage = languageSelect.value;
-      const elements = document.querySelectorAll('[data-lang-en]');
+    const selectedLanguage = languageSelect.value;
+    const elements = document.querySelectorAll("[data-lang-en]");
 
-      elements.forEach(element => {
-          const text = element.getAttribute(`data-lang-${selectedLanguage}`);
-          if (text) {
-              element.textContent = text;
-          }
-      });
+    elements.forEach((element) => {
+      const text = element.getAttribute(`data-lang-${selectedLanguage}`);
+      if (text) {
+        element.textContent = text;
+      }
+    });
   }
 
   // Set the default language based on the browser's language setting
   const browserLanguage = navigator.language.slice(0, 2); // Get the first two characters
-  if (browserLanguage === 'fr' || browserLanguage === 'en') {
-      languageSelect.value = browserLanguage;
-      switchLanguage();
+  if (browserLanguage === "fr" || browserLanguage === "en") {
+    languageSelect.value = browserLanguage;
+    switchLanguage();
   }
 });
-
 
 let login_button = document.getElementById("login_button");
 let auth = document.getElementById("auth");
@@ -238,6 +237,8 @@ backPGC3.addEventListener("click", function () {
   PGCSlide1.style.display = "none";
 });
 
+let checkedPGC = document.getElementById("checkedPGC");
+
 nextPGC5.addEventListener("click", function () {
   setTimeout(function () {
     PGCSlide4.style.display = "none";
@@ -246,7 +247,20 @@ nextPGC5.addEventListener("click", function () {
     testZone.style.display = "flex";
     PGCZone.style.animation = "appear 1s forwards";
     testZone.style.animation = "appear 1s forwards";
+    if (
+      checkedNEM.style.display == "flex" &&
+      checkedSE.style.display == "flex" &&
+      checkedEE.style.display == "flex" &&
+      checkedESS.style.display == "flex" &&
+      checkedPGC.style.display == "flex"
+    ) {
+      console.log("all checked");
+      TVC.style.color = 'white';
+      TVC.style.backgroundColor = '#4930e8';
+      TVC.style.cursor = 'pointer';
+    }
   }, 1000);
+  checkedPGC.style.display = "flex";
   PGCZone.style.animation = "disappear 1s forwards";
 });
 
@@ -341,6 +355,8 @@ backESS4.addEventListener("click", function () {
   ESSSlide1.style.display = "none";
 });
 
+let checkedESS = document.getElementById("checkedESS");
+
 nextESS5.addEventListener("click", function () {
   setTimeout(function () {
     ESSSlide5.style.display = "none";
@@ -348,7 +364,20 @@ nextESS5.addEventListener("click", function () {
     testZone.style.display = "flex";
     ESSZone.style.animation = "appear 1s forwards";
     testZone.style.animation = "appear 1s forwards";
+    if (
+      checkedNEM.style.display == "flex" &&
+      checkedSE.style.display == "flex" &&
+      checkedEE.style.display == "flex" &&
+      checkedESS.style.display == "flex" &&
+      checkedPGC.style.display == "flex"
+    ) {
+      console.log("all checked");
+      TVC.style.color = 'white';
+      TVC.style.backgroundColor = '#4930e8';
+      TVC.style.cursor = 'pointer';
+    }
   }, 1000);
+  checkedESS.style.display = "flex";
   ESSZone.style.animation = "disappear 1s forwards";
 });
 
@@ -376,6 +405,8 @@ nextEE.addEventListener("click", function () {
   EESlide2.style.display = "flex";
 });
 
+let checkedEE = document.getElementById("checkedEE");
+
 nextEE2.addEventListener("click", function () {
   setTimeout(function () {
     EESlide2.style.display = "none";
@@ -383,7 +414,20 @@ nextEE2.addEventListener("click", function () {
     testZone.style.display = "flex";
     EEZone.style.animation = "appear 1s forwards";
     testZone.style.animation = "appear 1s forwards";
+    if (
+      checkedNEM.style.display == "flex" &&
+      checkedSE.style.display == "flex" &&
+      checkedEE.style.display == "flex" &&
+      checkedESS.style.display == "flex" &&
+      checkedPGC.style.display == "flex"
+    ) {
+      console.log("all checked");
+      TVC.style.color = 'white';
+      TVC.style.backgroundColor = '#4930e8';
+      TVC.style.cursor = 'pointer';
+    }
   }, 1000);
+  checkedEE.style.display = "flex";
   EEZone.style.animation = "disappear 1s forwards";
 });
 
@@ -439,6 +483,8 @@ backSE2.addEventListener("click", function () {
   SESlide3.style.display = "none";
 });
 
+let checkedSE = document.getElementById("checkedSE");
+
 nextSE3.addEventListener("click", function () {
   setTimeout(function () {
     SESlide3.style.display = "none";
@@ -446,7 +492,20 @@ nextSE3.addEventListener("click", function () {
     testZone.style.display = "flex";
     SEZone.style.animation = "appear 1s forwards";
     testZone.style.animation = "appear 1s forwards";
+    if (
+      checkedNEM.style.display == "flex" &&
+      checkedSE.style.display == "flex" &&
+      checkedEE.style.display == "flex" &&
+      checkedESS.style.display == "flex" &&
+      checkedPGC.style.display == "flex"
+    ) {
+      console.log("all checked");
+      TVC.style.color = 'white';
+      TVC.style.backgroundColor = '#4930e8';
+      TVC.style.cursor = 'pointer';
+    }
   }, 1000);
+  checkedSE.style.display = "flex";
   SEZone.style.animation = "disappear 1s forwards";
 });
 
@@ -497,6 +556,8 @@ backNEM2.addEventListener("click", function () {
   NEMSlide3.style.display = "none";
 });
 
+let checkedNEM = document.getElementById("checkedNEM");
+
 nextNEM3.addEventListener("click", function () {
   setTimeout(function () {
     NEMSlide3.style.display = "none";
@@ -504,20 +565,43 @@ nextNEM3.addEventListener("click", function () {
     testZone.style.display = "flex";
     NEMZone.style.animation = "appear 1s forwards";
     testZone.style.animation = "appear 1s forwards";
+    if (
+      checkedNEM.style.display == "flex" &&
+      checkedSE.style.display == "flex" &&
+      checkedEE.style.display == "flex" &&
+      checkedESS.style.display == "flex" &&
+      checkedPGC.style.display == "flex"
+    ) {
+      console.log("all checked");
+      TVC.style.color = 'white';
+      TVC.style.backgroundColor = '#4930e8';
+      TVC.style.cursor = 'pointer';
+    }
   }, 1000);
+  checkedNEM.style.display = "flex";
   NEMZone.style.animation = "disappear 1s forwards";
 });
+
+
 
 let TVC = document.getElementById("TVC");
 let TVCzone = document.getElementById("TVCzone");
 
 TVC.addEventListener("click", function () {
-  setTimeout(function () {
-    testZone.style.display = "none";
-    TVCzone.style.display = "flex";
-    TVCzone.style.animation = "appear 1s forwards";
-  }, 1000);
-  testZone.style.animation = "disappear 1s forwards";
+  if (
+    checkedNEM.style.display == "flex" &&
+    checkedSE.style.display == "flex" &&
+    checkedEE.style.display == "flex" &&
+    checkedESS.style.display == "flex" &&
+    checkedPGC.style.display == "flex"
+  ) {
+    setTimeout(function () {
+      testZone.style.display = "none";
+      TVCzone.style.display = "flex";
+      TVCzone.style.animation = "appear 1s forwards";
+    }, 1000);
+    testZone.style.animation = "disappear 1s forwards";
+  }
 });
 
 let ready = document.getElementById("ready");
