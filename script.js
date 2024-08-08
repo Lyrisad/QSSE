@@ -173,7 +173,7 @@ suivantSecurite.addEventListener("click", function () {
   }, 500);
   language_select.style.color = "black";
   language_select.style.backgroundColor = "white";
-  language_select.style.borderRadius = "180px";
+  language_select.style.borderRadius = "15px";
   header_module.style.animation = "disappearToTop 1s forwards";
   securitySpeach.style.animation = "disappear 1s forwards";
 });
