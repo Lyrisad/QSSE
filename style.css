@@ -2272,9 +2272,9 @@ body::-webkit-scrollbar {
   background-color: white;
   border-radius: 12px;
   width: 70%;
-  height: 50%;
+  height: 45%;
   color: white;
-  padding: 15px;
+  padding: 5px;
   margin-bottom: 20px;
 }
 
@@ -2371,8 +2371,8 @@ body::-webkit-scrollbar {
 
   #secuText {
     width: 85%;
-    height: 50%;
-    padding: 10px;
+    height: 42%;
+    padding: 5px;
   }
 
   #secuText p {
