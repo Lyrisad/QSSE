@@ -50,6 +50,31 @@ condor_logo.addEventListener("click", function () {
   location.href = "https://groupecandor.com/";
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const languageSelect = document.getElementById('language-select');
+  languageSelect.addEventListener('change', switchLanguage);
+
+  function switchLanguage() {
+      const selectedLanguage = languageSelect.value;
+      const elements = document.querySelectorAll('[data-lang-en]');
+
+      elements.forEach(element => {
+          const text = element.getAttribute(`data-lang-${selectedLanguage}`);
+          if (text) {
+              element.textContent = text;
+          }
+      });
+  }
+
+  // Set the default language based on the browser's language setting
+  const browserLanguage = navigator.language.slice(0, 2); // Get the first two characters
+  if (browserLanguage === 'fr' || browserLanguage === 'en') {
+      languageSelect.value = browserLanguage;
+      switchLanguage();
+  }
+});
+
+
 let login_button = document.getElementById("login_button");
 let auth = document.getElementById("auth");
 let mdp = document.getElementById("mdp");
