@@ -441,29 +441,32 @@ body::-webkit-scrollbar {
 
 
 .language-switcher {
+  background-color: transparent;
   position: fixed;
+  width: fit-content;
+  height: 50px;
   color: black;
   z-index: 2000;
-  margin-bottom: 20px;
-  margin-left: 10px;
-  left: 5px;
-  bottom: 25px;
-  display: flex;
-  width: 50px;
-  height: 50px;
+  right: 5%;
+  top: 5.5%;
+  border-radius: 180px;
   border: none;
   outline: none;
 }
 
 #language-select {
+  cursor: pointer;
+  background-color: transparent;
   position: fixed;
+  width: 3%;
+  padding: 5px;
+  height: 50px;
   color: black;
   border-radius: 15px;
-  padding: 15px;
-  font-size: 11px;
+  font-size: 13px;
+  font-weight: 700;
   font-style: italic;
   border: none;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   outline: none;
 }
 
@@ -535,11 +538,37 @@ body::-webkit-scrollbar {
 
 #home_page_button:hover {
   cursor: pointer;
-  color: #ffffff;
+  color: #93cede;
   transform: scale(1.05);
 }
 
 @media screen and (max-width: 1000px) {
+
+  .language-switcher {
+    position: fixed;
+    width: fit-content;
+    height: 50px;
+    color: black;
+    z-index: 2000;
+    left: 40%;
+    top: 5%;
+    border-radius: 180px;
+    border: none;
+    outline: none;
+  }
+  
+  #language-select {
+    position: fixed;
+    width: 40px;
+    height: 50px;
+    color: black;
+    border-radius: 15px;
+    font-size: 11px;
+    font-style: italic;
+    border: none;
+    outline: none;
+  }  
+
   #home_page_intro {
     display: none;
     position: fixed;

@@ -1,9 +1,17 @@
 let next = document.getElementById("next");
 let loadingPage = document.getElementById("loading_page");
 let login_page = document.getElementById("login_page");
+let language_select = document.getElementById("language-select");
+
 next.addEventListener("click", function () {
+  language_select.style.animation = "disappearToTop 0.6s";
+  setTimeout(function () {
+    language_select.style.opacity = "0";
+  }, 500);
   loadingPage.style.animation = "disappearToTop 1s forwards";
   setTimeout(function () {
+    language_select.style.opacity = "1";
+    language_select.style.animation = "appearFromTop 1s";
     loadingPage.style.display = "none";
   }, 1000);
 });
@@ -82,7 +90,13 @@ let errorMsg = document.getElementById("errorMsg");
 login_button.addEventListener("click", function () {
   if (auth.value == "MACQSSE2024" && mdp.value == "QSSE#2024Secure!") {
     login_page.style.animation = "disappearToLeft 1s forwards";
+    language_select.style.animation = "disappearToLeft 1s";
     setTimeout(function () {
+      language_select.style.opacity = "0";
+    }, 600);
+    setTimeout(function () {
+      language_select.style.opacity = "1";
+      language_select.style.animation = "appearFromTop 1s";
       header_module.style.display = "flex";
       login_page.style.display = "none";
       homePage.style.display = "flex";
@@ -151,7 +165,15 @@ suivantSecurite.addEventListener("click", function () {
     securitySpeach.style.display = "none";
     testZone.style.display = "flex";
     securitySpeach.style.animation = "appear 1s forwards";
+    language_select.style.opacity = "1";
   }, 1000);
+  language_select.style.animation = "disappearToTop 0.6s";
+  setTimeout(function () {
+    language_select.style.opacity = "0";
+  }, 500);
+  language_select.style.color = "black";
+  language_select.style.backgroundColor = "white";
+  language_select.style.borderRadius = "180px";
   header_module.style.animation = "disappearToTop 1s forwards";
   securitySpeach.style.animation = "disappear 1s forwards";
 });
@@ -159,9 +181,18 @@ suivantSecurite.addEventListener("click", function () {
 let back = document.getElementById("back");
 
 back.addEventListener("click", function () {
+  
   header_module.style.display = "flex";
   securitySpeach.style.display = "flex";
   testZone.style.display = "none";
+  language_select.style.color = "black";
+  language_select.style.backgroundColor = "transparent";
+  language_select.style.opacity = "0";
+  setTimeout(function () {
+    language_select.style.opacity = "1";
+    language_select.style.animation = "appearFromTop 1s";
+  }, 1000);
+  language_select.style.animation = "none";
   header_module.style.animation = "appearFromTop 1s forwards";
   securitySpeach.style.animation = "appear 1s forwards";
 });
