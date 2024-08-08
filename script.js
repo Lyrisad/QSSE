@@ -89,14 +89,16 @@ let errorMsg = document.getElementById("errorMsg");
 
 login_button.addEventListener("click", function () {
   if (auth.value == "MACQSSE2024" && mdp.value == "QSSE#2024Secure!") {
+    if (window.matchMedia("(max-width: 1000px)").matches) {
+      language_select.style.animation = "appear 1s forwards 2s";
+      language_select.style.left = "33%";
+      language_select.style.top = "5%";
+    }else{
+      language_select.style.right = "3%";
+    }
     login_page.style.animation = "disappearToLeft 1s forwards";
-    language_select.style.animation = "disappearToLeft 1s";
+    language_select.style.opacity = "0";
     setTimeout(function () {
-      language_select.style.opacity = "0";
-    }, 600);
-    setTimeout(function () {
-      language_select.style.opacity = "1";
-      language_select.style.animation = "appearFromTop 1s";
       header_module.style.display = "flex";
       login_page.style.display = "none";
       homePage.style.display = "flex";
@@ -181,7 +183,6 @@ suivantSecurite.addEventListener("click", function () {
 let back = document.getElementById("back");
 
 back.addEventListener("click", function () {
-  
   header_module.style.display = "flex";
   securitySpeach.style.display = "flex";
   testZone.style.display = "none";
@@ -286,9 +287,9 @@ nextPGC5.addEventListener("click", function () {
       checkedPGC.style.display == "flex"
     ) {
       console.log("all checked");
-      TVC.style.color = 'white';
-      TVC.style.backgroundColor = '#4930e8';
-      TVC.style.cursor = 'pointer';
+      TVC.style.color = "white";
+      TVC.style.backgroundColor = "#4930e8";
+      TVC.style.cursor = "pointer";
     }
   }, 1000);
   checkedPGC.style.display = "flex";
@@ -403,9 +404,9 @@ nextESS5.addEventListener("click", function () {
       checkedPGC.style.display == "flex"
     ) {
       console.log("all checked");
-      TVC.style.color = 'white';
-      TVC.style.backgroundColor = '#4930e8';
-      TVC.style.cursor = 'pointer';
+      TVC.style.color = "white";
+      TVC.style.backgroundColor = "#4930e8";
+      TVC.style.cursor = "pointer";
     }
   }, 1000);
   checkedESS.style.display = "flex";
@@ -453,9 +454,9 @@ nextEE2.addEventListener("click", function () {
       checkedPGC.style.display == "flex"
     ) {
       console.log("all checked");
-      TVC.style.color = 'white';
-      TVC.style.backgroundColor = '#4930e8';
-      TVC.style.cursor = 'pointer';
+      TVC.style.color = "white";
+      TVC.style.backgroundColor = "#4930e8";
+      TVC.style.cursor = "pointer";
     }
   }, 1000);
   checkedEE.style.display = "flex";
@@ -531,9 +532,9 @@ nextSE3.addEventListener("click", function () {
       checkedPGC.style.display == "flex"
     ) {
       console.log("all checked");
-      TVC.style.color = 'white';
-      TVC.style.backgroundColor = '#4930e8';
-      TVC.style.cursor = 'pointer';
+      TVC.style.color = "white";
+      TVC.style.backgroundColor = "#4930e8";
+      TVC.style.cursor = "pointer";
     }
   }, 1000);
   checkedSE.style.display = "flex";
@@ -604,16 +605,14 @@ nextNEM3.addEventListener("click", function () {
       checkedPGC.style.display == "flex"
     ) {
       console.log("all checked");
-      TVC.style.color = 'white';
-      TVC.style.backgroundColor = '#4930e8';
-      TVC.style.cursor = 'pointer';
+      TVC.style.color = "white";
+      TVC.style.backgroundColor = "#4930e8";
+      TVC.style.cursor = "pointer";
     }
   }, 1000);
   checkedNEM.style.display = "flex";
   NEMZone.style.animation = "disappear 1s forwards";
 });
-
-
 
 let TVC = document.getElementById("TVC");
 let TVCzone = document.getElementById("TVCzone");
