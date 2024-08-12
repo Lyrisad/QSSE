@@ -93,7 +93,8 @@ login_button.addEventListener("click", function () {
       language_select.style.animation = "appear 1s forwards 2s";
       language_select.style.left = "33%";
       language_select.style.top = "5%";
-    }else{
+    } else {
+      language_select.style.animation = "appear 1s forwards 2s";
       language_select.style.right = "3%";
     }
     login_page.style.animation = "disappearToLeft 1s forwards";
@@ -115,12 +116,20 @@ document.addEventListener("keydown", function (e) {
   if (e.key === "Enter") {
     if (login_page.style.display != "none") {
       if (auth.value == "MACQSSE2024" && mdp.value == "QSSE#2024Secure!") {
+        if (window.matchMedia("(max-width: 1000px)").matches) {
+          language_select.style.animation = "appear 1s forwards 2s";
+          language_select.style.left = "33%";
+          language_select.style.top = "5%";
+        } else {
+          language_select.style.right = "3%";
+        }
         login_page.style.animation = "disappearToLeft 1s forwards";
+        language_select.style.opacity = "0";
         setTimeout(function () {
+          header_module.style.display = "flex";
           login_page.style.display = "none";
           homePage.style.display = "flex";
           homePage.style.animation = "appear 1s forwards";
-          header_module.style.display = "flex";
           header_module.style.animation = "appearFromTop 1s forwards";
         }, 1000);
       } else {
@@ -161,18 +170,23 @@ let suivantSecurite = document.getElementById("suivantSecurite");
 let testZone = document.getElementById("testZone");
 
 suivantSecurite.addEventListener("click", function () {
+  language_select.style.display = "none";
   setTimeout(function () {
     header_module.style.display = "none";
     header_module.style.animation = "none";
     securitySpeach.style.display = "none";
     testZone.style.display = "flex";
     securitySpeach.style.animation = "appear 1s forwards";
-    language_select.style.opacity = "1";
+    language_select.style.display = "flex";
   }, 1000);
-  language_select.style.animation = "disappearToTop 0.6s";
-  setTimeout(function () {
-    language_select.style.opacity = "0";
-  }, 500);
+  if (window.matchMedia("(max-width: 1000px)").matches) {
+    language_select.style.animation = "appear 1s forwards 1s";
+    language_select.style.left = "85%";
+    language_select.style.top = "2%";
+  } else {
+    language_select.style.animation = "appear 1s forwards 1s";
+    language_select.style.right = "3%";
+  }
   language_select.style.color = "black";
   language_select.style.backgroundColor = "white";
   language_select.style.borderRadius = "15px";
@@ -193,6 +207,12 @@ back.addEventListener("click", function () {
     language_select.style.opacity = "1";
     language_select.style.animation = "appearFromTop 1s";
   }, 1000);
+  if (window.matchMedia("(max-width: 1000px)").matches) {
+    language_select.style.left = "33%";
+    language_select.style.top = "5%";
+  } else {
+    language_select.style.right = "3%";
+  }
   language_select.style.animation = "none";
   header_module.style.animation = "appearFromTop 1s forwards";
   securitySpeach.style.animation = "appear 1s forwards";
