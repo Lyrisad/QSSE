@@ -634,33 +634,46 @@ nextNEM3.addEventListener("click", function () {
   NEMZone.style.animation = "disappear 1s forwards";
 });
 
-  // URLs des vidéos
-  const video1Url = "https://drive.google.com/file/d/1LWDKP6C8FySn2-M8HiGBVfwhM19WAGS6/preview"; 
-  const video2Url = "https://drive.google.com/file/d/1YUWTbw1ZxATwZ-NhAlVlsF4asLjK0dPl/preview";
-  // Fonction pour ouvrir la vidéo en plein écran
-  function openVideo(url) {
-      const videoIframe = document.getElementById('video-iframe');
-      videoIframe.src = url;
+// URLs des vidéos
+const video1Url =
+  "https://drive.google.com/file/d/1LWDKP6C8FySn2-M8HiGBVfwhM19WAGS6/preview";
+const video2Url =
+  "https://drive.google.com/file/d/1YUWTbw1ZxATwZ-NhAlVlsF4asLjK0dPl/preview";
+// Fonction pour ouvrir la vidéo en plein écran
+function openVideo(url) {
+  const videoIframe = document.getElementById("video-iframe");
+  videoIframe.src = url;
 
-      const videoModal = document.getElementById('video-modal');
-      videoModal.style.display = 'flex';
+  const videoModal = document.getElementById("video-modal");
+  videoModal.style.display = "flex";
+}
+
+// Événements de clic sur les divs
+document.getElementById("video1").onclick = function () {
+  openVideo(video1Url);
+};
+
+document.getElementById("video2").onclick = function () {
+  openVideo(video2Url);
+};
+
+document.querySelector("#video-modal .close").onclick = function () {
+  closeModal();
+};
+
+// Fermeture du modal en cliquant en dehors de la vidéo
+document.getElementById("video-modal").onclick = function (event) {
+  if (event.target === this) {
+    closeModal();
   }
+};
 
-  // Événements de clic sur les divs
-  document.getElementById('video1').onclick = function() {
-      openVideo(video1Url);
-  };
-
-  document.getElementById('video2').onclick = function() {
-      openVideo(video2Url);
-  };
-
-  // Fermeture du modal
-  document.querySelector('#video-modal .close').onclick = function() {
-      const videoModal = document.getElementById('video-modal');
-      videoModal.style.display = 'none';
-      document.getElementById('video-iframe').src = ""; // Stoppe la vidéo
-  };
+// Fonction pour fermer le modal et arrêter la vidéo
+function closeModal() {
+  const videoModal = document.getElementById("video-modal");
+  videoModal.style.display = "none";
+  document.getElementById("video-iframe").src = ""; // Stoppe la vidéo
+}
 
 let TVC = document.getElementById("TVC");
 let TVCzone = document.getElementById("TVCzone");
