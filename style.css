@@ -2943,8 +2943,8 @@ body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40.5%;
-  height: 40.5vw;
+  width: 35.5%;
+  height: 35.5vw;
   background-color: #c33aae;
   background-image: url(images/NEMImages/2.png);
   background-size: contain;
@@ -3064,7 +3064,55 @@ body::-webkit-scrollbar {
   cursor: pointer;
   background-color: #3a1b08;
 }
+ /* Style des divs */
+ .video-div {
+  display: flex;
+  justify-content: center;
+  border-radius: 180px;
+  cursor: pointer;
+  text-align: center;
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  top: 3%;
+  width: 70px;
+  height: 70px;
+  background-color: #03008d;
+  animation: breath 1s infinite;
+}
 
+.video-div:hover {
+  background-color: #00005a;
+
+}
+
+/* Style du modal */
+#video-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#video-modal iframe {
+  width: 80%;
+  height: 80%;
+}
+
+#video-modal .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 768px) {
   #NEM1 {
@@ -3648,5 +3696,17 @@ body::-webkit-scrollbar {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes breath {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }

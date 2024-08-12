@@ -634,6 +634,35 @@ nextNEM3.addEventListener("click", function () {
   NEMZone.style.animation = "disappear 1s forwards";
 });
 
+  // URLs des vidéos
+  const video1Url = "https://drive.google.com/file/d/1TlXTBvmFYKxoqeR2Y2V8y12FJrHvZTwZ/preview"; 
+  const video2Url = "https://drive.google.com/file/d/1FWxpwYqkt8iwzj8-SubNZ3FxdObRJktv/preview";
+
+  // Fonction pour ouvrir la vidéo en plein écran
+  function openVideo(url) {
+      const videoIframe = document.getElementById('video-iframe');
+      videoIframe.src = url;
+
+      const videoModal = document.getElementById('video-modal');
+      videoModal.style.display = 'flex';
+  }
+
+  // Événements de clic sur les divs
+  document.getElementById('video1').onclick = function() {
+      openVideo(video1Url);
+  };
+
+  document.getElementById('video2').onclick = function() {
+      openVideo(video2Url);
+  };
+
+  // Fermeture du modal
+  document.querySelector('#video-modal .close').onclick = function() {
+      const videoModal = document.getElementById('video-modal');
+      videoModal.style.display = 'none';
+      document.getElementById('video-iframe').src = ""; // Stoppe la vidéo
+  };
+
 let TVC = document.getElementById("TVC");
 let TVCzone = document.getElementById("TVCzone");
 
