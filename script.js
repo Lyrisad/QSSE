@@ -1250,7 +1250,6 @@ assignClickHandler(q6r3, function () {
     question6.style.display = "none";
     mauvaiseReponse.style.display = "flex";
     question6.style.animation = "appear 1s forwards";
-    element.style.borderRadius = "15px";
     mauvaiseReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
       element.textContent =
