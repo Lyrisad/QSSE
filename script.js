@@ -635,9 +635,8 @@ nextNEM3.addEventListener("click", function () {
 });
 
   // URLs des vidéos
-  const video1Url = "https://drive.google.com/file/d/1TlXTBvmFYKxoqeR2Y2V8y12FJrHvZTwZ/preview"; 
-  const video2Url = "https://drive.google.com/file/d/1FWxpwYqkt8iwzj8-SubNZ3FxdObRJktv/preview";
-
+  const video1Url = "https://drive.google.com/file/d/1LWDKP6C8FySn2-M8HiGBVfwhM19WAGS6/preview"; 
+  const video2Url = "https://drive.google.com/file/d/1YUWTbw1ZxATwZ-NhAlVlsF4asLjK0dPl/preview";
   // Fonction pour ouvrir la vidéo en plein écran
   function openVideo(url) {
       const videoIframe = document.getElementById('video-iframe');
