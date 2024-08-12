@@ -863,8 +863,18 @@ assignClickHandler(q1r1, function () {
     question1.style.animation = "appear 1s forwards";
     mauvaiseReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
-      element.textContent =
-        "Pour chaque tâche sa couleur, pour un nettoyage sans erreur!";
+      if (selectedLanguage === "fr") {
+        element.textContent =
+          "Pour chaque tâche sa couleur, pour un nettoyage sans erreur!";
+      } else if (selectedLanguage === "en") {
+        element.textContent =
+          "For each task its color, for a cleaning without error!";
+      } else if (selectedLanguage === "pt") {
+        element.textContent =
+          "Para cada tarefa sua cor, para uma limpeza sem erro!";
+      } else if (selectedLanguage === "ar") {
+        element.textContent = "لكل مهمة لونها ، لتنظيف بدون أخطاء!";
+      }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(1)}')`;
@@ -885,8 +895,18 @@ assignClickHandler(q1r2, function () {
     question1.style.animation = "appear 1s forwards";
     bonneReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
-      element.textContent =
-        "Pour chaque tâche sa couleur, pour un nettoyage sans erreur!";
+      if (selectedLanguage === "fr") {
+        element.textContent =
+          "Pour chaque tâche sa couleur, pour un nettoyage sans erreur!";
+      } else if (selectedLanguage === "en") {
+        element.textContent =
+          "For each task its color, for a cleaning without error!";
+      } else if (selectedLanguage === "pt") {
+        element.textContent =
+          "Para cada tarefa sua cor, para uma limpeza sem erro!";
+      } else if (selectedLanguage === "ar") {
+        element.textContent = "لكل مهمة لونها ، لتنظيف بدون أخطاء!";
+      }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(1)}')`;
@@ -907,8 +927,18 @@ assignClickHandler(q1r3, function () {
     question1.style.animation = "appear 1s forwards";
     mauvaiseReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
-      element.textContent =
-        "Pour chaque tâche sa couleur, pour un nettoyage sans erreur!";
+      if (selectedLanguage === "fr") {
+        element.textContent =
+          "Pour chaque tâche sa couleur, pour un nettoyage sans erreur!";
+      } else if (selectedLanguage === "en") {
+        element.textContent =
+          "For each task its color, for a cleaning without error!";
+      } else if (selectedLanguage === "pt") {
+        element.textContent =
+          "Para cada tarefa sua cor, para uma limpeza sem erro!";
+      } else if (selectedLanguage === "ar") {
+        element.textContent = "لكل مهمة لونها ، لتنظيف بدون أخطاء!";
+      }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(1)}')`;
@@ -931,7 +961,15 @@ assignClickHandler(q2r1, function () {
     question2.style.animation = "appear 1s forwards";
     mauvaiseReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
+      if (selectedLanguage === "fr") {
       element.textContent = "Avec la godille, le sol scintille!";
+      } else if (selectedLanguage === "en") {
+      element.textContent = "With the godille, the floor sparkles!";
+      } else if (selectedLanguage === "pt") {
+      element.textContent = "Com a godille, o chão brilha!";
+      } else if (selectedLanguage === "ar") {
+      element.textContent = "مع الجوديل ، يتلألأ الأرض!";
+      }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(2)}')`;
@@ -953,7 +991,15 @@ assignClickHandler(q2r2, function () {
     question2.style.animation = "appear 1s forwards";
     bonneReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
-      element.textContent = "Avec la godille, le sol scintille!";
+      if (selectedLanguage === "fr") {
+        element.textContent = "Avec la godille, le sol scintille!";
+        } else if (selectedLanguage === "en") {
+        element.textContent = "With the godille, the floor sparkles!";
+        } else if (selectedLanguage === "pt") {
+        element.textContent = "Com a godille, o chão brilha!";
+        } else if (selectedLanguage === "ar") {
+        element.textContent = "مع الجوديل ، يتلألأ الأرض!";
+        }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(2)}')`;
@@ -975,7 +1021,15 @@ assignClickHandler(q2r3, function () {
     question2.style.animation = "appear 1s forwards";
     mauvaiseReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
-      element.textContent = "Avec la godille, le sol scintille!";
+      if (selectedLanguage === "fr") {
+        element.textContent = "Avec la godille, le sol scintille!";
+        } else if (selectedLanguage === "en") {
+        element.textContent = "With the godille, the floor sparkles!";
+        } else if (selectedLanguage === "pt") {
+        element.textContent = "Com a godille, o chão brilha!";
+        } else if (selectedLanguage === "ar") {
+        element.textContent = "مع الجوديل ، يتلألأ الأرض!";
+        }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(2)}')`;
@@ -999,8 +1053,19 @@ assignClickHandler(q3r1, function () {
     question3.style.animation = "appear 1s forwards";
     mauvaiseReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
+      if (selectedLanguage === "fr") {
       element.textContent =
         "Des gants aujourd'hui, des mains demain, mieux vaut marcher lourdement que boiter tristement.";
+      } else if (selectedLanguage === "en") {
+      element.textContent =
+        "Gloves today, hands tomorrow, better to walk heavily than to limp sadly.";
+      } else if (selectedLanguage === "pt") {
+      element.textContent =
+        "Luvas hoje, mãos amanhã, melhor andar pesadamente do que mancar tristemente.";
+      } else if (selectedLanguage === "ar") {
+      element.textContent =
+        "قفازات اليوم ، والأيدي غدًا ، الأفضل أن تمشي بثقل من أن تعرج بحزن.";
+      }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(3)}')`;
@@ -1022,8 +1087,19 @@ assignClickHandler(q3r2, function () {
     question3.style.animation = "appear 1s forwards";
     mauvaiseReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
-      element.textContent =
-        "Des gants aujourd'hui, des mains demain, mieux vaut marcher lourdement que boiter tristement.";
+      if (selectedLanguage === "fr") {
+        element.textContent =
+          "Des gants aujourd'hui, des mains demain, mieux vaut marcher lourdement que boiter tristement.";
+        } else if (selectedLanguage === "en") {
+        element.textContent =
+          "Gloves today, hands tomorrow, better to walk heavily than to limp sadly.";
+        } else if (selectedLanguage === "pt") {
+        element.textContent =
+          "Luvas hoje, mãos amanhã, melhor andar pesadamente do que mancar tristemente.";
+        } else if (selectedLanguage === "ar") {
+        element.textContent =
+          "قفازات اليوم ، والأيدي غدًا ، الأفضل أن تمشي بثقل من أن تعرج بحزن.";
+        }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(3)}')`;
@@ -1045,8 +1121,19 @@ assignClickHandler(q3r3, function () {
     question3.style.animation = "appear 1s forwards";
     bonneReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
-      element.textContent =
-        "Des gants aujourd'hui, des mains demain, mieux vaut marcher lourdement que boiter tristement.";
+      if (selectedLanguage === "fr") {
+        element.textContent =
+          "Des gants aujourd'hui, des mains demain, mieux vaut marcher lourdement que boiter tristement.";
+        } else if (selectedLanguage === "en") {
+        element.textContent =
+          "Gloves today, hands tomorrow, better to walk heavily than to limp sadly.";
+        } else if (selectedLanguage === "pt") {
+        element.textContent =
+          "Luvas hoje, mãos amanhã, melhor andar pesadamente do que mancar tristemente.";
+        } else if (selectedLanguage === "ar") {
+        element.textContent =
+          "قفازات اليوم ، والأيدي غدًا ، الأفضل أن تمشي بثقل من أن تعرج بحزن.";
+        }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(3)}')`;
@@ -1070,7 +1157,15 @@ assignClickHandler(q4r1, function () {
     question4.style.animation = "appear 1s forwards";
     mauvaiseReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
+      if (selectedLanguage === "fr") {
       element.textContent = "Il vaut mieux prévenir que guérir.";
+      } else if (selectedLanguage === "en") {
+      element.textContent = "Prevention is better than cure.";
+      } else if (selectedLanguage === "pt") {
+      element.textContent = "Prevenir é melhor que remediar.";
+      } else if (selectedLanguage === "ar") {
+      element.textContent = "الوقاية خير من العلاج.";
+      }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(4)}')`;
@@ -1092,7 +1187,15 @@ assignClickHandler(q4r2, function () {
     question4.style.animation = "appear 1s forwards";
     bonneReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
-      element.textContent = "Il vaut mieux prévenir que guérir.";
+      if (selectedLanguage === "fr") {
+        element.textContent = "Il vaut mieux prévenir que guérir.";
+        } else if (selectedLanguage === "en") {
+        element.textContent = "Prevention is better than cure.";
+        } else if (selectedLanguage === "pt") {
+        element.textContent = "Prevenir é melhor que remediar.";
+        } else if (selectedLanguage === "ar") {
+        element.textContent = "الوقاية خير من العلاج.";
+        }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(4)}')`;
@@ -1114,7 +1217,15 @@ assignClickHandler(q4r3, function () {
     question4.style.animation = "appear 1s forwards";
     mauvaiseReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
-      element.textContent = "Il vaut mieux prévenir que guérir.";
+      if (selectedLanguage === "fr") {
+        element.textContent = "Il vaut mieux prévenir que guérir.";
+        } else if (selectedLanguage === "en") {
+        element.textContent = "Prevention is better than cure.";
+        } else if (selectedLanguage === "pt") {
+        element.textContent = "Prevenir é melhor que remediar.";
+        } else if (selectedLanguage === "ar") {
+        element.textContent = "الوقاية خير من العلاج.";
+        }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(4)}')`;
@@ -1138,7 +1249,15 @@ assignClickHandler(q5r1, function () {
     question5.style.animation = "appear 1s forwards";
     bonneReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
+      if (selectedLanguage === "fr") {
       element.textContent = "Suivre les pictogrammes, c'est éviter les drames!";
+      } else if (selectedLanguage === "en") {
+      element.textContent = "Following the pictograms is avoiding dramas!";
+      } else if (selectedLanguage === "pt") {
+      element.textContent = "Seguir os pictogramas é evitar dramas!";
+      } else if (selectedLanguage === "ar") {
+      element.textContent = "اتباع الرموز التوضيحية يعني تجنب الدراما!";
+      }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(5)}')`;
@@ -1160,7 +1279,15 @@ assignClickHandler(q5r2, function () {
     question5.style.animation = "appear 1s forwards";
     mauvaiseReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
-      element.textContent = "Suivre les pictogrammes, c'est éviter les drames!";
+      if (selectedLanguage === "fr") {
+        element.textContent = "Suivre les pictogrammes, c'est éviter les drames!";
+        } else if (selectedLanguage === "en") {
+        element.textContent = "Following the pictograms is avoiding dramas!";
+        } else if (selectedLanguage === "pt") {
+        element.textContent = "Seguir os pictogramas é evitar dramas!";
+        } else if (selectedLanguage === "ar") {
+        element.textContent = "اتباع الرموز التوضيحية يعني تجنب الدراما!";
+        }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(5)}')`;
@@ -1182,7 +1309,15 @@ assignClickHandler(q5r3, function () {
     question5.style.animation = "appear 1s forwards";
     mauvaiseReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
-      element.textContent = "Suivre les pictogrammes, c'est éviter les drames!";
+      if (selectedLanguage === "fr") {
+        element.textContent = "Suivre les pictogrammes, c'est éviter les drames!";
+        } else if (selectedLanguage === "en") {
+        element.textContent = "Following the pictograms is avoiding dramas!";
+        } else if (selectedLanguage === "pt") {
+        element.textContent = "Seguir os pictogramas é evitar dramas!";
+        } else if (selectedLanguage === "ar") {
+        element.textContent = "اتباع الرموز التوضيحية يعني تجنب الدراما!";
+        }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(5)}')`;
@@ -1206,8 +1341,19 @@ assignClickHandler(q6r1, function () {
     question6.style.animation = "appear 1s forwards";
     mauvaiseReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
+      if (selectedLanguage === "fr") {
       element.textContent =
         "Respecter l'environnement, pour un avenir éclatant!";
+      } else if (selectedLanguage === "en") {
+      element.textContent =
+        "Respect the environment, for a bright future!";
+      } else if (selectedLanguage === "pt") {
+      element.textContent =
+        "Respeitar o meio ambiente, para um futuro brilhante!";
+      } else if (selectedLanguage === "ar") {
+      element.textContent =
+        "احترام البيئة ، من أجل مستقبل مشرق!";
+      }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(8)}')`;
@@ -1229,8 +1375,19 @@ assignClickHandler(q6r2, function () {
     question6.style.animation = "appear 1s forwards";
     bonneReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
-      element.textContent =
-        "Respecter l'environnement, pour un avenir éclatant!";
+      if (selectedLanguage === "fr") {
+        element.textContent =
+          "Respecter l'environnement, pour un avenir éclatant!";
+        } else if (selectedLanguage === "en") {
+        element.textContent =
+          "Respect the environment, for a bright future!";
+        } else if (selectedLanguage === "pt") {
+        element.textContent =
+          "Respeitar o meio ambiente, para um futuro brilhante!";
+        } else if (selectedLanguage === "ar") {
+        element.textContent =
+          "احترام البيئة ، من أجل مستقبل مشرق!";
+        }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(8)}')`;
@@ -1252,8 +1409,19 @@ assignClickHandler(q6r3, function () {
     question6.style.animation = "appear 1s forwards";
     mauvaiseReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
-      element.textContent =
-        "Respecter l'environnement, pour un avenir éclatant!";
+      if (selectedLanguage === "fr") {
+        element.textContent =
+          "Respecter l'environnement, pour un avenir éclatant!";
+        } else if (selectedLanguage === "en") {
+        element.textContent =
+          "Respect the environment, for a bright future!";
+        } else if (selectedLanguage === "pt") {
+        element.textContent =
+          "Respeitar o meio ambiente, para um futuro brilhante!";
+        } else if (selectedLanguage === "ar") {
+        element.textContent =
+          "احترام البيئة ، من أجل مستقبل مشرق!";
+        }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(8)}')`;
@@ -1277,8 +1445,19 @@ assignClickHandler(q7r1, function () {
     question7.style.animation = "appear 1s forwards";
     mauvaiseReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
+      if (selectedLanguage === "fr") {
       element.textContent =
         "Garder le dos droit, c'est éviter bien des tracas!";
+      } else if (selectedLanguage === "en") {
+      element.textContent =
+        "Keeping your back straight avoids many troubles!";
+      } else if (selectedLanguage === "pt") {
+      element.textContent =
+        "Manter as costas retas evita muitos problemas!";
+      } else if (selectedLanguage === "ar") {
+      element.textContent =
+        "الحفاظ على ظهرك مستقيمًا يجنبك العديد من المشاكل!";
+      }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(7)}')`;
@@ -1301,8 +1480,19 @@ assignClickHandler(q7r2, function () {
     question7.style.animation = "appear 1s forwards";
     mauvaiseReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
-      element.textContent =
-        "Garder le dos droit, c'est éviter bien des tracas!";
+      if (selectedLanguage === "fr") {
+        element.textContent =
+          "Garder le dos droit, c'est éviter bien des tracas!";
+        } else if (selectedLanguage === "en") {
+        element.textContent =
+          "Keeping your back straight avoids many troubles!";
+        } else if (selectedLanguage === "pt") {
+        element.textContent =
+          "Manter as costas retas evita muitos problemas!";
+        } else if (selectedLanguage === "ar") {
+        element.textContent =
+          "الحفاظ على ظهرك مستقيمًا يجنبك العديد من المشاكل!";
+        }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(7)}')`;
@@ -1325,8 +1515,19 @@ assignClickHandler(q7r3, function () {
     question7.style.animation = "appear 1s forwards";
     bonneReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
-      element.textContent =
-        "Garder le dos droit, c'est éviter bien des tracas!";
+      if (selectedLanguage === "fr") {
+        element.textContent =
+          "Garder le dos droit, c'est éviter bien des tracas!";
+        } else if (selectedLanguage === "en") {
+        element.textContent =
+          "Keeping your back straight avoids many troubles!";
+        } else if (selectedLanguage === "pt") {
+        element.textContent =
+          "Manter as costas retas evita muitos problemas!";
+        } else if (selectedLanguage === "ar") {
+        element.textContent =
+          "الحفاظ على ظهرك مستقيمًا يجنبك العديد من المشاكل!";
+        }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(7)}')`;
