@@ -74,12 +74,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Set the default language based on the browser's language setting
+  // Set the default language to French or based on the browser's language setting
   const browserLanguage = navigator.language.slice(0, 2); // Get the first two characters
-  if (browserLanguage === "fr" || browserLanguage === "en") {
-    languageSelect.value = browserLanguage;
-    switchLanguage();
+  if (browserLanguage === "en") {
+    languageSelect.value = "en";
+  } else {
+    languageSelect.value = "fr"; // Default to French
   }
+  switchLanguage(); // Initialize the page with the selected language
 });
 
 let login_button = document.getElementById("login_button");
@@ -824,6 +826,30 @@ function countGoodAnswers() {
   console.log(goodAnswers);
   return goodAnswers;
 }
+const languageSelect = document.getElementById("language-select");
+let selectedLanguage = languageSelect.value;
+
+console.log(selectedLanguage);
+
+languageSelect.addEventListener("change", () => {
+  selectedLanguage = languageSelect.value;
+  console.log(selectedLanguage);
+});
+
+// Function to get the correct image path based on the selected language
+function getImagePath(questionNumber) {
+  let basePath = "images/QCM_images/";
+  if (selectedLanguage === "en") {
+    basePath = "images/QCM_images/images_anglais/";
+  } else if (selectedLanguage === "pt") {
+    basePath = "images/QCM_images/images_portugais/";
+  } else if (selectedLanguage === "ar") {
+    basePath = "images/QCM_images/images_arabe/";
+  } else if (selectedLanguage === "fr") {
+    basePath = "images/QCM_images/";
+  }
+  return `${basePath}${questionNumber}.png`;
+}
 
 // Question 1
 let q1Buttons = [q1r1, q1r2, q1r3];
@@ -839,6 +865,11 @@ assignClickHandler(q1r1, function () {
     descriptif.forEach((element) => {
       element.textContent =
         "Pour chaque tâche sa couleur, pour un nettoyage sans erreur!";
+    });
+    QCM_image.forEach((element) => {
+      element.style.background = `url('${getImagePath(1)}')`;
+      element.style.backgroundSize = "contain";
+      element.style.backgroundRepeat = "no-repeat";
     });
   }, 2000);
   question1.style.animation = "disappear 1s forwards 1s";
@@ -857,6 +888,11 @@ assignClickHandler(q1r2, function () {
       element.textContent =
         "Pour chaque tâche sa couleur, pour un nettoyage sans erreur!";
     });
+    QCM_image.forEach((element) => {
+      element.style.background = `url('${getImagePath(1)}')`;
+      element.style.backgroundSize = "contain";
+      element.style.backgroundRepeat = "no-repeat";
+    });
   }, 2000);
   question1.style.animation = "disappear 1s forwards 1s";
 });
@@ -873,6 +909,11 @@ assignClickHandler(q1r3, function () {
     descriptif.forEach((element) => {
       element.textContent =
         "Pour chaque tâche sa couleur, pour un nettoyage sans erreur!";
+    });
+    QCM_image.forEach((element) => {
+      element.style.background = `url('${getImagePath(1)}')`;
+      element.style.backgroundSize = "contain";
+      element.style.backgroundRepeat = "no-repeat";
     });
   }, 2000);
   question1.style.animation = "disappear 1s forwards 1s";
@@ -893,7 +934,7 @@ assignClickHandler(q2r1, function () {
       element.textContent = "Avec la godille, le sol scintille!";
     });
     QCM_image.forEach((element) => {
-      element.style.background = "url('images/QCM_images/2.png')";
+      element.style.background = `url('${getImagePath(2)}')`;
       element.style.backgroundSize = "contain";
       element.style.backgroundRepeat = "no-repeat";
       element.style.height = "200px";
@@ -915,7 +956,7 @@ assignClickHandler(q2r2, function () {
       element.textContent = "Avec la godille, le sol scintille!";
     });
     QCM_image.forEach((element) => {
-      element.style.background = "url('images/QCM_images/2.png')";
+      element.style.background = `url('${getImagePath(2)}')`;
       element.style.backgroundSize = "contain";
       element.style.backgroundRepeat = "no-repeat";
       element.style.height = "200px";
@@ -937,7 +978,7 @@ assignClickHandler(q2r3, function () {
       element.textContent = "Avec la godille, le sol scintille!";
     });
     QCM_image.forEach((element) => {
-      element.style.background = "url('images/QCM_images/2.png')";
+      element.style.background = `url('${getImagePath(2)}')`;
       element.style.backgroundSize = "contain";
       element.style.backgroundRepeat = "no-repeat";
       element.style.height = "200px";
@@ -962,7 +1003,7 @@ assignClickHandler(q3r1, function () {
         "Des gants aujourd'hui, des mains demain, mieux vaut marcher lourdement que boiter tristement.";
     });
     QCM_image.forEach((element) => {
-      element.style.background = "url('images/QCM_images/3.png')";
+      element.style.background = `url('${getImagePath(3)}')`;
       element.style.backgroundSize = "contain";
       element.style.backgroundRepeat = "no-repeat";
       element.style.height = "350px";
@@ -985,7 +1026,7 @@ assignClickHandler(q3r2, function () {
         "Des gants aujourd'hui, des mains demain, mieux vaut marcher lourdement que boiter tristement.";
     });
     QCM_image.forEach((element) => {
-      element.style.background = "url('images/QCM_images/3.png')";
+      element.style.background = `url('${getImagePath(3)}')`;
       element.style.backgroundSize = "contain";
       element.style.backgroundRepeat = "no-repeat";
       element.style.height = "350px";
@@ -1008,7 +1049,7 @@ assignClickHandler(q3r3, function () {
         "Des gants aujourd'hui, des mains demain, mieux vaut marcher lourdement que boiter tristement.";
     });
     QCM_image.forEach((element) => {
-      element.style.background = "url('images/QCM_images/3.png')";
+      element.style.background = `url('${getImagePath(3)}')`;
       element.style.backgroundSize = "contain";
       element.style.backgroundRepeat = "no-repeat";
       element.style.height = "350px";
@@ -1032,7 +1073,7 @@ assignClickHandler(q4r1, function () {
       element.textContent = "Il vaut mieux prévenir que guérir.";
     });
     QCM_image.forEach((element) => {
-      element.style.background = "url('images/QCM_images/4.png')";
+      element.style.background = `url('${getImagePath(4)}')`;
       element.style.backgroundSize = "contain";
       element.style.backgroundRepeat = "no-repeat";
       element.style.height = "200px";
@@ -1054,7 +1095,7 @@ assignClickHandler(q4r2, function () {
       element.textContent = "Il vaut mieux prévenir que guérir.";
     });
     QCM_image.forEach((element) => {
-      element.style.background = "url('images/QCM_images/4.png')";
+      element.style.background = `url('${getImagePath(4)}')`;
       element.style.backgroundSize = "contain";
       element.style.backgroundRepeat = "no-repeat";
       element.style.height = "200px";
@@ -1076,7 +1117,7 @@ assignClickHandler(q4r3, function () {
       element.textContent = "Il vaut mieux prévenir que guérir.";
     });
     QCM_image.forEach((element) => {
-      element.style.background = "url('images/QCM_images/4.png')";
+      element.style.background = `url('${getImagePath(4)}')`;
       element.style.backgroundSize = "contain";
       element.style.backgroundRepeat = "no-repeat";
       element.style.height = "200px";
@@ -1100,7 +1141,7 @@ assignClickHandler(q5r1, function () {
       element.textContent = "Suivre les pictogrammes, c'est éviter les drames!";
     });
     QCM_image.forEach((element) => {
-      element.style.background = "url('images/QCM_images/5.png')";
+      element.style.background = `url('${getImagePath(5)}')`;
       element.style.backgroundSize = "contain";
       element.style.backgroundRepeat = "no-repeat";
       element.style.height = "350px";
@@ -1122,7 +1163,7 @@ assignClickHandler(q5r2, function () {
       element.textContent = "Suivre les pictogrammes, c'est éviter les drames!";
     });
     QCM_image.forEach((element) => {
-      element.style.background = "url('images/QCM_images/5.png')";
+      element.style.background = `url('${getImagePath(5)}')`;
       element.style.backgroundSize = "contain";
       element.style.backgroundRepeat = "no-repeat";
       element.style.height = "350px";
@@ -1144,7 +1185,7 @@ assignClickHandler(q5r3, function () {
       element.textContent = "Suivre les pictogrammes, c'est éviter les drames!";
     });
     QCM_image.forEach((element) => {
-      element.style.background = "url('images/QCM_images/5.png')";
+      element.style.background = `url('${getImagePath(5)}')`;
       element.style.backgroundSize = "contain";
       element.style.backgroundRepeat = "no-repeat";
       element.style.height = "350px";
@@ -1169,7 +1210,7 @@ assignClickHandler(q6r1, function () {
         "Respecter l'environnement, pour un avenir éclatant!";
     });
     QCM_image.forEach((element) => {
-      element.style.background = "url('images/QCM_images/eco.png')";
+      element.style.background = `url('${getImagePath(8)}')`;
       element.style.backgroundSize = "contain";
       element.style.borderRadius = "15px";
       element.style.backgroundRepeat = "no-repeat";
@@ -1192,7 +1233,7 @@ assignClickHandler(q6r2, function () {
         "Respecter l'environnement, pour un avenir éclatant!";
     });
     QCM_image.forEach((element) => {
-      element.style.background = "url('images/QCM_images/eco.png')";
+      element.style.background = `url('${getImagePath(8)}')`;
       element.style.backgroundSize = "contain";
       element.style.borderRadius = "15px";
       element.style.backgroundRepeat = "no-repeat";
@@ -1216,7 +1257,7 @@ assignClickHandler(q6r3, function () {
         "Respecter l'environnement, pour un avenir éclatant!";
     });
     QCM_image.forEach((element) => {
-      element.style.background = "url('images/QCM_images/eco.png')";
+      element.style.background = `url('${getImagePath(8)}')`;
       element.style.backgroundSize = "contain";
       element.style.borderRadius = "15px";
       element.style.backgroundRepeat = "no-repeat";
@@ -1241,7 +1282,7 @@ assignClickHandler(q7r1, function () {
         "Garder le dos droit, c'est éviter bien des tracas!";
     });
     QCM_image.forEach((element) => {
-      element.style.background = "url('images/QCM_images/7.png')";
+      element.style.background = `url('${getImagePath(7)}')`;
       element.style.backgroundSize = "contain";
       element.style.borderRadius = "0px";
       element.style.backgroundRepeat = "no-repeat";
@@ -1265,7 +1306,7 @@ assignClickHandler(q7r2, function () {
         "Garder le dos droit, c'est éviter bien des tracas!";
     });
     QCM_image.forEach((element) => {
-      element.style.background = "url('images/QCM_images/7.png')";
+      element.style.background = `url('${getImagePath(7)}')`;
       element.style.backgroundSize = "contain";
       element.style.backgroundRepeat = "no-repeat";
       element.style.borderRadius = "0px";
@@ -1289,7 +1330,7 @@ assignClickHandler(q7r3, function () {
         "Garder le dos droit, c'est éviter bien des tracas!";
     });
     QCM_image.forEach((element) => {
-      element.style.background = "url('images/QCM_images/7.png')";
+      element.style.background = `url('${getImagePath(7)}')`;
       element.style.backgroundSize = "contain";
       element.style.borderRadius = "0px";
       element.style.backgroundRepeat = "no-repeat";
