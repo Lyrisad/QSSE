@@ -117,10 +117,10 @@ document.addEventListener("DOMContentLoaded", () => {
         SE2.style.backgroundImage =
           "url('images/Comportement/les10regles2.png')";
       } else if (selectedLanguage === "en") {
-        v1.style.backgroundImage = "url('images/PGCImages/PCGAnglais/one.png')";
-        v2.style.backgroundImage = "url('images/PGCImages/PCGAnglais/two.png')";
-        v3.style.backgroundImage = "url('images/PGCImages/PCGAnglais/three.png')";
-        v4.style.backgroundImage = "url('images/PGCImages/PCGAnglais/four.png')";
+        v1.style.backgroundImage = "url('images/PGCImages/PGCAnglais/one.png')";
+        v2.style.backgroundImage = "url('images/PGCImages/PGCAnglais/two.png')";
+        v3.style.backgroundImage = "url('images/PGCImages/PGCAnglais/three.png')";
+        v4.style.backgroundImage = "url('images/PGCImages/PGCAnglais/four.png')";
         one.style.backgroundImage = "url('images/PGCImages/PGCAnglais/1.png')";
         two.style.backgroundImage = "url('images/PGCImages/PGCAnglais/2.png')";
         three.style.backgroundImage =
@@ -142,10 +142,10 @@ document.addEventListener("DOMContentLoaded", () => {
         SE2.style.backgroundImage =
           "url('images/Comportement/SE_ANGLAIS/les10regles2.png')";
       } else if (selectedLanguage === "pt") {
-        v1.style.backgroundImage = "url('images/PGCImages/PCGPortugais/one.png')";
-        v2.style.backgroundImage = "url('images/PGCImages/PCGPortugais/two.png')";
-        v3.style.backgroundImage = "url('images/PGCImages/PCGPortugais/three.png')";
-        v4.style.backgroundImage = "url('images/PGCImages/PCGPortugais/four.png')";
+        v1.style.backgroundImage = "url('images/PGCImages/PGCPortugais/one.png')";
+        v2.style.backgroundImage = "url('images/PGCImages/PGCPortugais/two.png')";
+        v3.style.backgroundImage = "url('images/PGCImages/PGCPortugais/three.png')";
+        v4.style.backgroundImage = "url('images/PGCImages/PGCPortugais/four.png')";
         one.style.backgroundImage =
           "url('images/PGCImages/PGCPortugais/1.png')";
         two.style.backgroundImage =
@@ -171,10 +171,10 @@ document.addEventListener("DOMContentLoaded", () => {
         SE2.style.backgroundImage =
           "url('images/Comportement/SE_PORTUGAIS/les10regles2.png')";
       } else if (selectedLanguage === "ar") {
-        v1.style.backgroundImage = "url('images/PGCImages/PCGArabe/one.png')";
-        v2.style.backgroundImage = "url('images/PGCImages/PCGArabe/two.png')";
-        v3.style.backgroundImage = "url('images/PGCImages/PCGArabe/three.png')";
-        v4.style.backgroundImage = "url('images/PGCImages/PCGArabe/four.png')";
+        v1.style.backgroundImage = "url('images/PGCImages/PGCArabe/one.png')";
+        v2.style.backgroundImage = "url('images/PGCImages/PGCArabe/two.png')";
+        v3.style.backgroundImage = "url('images/PGCImages/PGCArabe/three.png')";
+        v4.style.backgroundImage = "url('images/PGCImages/PGCArabe/four.png')";
         one.style.backgroundImage = "url('images/PGCImages/PGCArabe/1.png')";
         two.style.backgroundImage = "url('images/PGCImages/PGCArabe/2.png')";
         three.style.backgroundImage = "url('images/PGCImages/PGCArabe/3.png')";
