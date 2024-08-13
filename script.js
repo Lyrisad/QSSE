@@ -223,6 +223,18 @@ back.addEventListener("click", function () {
   securitySpeach.style.animation = "appear 1s forwards";
 });
 
+const languageSelect = document.getElementById("language-select");
+let selectedLanguage = languageSelect.value;
+
+console.log(selectedLanguage);
+
+languageSelect.addEventListener("change", () => {
+  selectedLanguage = languageSelect.value;
+  console.log(selectedLanguage);
+});
+
+
+
 let PGC = document.getElementById("PGC");
 let PGCZone = document.getElementById("PGCZone");
 
@@ -503,6 +515,24 @@ let backSE2 = document.getElementById("backSE2");
 let nextSE1 = document.getElementById("nextSE");
 let nextSE2 = document.getElementById("nextSE2");
 let nextSE3 = document.getElementById("nextSE3");
+let SE1 = document.getElementById("SE1");
+let SE2 = document.getElementById("SE2");
+
+
+
+if (selectedLanguage === "fr") {
+  SE1.style.backgroundImage = "url('images/Comportement/les10regles.png')";
+  SE2.style.backgroundImage = "url('images/Comportement/les10regles2.png')";
+}else if (selectedLanguage === "en") {
+  SE1.style.backgroundImage = "url('images/Comportement/SE_ANGLAIS/les10regles.png')";
+  SE2.style.backgroundImage = "url('images/Comportement/SE_ANGLAIS/les10regles2.png')";
+}else if (selectedLanguage === "pt") {
+  SE1.style.backgroundImage = "url('images/Comportement/SE_PORTUGAIS/les10regles.png')";
+  SE2.style.backgroundImage = "url('images/Comportement/SE_PORTUGAIS/les10regles2.png')";
+}else if (selectedLanguage === "ar") {
+  SE1.style.backgroundImage = "url('images/Comportement/SE_ARABE/les10regles.png')";
+  SE2.style.backgroundImage = "url('images/Comportement/SE_ARABE/les10regles2.png')";
+}  
 
 SE.addEventListener("click", function () {
   setTimeout(function () {
@@ -829,15 +859,6 @@ function countGoodAnswers() {
   console.log(goodAnswers);
   return goodAnswers;
 }
-const languageSelect = document.getElementById("language-select");
-let selectedLanguage = languageSelect.value;
-
-console.log(selectedLanguage);
-
-languageSelect.addEventListener("change", () => {
-  selectedLanguage = languageSelect.value;
-  console.log(selectedLanguage);
-});
 
 // Function to get the correct image path based on the selected language
 function getImagePath(questionNumber) {
