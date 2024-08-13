@@ -1566,7 +1566,7 @@ body::-webkit-scrollbar {
   height: 12.5vw;
   align-items: center;
   justify-content: center;
-  background: url(images/PGCImages/1.png);
+  background-image: url(images/PGCImages/1.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -2726,7 +2726,7 @@ body::-webkit-scrollbar {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 30px;
+  border-radius: 29px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -2959,8 +2959,8 @@ body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40.5%;
-  height: 35.5vw;
+  width: 56.7%;
+  height: 36.5vw;
   background-color: #c33aae;
   background-image: url(images/NEMImages/1.png);
   background-size: contain;
@@ -3108,7 +3108,8 @@ body::-webkit-scrollbar {
   font-size: 1vw;
   padding: 10px;
   top: 36.5%;
-  width: 90%;
+  right: 23%;
+  width: 43%;
   height: 18%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -3183,8 +3184,8 @@ body::-webkit-scrollbar {
   #video1 {
     font-size: 2.5vw;
     border-radius: 10px;
-    width: 88%;
-    height: 15%;
+    width: 40%;
+    height: 14%;
   }
 
   #video2{
@@ -3195,8 +3196,8 @@ body::-webkit-scrollbar {
   }
 
   #NEM1 {
-    width: 91.1%;
-    height: 80vw;
+    width: 95%;
+    height: 61.5vw;
     position: relative;
     border-radius: 10px;
     bottom: 5%;

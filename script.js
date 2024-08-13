@@ -75,6 +75,15 @@ document.addEventListener("DOMContentLoaded", () => {
         element.textContent = text;
       }
 
+      let one = document.getElementById("one");
+      let two = document.getElementById("two");
+      let three = document.getElementById("three");
+
+      let v1 = document.getElementById("v1");
+      let v2 = document.getElementById("v2");
+      let v3 = document.getElementById("v3");
+      let v4 = document.getElementById("v4");
+
       let ESS1 = document.getElementById("ESS1");
       let ESS2 = document.getElementById("ESS2");
       let ESS3 = document.getElementById("ESS3");
@@ -89,6 +98,13 @@ document.addEventListener("DOMContentLoaded", () => {
       let SE2 = document.getElementById("SE2");
 
       if (selectedLanguage === "fr") {
+        v1.style.backgroundImage = "url('images/PGCImages/one.png')";
+        v2.style.backgroundImage = "url('images/PGCImages/two.png')";
+        v3.style.backgroundImage = "url('images/PGCImages/three.png')";
+        v4.style.backgroundImage = "url('images/PGCImages/four.png')";
+        one.style.backgroundImage = "url('images/PGCImages/1.png')";
+        two.style.backgroundImage = "url('images/PGCImages/2.png')";
+        three.style.backgroundImage = "url('images/PGCImages/3.png')";
         ESS1.style.backgroundImage = "url('images/ESSImages/Secu1.png')";
         ESS2.style.backgroundImage = "url('images/ESSImages/Secu2.png')";
         ESS3.style.backgroundImage = "url('images/ESSImages/Secu3.png')";
@@ -101,6 +117,14 @@ document.addEventListener("DOMContentLoaded", () => {
         SE2.style.backgroundImage =
           "url('images/Comportement/les10regles2.png')";
       } else if (selectedLanguage === "en") {
+        v1.style.backgroundImage = "url('images/PGCImages/PCGAnglais/one.png')";
+        v2.style.backgroundImage = "url('images/PGCImages/PCGAnglais/two.png')";
+        v3.style.backgroundImage = "url('images/PGCImages/PCGAnglais/three.png')";
+        v4.style.backgroundImage = "url('images/PGCImages/PCGAnglais/four.png')";
+        one.style.backgroundImage = "url('images/PGCImages/PGCAnglais/1.png')";
+        two.style.backgroundImage = "url('images/PGCImages/PGCAnglais/2.png')";
+        three.style.backgroundImage =
+          "url('images/PGCImages/PGCAnglais/3.png')";
         ESS1.style.backgroundImage =
           "url('images/ESSImages/SecuAnglais/Secu1.png')";
         ESS2.style.backgroundImage =
@@ -118,6 +142,16 @@ document.addEventListener("DOMContentLoaded", () => {
         SE2.style.backgroundImage =
           "url('images/Comportement/SE_ANGLAIS/les10regles2.png')";
       } else if (selectedLanguage === "pt") {
+        v1.style.backgroundImage = "url('images/PGCImages/PCGPortugais/one.png')";
+        v2.style.backgroundImage = "url('images/PGCImages/PCGPortugais/two.png')";
+        v3.style.backgroundImage = "url('images/PGCImages/PCGPortugais/three.png')";
+        v4.style.backgroundImage = "url('images/PGCImages/PCGPortugais/four.png')";
+        one.style.backgroundImage =
+          "url('images/PGCImages/PGCPortugais/1.png')";
+        two.style.backgroundImage =
+          "url('images/PGCImages/PGCPortugais/2.png')";
+        three.style.backgroundImage =
+          "url('images/PGCImages/PGCPortugais/3.png')";
         ESS1.style.backgroundImage =
           "url('images/ESSImages/SecuPortugais/Secu1.png')";
         ESS2.style.backgroundImage =
@@ -137,6 +171,13 @@ document.addEventListener("DOMContentLoaded", () => {
         SE2.style.backgroundImage =
           "url('images/Comportement/SE_PORTUGAIS/les10regles2.png')";
       } else if (selectedLanguage === "ar") {
+        v1.style.backgroundImage = "url('images/PGCImages/PCGArabe/one.png')";
+        v2.style.backgroundImage = "url('images/PGCImages/PCGArabe/two.png')";
+        v3.style.backgroundImage = "url('images/PGCImages/PCGArabe/three.png')";
+        v4.style.backgroundImage = "url('images/PGCImages/PCGArabe/four.png')";
+        one.style.backgroundImage = "url('images/PGCImages/PGCArabe/1.png')";
+        two.style.backgroundImage = "url('images/PGCImages/PGCArabe/2.png')";
+        three.style.backgroundImage = "url('images/PGCImages/PGCArabe/3.png')";
         ESS1.style.backgroundImage =
           "url('images/ESSImages/SecuArabe/Secu1.png')";
         ESS2.style.backgroundImage =
