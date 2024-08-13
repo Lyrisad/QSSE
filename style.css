@@ -2015,6 +2015,21 @@ body::-webkit-scrollbar {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+#ESS4{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 42.5vw;
+  background-color: #ee712d;
+  background-image: url(images/ESSImages/secu4.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 #backESS {
   position: absolute;
   rotate: 180deg;
@@ -2281,21 +2296,28 @@ body::-webkit-scrollbar {
 #ESS1 {
   width: 47.9%;
   height: 33.8vw;
-  border-radius: 10px;
+  border-radius: 30px;
   bottom: 5%;
 }
 
 #ESS2 {
   width: 47.9%;
   height: 33.8vw;
-  border-radius: 10px;
+  border-radius: 30px;
   bottom: 5%;
 }
 
 #ESS3 {
   width: 47.9%;
   height: 33.8vw;
-  border-radius: 10px;
+  border-radius: 30px;
+  bottom: 5%;
+}
+
+#ESS4 {
+  width: 47.9%;
+  height: 33.8vw;
+  border-radius: 30px;
   bottom: 5%;
 }
 
@@ -2332,6 +2354,14 @@ body::-webkit-scrollbar {
   }
 
   #ESS3 {
+    width: 98%;
+    height: 69.3vw;
+    position: relative;
+    border-radius: 10px;
+    bottom: 5%;
+  }
+
+  #ESS4 {
     width: 98%;
     height: 69.3vw;
     position: relative;
@@ -3066,7 +3096,7 @@ body::-webkit-scrollbar {
   background-color: #3a1b08;
 }
  /* Style des divs */
- .video-div {
+ #video1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3086,10 +3116,38 @@ body::-webkit-scrollbar {
   animation: breath 1s infinite;
 }
 
-.video-div:hover {
+#video1:hover {
   background-color: #00005a;
 
 }
+
+#video2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  color: white;
+  font-size: 1vw;
+  padding: 10px;
+  top: 36%;
+  right: 28%;
+  width: 25%;
+  height: 18%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: 2px;
+  background-color: #014488;
+  animation: breath 1s infinite;
+}
+
+#video2:hover {
+  background-color: #1c1c30;
+
+}
+
 
 /* Style du modal */
 #video-modal {
@@ -3120,6 +3178,14 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 768px) {
+
+  #video2{
+    font-size: 2.5vw;
+    border-radius: 10px;
+    width: 24%;
+    height: 15%;
+  }
+
   #NEM1 {
     width: 98%;
     height: 55.4vw;

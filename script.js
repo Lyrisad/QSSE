@@ -78,6 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
       let ESS1 = document.getElementById("ESS1");
       let ESS2 = document.getElementById("ESS2");
       let ESS3 = document.getElementById("ESS3");
+      let ESS4 = document.getElementById("ESS4");
 
       let NEM1 = document.getElementById("NEM1");
       let NEM2 = document.getElementById("NEM2");
@@ -91,6 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ESS1.style.backgroundImage = "url('images/ESSImages/Secu1.png')";
         ESS2.style.backgroundImage = "url('images/ESSImages/Secu2.png')";
         ESS3.style.backgroundImage = "url('images/ESSImages/Secu3.png')";
+        ESS4.style.backgroundImage = "url('images/ESSImages/Secu4.png')";
         NEM1.style.backgroundImage = "url('images/NEMImages/1.png')";
         NEM2.style.backgroundImage = "url('images/NEMImages/2.png')";
         EE1.style.backgroundImage = "url('images/EEImages/slideEnv.png')";
@@ -99,9 +101,14 @@ document.addEventListener("DOMContentLoaded", () => {
         SE2.style.backgroundImage =
           "url('images/Comportement/les10regles2.png')";
       } else if (selectedLanguage === "en") {
-        ESS1.style.backgroundImage = "url('images/ESSImages/SecuAnglais/Secu1.png')";
-        ESS2.style.backgroundImage = "url('images/ESSImages/SecuAnglais/Secu2.png')";
-        ESS3.style.backgroundImage = "url('images/ESSImages/SecuAnglais/Secu3.png')";
+        ESS1.style.backgroundImage =
+          "url('images/ESSImages/SecuAnglais/Secu1.png')";
+        ESS2.style.backgroundImage =
+          "url('images/ESSImages/SecuAnglais/Secu2.png')";
+        ESS3.style.backgroundImage =
+          "url('images/ESSImages/SecuAnglais/Secu3.png')";
+        ESS4.style.backgroundImage =
+          "url('images/ESSImages/SecuAnglais/Secu4.png')";
         NEM1.style.backgroundImage = "url('images/NEMImages/NemAnglais/1.png')";
         NEM2.style.backgroundImage = "url('images/NEMImages/NemAnglais/2.png')";
         EE1.style.backgroundImage =
@@ -111,11 +118,18 @@ document.addEventListener("DOMContentLoaded", () => {
         SE2.style.backgroundImage =
           "url('images/Comportement/SE_ANGLAIS/les10regles2.png')";
       } else if (selectedLanguage === "pt") {
-        ESS1.style.backgroundImage = "url('images/ESSImages/SecuPortugais/Secu1.png')";
-        ESS2.style.backgroundImage = "url('images/ESSImages/SecuPortugais/Secu2.png')";
-        ESS3.style.backgroundImage = "url('images/ESSImages/SecuPortugais/Secu3.png')";
-        NEM1.style.backgroundImage = "url('images/NEMImages/NemPortugais/1.png')";
-        NEM2.style.backgroundImage = "url('images/NEMImages/NemPortugais/2.png')";
+        ESS1.style.backgroundImage =
+          "url('images/ESSImages/SecuPortugais/Secu1.png')";
+        ESS2.style.backgroundImage =
+          "url('images/ESSImages/SecuPortugais/Secu2.png')";
+        ESS3.style.backgroundImage =
+          "url('images/ESSImages/SecuPortugais/Secu3.png')";
+        ESS4.style.backgroundImage =
+          "url('images/ESSImages/SecuPortugais/Secu4.png')";
+        NEM1.style.backgroundImage =
+          "url('images/NEMImages/NemPortugais/1.png')";
+        NEM2.style.backgroundImage =
+          "url('images/NEMImages/NemPortugais/2.png')";
         EE1.style.backgroundImage =
           "url('images/EEImages/EnvPortugais/slideEnv.png')";
         SE1.style.backgroundImage =
@@ -123,9 +137,14 @@ document.addEventListener("DOMContentLoaded", () => {
         SE2.style.backgroundImage =
           "url('images/Comportement/SE_PORTUGAIS/les10regles2.png')";
       } else if (selectedLanguage === "ar") {
-        ESS1.style.backgroundImage = "url('images/ESSImages/SecuArabe/Secu1.png')";
-        ESS2.style.backgroundImage = "url('images/ESSImages/SecuArabe/Secu2.png')";
-        ESS3.style.backgroundImage = "url('images/ESSImages/SecuArabe/Secu3.png')";
+        ESS1.style.backgroundImage =
+          "url('images/ESSImages/SecuArabe/Secu1.png')";
+        ESS2.style.backgroundImage =
+          "url('images/ESSImages/SecuArabe/Secu2.png')";
+        ESS3.style.backgroundImage =
+          "url('images/ESSImages/SecuArabe/Secu3.png')";
+        ESS4.style.backgroundImage =
+          "url('images/ESSImages/SecuArabe/Secu4.png')";
         NEM1.style.backgroundImage = "url('images/NEMImages/NemArabe/1.png')";
         NEM2.style.backgroundImage = "url('images/NEMImages/NemArabe/2.png')";
         EE1.style.backgroundImage =
