@@ -1682,8 +1682,7 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: center;
   width: 60%; /* Adjust percentage as needed */
-  max-width: 1200px; /* Maximum width */
-  height: clamp(40vw, 43vw, 42.3vw); /* Adjust height as needed */
+  height: 42.8vw;
   background-color: #032d37;
   background-image: url(images/PGCImages/leader_regional.png); /* Replace with your image URL */
   background-size: contain;
@@ -1692,6 +1691,16 @@ body::-webkit-scrollbar {
   border-radius: 30px; /* Rounded corners */
   overflow: hidden; /* Ensure child elements don't overflow the rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#leaderH1{
+  position: relative;
+  bottom: 40.2%;
+  left: 25.7%;
+  color: #005d72;
+  font-size: 2.1vw;
+  font-weight: bold;
+  font-style: oblique;
 }
 
 #backPGC2 {
@@ -1862,7 +1871,12 @@ body::-webkit-scrollbar {
     width: 95%;
     height: 67.5vw;
     position: relative;
+    border-radius: 15px;
     bottom: 5%;
+  }
+
+  #leaderH1{
+    font-size: 3.5vw;
   }
 
   #backPGC1,
