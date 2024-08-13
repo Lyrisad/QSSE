@@ -1975,7 +1975,7 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: center;
   width: 60%;
-  height: 42.5vw;
+  height: 44.5vw;
   background-color: #ee712d;
   background-image: url(images/ESSImages/Secu1.png);
   background-size: contain;
@@ -2279,22 +2279,22 @@ body::-webkit-scrollbar {
 }
 
 #ESS1 {
-  width: 53.3%;
-  height: 35vw;
+  width: 47.9%;
+  height: 33.8vw;
   border-radius: 10px;
   bottom: 5%;
 }
 
 #ESS2 {
-  width: 48.3%;
-  height: 34.9vw;
+  width: 47.9%;
+  height: 33.8vw;
   border-radius: 10px;
   bottom: 5%;
 }
 
 #ESS3 {
-  width: 50.9%;
-  height: 35vw;
+  width: 47.9%;
+  height: 33.8vw;
   border-radius: 10px;
   bottom: 5%;
 }
@@ -2317,7 +2317,7 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 768px) {
   #ESS1 {
     width: 98%;
-    height: 64vw;
+    height: 69.3vw;
     position: relative;
     border-radius: 10px;
     bottom: 5%;
@@ -2325,7 +2325,7 @@ body::-webkit-scrollbar {
 
   #ESS2 {
     width: 98%;
-    height: 71.5vw;
+    height: 69.3vw;
     position: relative;
     border-radius: 10px;
     bottom: 5%;
@@ -2333,8 +2333,9 @@ body::-webkit-scrollbar {
 
   #ESS3 {
     width: 98%;
-    height: 67.2vw;
+    height: 69.3vw;
     position: relative;
+    border-radius: 10px;
     bottom: 5%;
   }
 

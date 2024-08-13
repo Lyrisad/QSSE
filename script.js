@@ -74,6 +74,67 @@ document.addEventListener("DOMContentLoaded", () => {
       if (text) {
         element.textContent = text;
       }
+
+      let ESS1 = document.getElementById("ESS1");
+      let ESS2 = document.getElementById("ESS2");
+      let ESS3 = document.getElementById("ESS3");
+
+      let NEM1 = document.getElementById("NEM1");
+      let NEM2 = document.getElementById("NEM2");
+
+      let EE1 = document.getElementById("EE1");
+
+      let SE1 = document.getElementById("SE1");
+      let SE2 = document.getElementById("SE2");
+
+      if (selectedLanguage === "fr") {
+        ESS1.style.backgroundImage = "url('images/ESSImages/Secu1.png')";
+        ESS2.style.backgroundImage = "url('images/ESSImages/Secu2.png')";
+        ESS3.style.backgroundImage = "url('images/ESSImages/Secu3.png')";
+        NEM1.style.backgroundImage = "url('images/NEMImages/1.png')";
+        NEM2.style.backgroundImage = "url('images/NEMImages/2.png')";
+        EE1.style.backgroundImage = "url('images/EEImages/slideEnv.png')";
+        SE1.style.backgroundImage =
+          "url('images/Comportement/les10regles.png')";
+        SE2.style.backgroundImage =
+          "url('images/Comportement/les10regles2.png')";
+      } else if (selectedLanguage === "en") {
+        ESS1.style.backgroundImage = "url('images/ESSImages/SecuAnglais/Secu1.png')";
+        ESS2.style.backgroundImage = "url('images/ESSImages/SecuAnglais/Secu2.png')";
+        ESS3.style.backgroundImage = "url('images/ESSImages/SecuAnglais/Secu3.png')";
+        NEM1.style.backgroundImage = "url('images/NEMImages/NemAnglais/1.png')";
+        NEM2.style.backgroundImage = "url('images/NEMImages/NemAnglais/2.png')";
+        EE1.style.backgroundImage =
+          "url('images/EEImages/EnvAnglais/slideEnv.png')";
+        SE1.style.backgroundImage =
+          "url('images/Comportement/SE_ANGLAIS/les10regles.png')";
+        SE2.style.backgroundImage =
+          "url('images/Comportement/SE_ANGLAIS/les10regles2.png')";
+      } else if (selectedLanguage === "pt") {
+        ESS1.style.backgroundImage = "url('images/ESSImages/SecuPortugais/Secu1.png')";
+        ESS2.style.backgroundImage = "url('images/ESSImages/SecuPortugais/Secu2.png')";
+        ESS3.style.backgroundImage = "url('images/ESSImages/SecuPortugais/Secu3.png')";
+        NEM1.style.backgroundImage = "url('images/NEMImages/NemPortugais/1.png')";
+        NEM2.style.backgroundImage = "url('images/NEMImages/NemPortugais/2.png')";
+        EE1.style.backgroundImage =
+          "url('images/EEImages/EnvPortugais/slideEnv.png')";
+        SE1.style.backgroundImage =
+          "url('images/Comportement/SE_PORTUGAIS/les10regles.png')";
+        SE2.style.backgroundImage =
+          "url('images/Comportement/SE_PORTUGAIS/les10regles2.png')";
+      } else if (selectedLanguage === "ar") {
+        ESS1.style.backgroundImage = "url('images/ESSImages/SecuArabe/Secu1.png')";
+        ESS2.style.backgroundImage = "url('images/ESSImages/SecuArabe/Secu2.png')";
+        ESS3.style.backgroundImage = "url('images/ESSImages/SecuArabe/Secu3.png')";
+        NEM1.style.backgroundImage = "url('images/NEMImages/NemArabe/1.png')";
+        NEM2.style.backgroundImage = "url('images/NEMImages/NemArabe/2.png')";
+        EE1.style.backgroundImage =
+          "url('images/EEImages/EnvArabe/slideEnv.png')";
+        SE1.style.backgroundImage =
+          "url('images/Comportement/SE_ARABE/les10regles.png')";
+        SE2.style.backgroundImage =
+          "url('images/Comportement/SE_ARABE/les10regles2.png')";
+      }
     });
   }
 
@@ -232,8 +293,6 @@ languageSelect.addEventListener("change", () => {
   selectedLanguage = languageSelect.value;
   console.log(selectedLanguage);
 });
-
-
 
 let PGC = document.getElementById("PGC");
 let PGCZone = document.getElementById("PGCZone");
@@ -515,24 +574,6 @@ let backSE2 = document.getElementById("backSE2");
 let nextSE1 = document.getElementById("nextSE");
 let nextSE2 = document.getElementById("nextSE2");
 let nextSE3 = document.getElementById("nextSE3");
-let SE1 = document.getElementById("SE1");
-let SE2 = document.getElementById("SE2");
-
-
-
-if (selectedLanguage === "fr") {
-  SE1.style.backgroundImage = "url('images/Comportement/les10regles.png')";
-  SE2.style.backgroundImage = "url('images/Comportement/les10regles2.png')";
-}else if (selectedLanguage === "en") {
-  SE1.style.backgroundImage = "url('images/Comportement/SE_ANGLAIS/les10regles.png')";
-  SE2.style.backgroundImage = "url('images/Comportement/SE_ANGLAIS/les10regles2.png')";
-}else if (selectedLanguage === "pt") {
-  SE1.style.backgroundImage = "url('images/Comportement/SE_PORTUGAIS/les10regles.png')";
-  SE2.style.backgroundImage = "url('images/Comportement/SE_PORTUGAIS/les10regles2.png')";
-}else if (selectedLanguage === "ar") {
-  SE1.style.backgroundImage = "url('images/Comportement/SE_ARABE/les10regles.png')";
-  SE2.style.backgroundImage = "url('images/Comportement/SE_ARABE/les10regles2.png')";
-}  
 
 SE.addEventListener("click", function () {
   setTimeout(function () {
@@ -986,13 +1027,13 @@ assignClickHandler(q2r1, function () {
     mauvaiseReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
       if (selectedLanguage === "fr") {
-      element.textContent = "Avec la godille, le sol scintille!";
+        element.textContent = "Avec la godille, le sol scintille!";
       } else if (selectedLanguage === "en") {
-      element.textContent = "With the godille, the floor sparkles!";
+        element.textContent = "With the godille, the floor sparkles!";
       } else if (selectedLanguage === "pt") {
-      element.textContent = "Com a godille, o chão brilha!";
+        element.textContent = "Com a godille, o chão brilha!";
       } else if (selectedLanguage === "ar") {
-      element.textContent = "مع الجوديل ، يتلألأ الأرض!";
+        element.textContent = "مع الجوديل ، يتلألأ الأرض!";
       }
     });
     QCM_image.forEach((element) => {
@@ -1017,13 +1058,13 @@ assignClickHandler(q2r2, function () {
     descriptif.forEach((element) => {
       if (selectedLanguage === "fr") {
         element.textContent = "Avec la godille, le sol scintille!";
-        } else if (selectedLanguage === "en") {
+      } else if (selectedLanguage === "en") {
         element.textContent = "With the godille, the floor sparkles!";
-        } else if (selectedLanguage === "pt") {
+      } else if (selectedLanguage === "pt") {
         element.textContent = "Com a godille, o chão brilha!";
-        } else if (selectedLanguage === "ar") {
+      } else if (selectedLanguage === "ar") {
         element.textContent = "مع الجوديل ، يتلألأ الأرض!";
-        }
+      }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(2)}')`;
@@ -1047,13 +1088,13 @@ assignClickHandler(q2r3, function () {
     descriptif.forEach((element) => {
       if (selectedLanguage === "fr") {
         element.textContent = "Avec la godille, le sol scintille!";
-        } else if (selectedLanguage === "en") {
+      } else if (selectedLanguage === "en") {
         element.textContent = "With the godille, the floor sparkles!";
-        } else if (selectedLanguage === "pt") {
+      } else if (selectedLanguage === "pt") {
         element.textContent = "Com a godille, o chão brilha!";
-        } else if (selectedLanguage === "ar") {
+      } else if (selectedLanguage === "ar") {
         element.textContent = "مع الجوديل ، يتلألأ الأرض!";
-        }
+      }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(2)}')`;
@@ -1078,17 +1119,17 @@ assignClickHandler(q3r1, function () {
     mauvaiseReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
       if (selectedLanguage === "fr") {
-      element.textContent =
-        "Des gants aujourd'hui, des mains demain, mieux vaut marcher lourdement que boiter tristement.";
+        element.textContent =
+          "Des gants aujourd'hui, des mains demain, mieux vaut marcher lourdement que boiter tristement.";
       } else if (selectedLanguage === "en") {
-      element.textContent =
-        "Gloves today, hands tomorrow, better to walk heavily than to limp sadly.";
+        element.textContent =
+          "Gloves today, hands tomorrow, better to walk heavily than to limp sadly.";
       } else if (selectedLanguage === "pt") {
-      element.textContent =
-        "Luvas hoje, mãos amanhã, melhor andar pesadamente do que mancar tristemente.";
+        element.textContent =
+          "Luvas hoje, mãos amanhã, melhor andar pesadamente do que mancar tristemente.";
       } else if (selectedLanguage === "ar") {
-      element.textContent =
-        "قفازات اليوم ، والأيدي غدًا ، الأفضل أن تمشي بثقل من أن تعرج بحزن.";
+        element.textContent =
+          "قفازات اليوم ، والأيدي غدًا ، الأفضل أن تمشي بثقل من أن تعرج بحزن.";
       }
     });
     QCM_image.forEach((element) => {
@@ -1114,16 +1155,16 @@ assignClickHandler(q3r2, function () {
       if (selectedLanguage === "fr") {
         element.textContent =
           "Des gants aujourd'hui, des mains demain, mieux vaut marcher lourdement que boiter tristement.";
-        } else if (selectedLanguage === "en") {
+      } else if (selectedLanguage === "en") {
         element.textContent =
           "Gloves today, hands tomorrow, better to walk heavily than to limp sadly.";
-        } else if (selectedLanguage === "pt") {
+      } else if (selectedLanguage === "pt") {
         element.textContent =
           "Luvas hoje, mãos amanhã, melhor andar pesadamente do que mancar tristemente.";
-        } else if (selectedLanguage === "ar") {
+      } else if (selectedLanguage === "ar") {
         element.textContent =
           "قفازات اليوم ، والأيدي غدًا ، الأفضل أن تمشي بثقل من أن تعرج بحزن.";
-        }
+      }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(3)}')`;
@@ -1148,16 +1189,16 @@ assignClickHandler(q3r3, function () {
       if (selectedLanguage === "fr") {
         element.textContent =
           "Des gants aujourd'hui, des mains demain, mieux vaut marcher lourdement que boiter tristement.";
-        } else if (selectedLanguage === "en") {
+      } else if (selectedLanguage === "en") {
         element.textContent =
           "Gloves today, hands tomorrow, better to walk heavily than to limp sadly.";
-        } else if (selectedLanguage === "pt") {
+      } else if (selectedLanguage === "pt") {
         element.textContent =
           "Luvas hoje, mãos amanhã, melhor andar pesadamente do que mancar tristemente.";
-        } else if (selectedLanguage === "ar") {
+      } else if (selectedLanguage === "ar") {
         element.textContent =
           "قفازات اليوم ، والأيدي غدًا ، الأفضل أن تمشي بثقل من أن تعرج بحزن.";
-        }
+      }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(3)}')`;
@@ -1182,13 +1223,13 @@ assignClickHandler(q4r1, function () {
     mauvaiseReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
       if (selectedLanguage === "fr") {
-      element.textContent = "Il vaut mieux prévenir que guérir.";
+        element.textContent = "Il vaut mieux prévenir que guérir.";
       } else if (selectedLanguage === "en") {
-      element.textContent = "Prevention is better than cure.";
+        element.textContent = "Prevention is better than cure.";
       } else if (selectedLanguage === "pt") {
-      element.textContent = "Prevenir é melhor que remediar.";
+        element.textContent = "Prevenir é melhor que remediar.";
       } else if (selectedLanguage === "ar") {
-      element.textContent = "الوقاية خير من العلاج.";
+        element.textContent = "الوقاية خير من العلاج.";
       }
     });
     QCM_image.forEach((element) => {
@@ -1213,13 +1254,13 @@ assignClickHandler(q4r2, function () {
     descriptif.forEach((element) => {
       if (selectedLanguage === "fr") {
         element.textContent = "Il vaut mieux prévenir que guérir.";
-        } else if (selectedLanguage === "en") {
+      } else if (selectedLanguage === "en") {
         element.textContent = "Prevention is better than cure.";
-        } else if (selectedLanguage === "pt") {
+      } else if (selectedLanguage === "pt") {
         element.textContent = "Prevenir é melhor que remediar.";
-        } else if (selectedLanguage === "ar") {
+      } else if (selectedLanguage === "ar") {
         element.textContent = "الوقاية خير من العلاج.";
-        }
+      }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(4)}')`;
@@ -1243,13 +1284,13 @@ assignClickHandler(q4r3, function () {
     descriptif.forEach((element) => {
       if (selectedLanguage === "fr") {
         element.textContent = "Il vaut mieux prévenir que guérir.";
-        } else if (selectedLanguage === "en") {
+      } else if (selectedLanguage === "en") {
         element.textContent = "Prevention is better than cure.";
-        } else if (selectedLanguage === "pt") {
+      } else if (selectedLanguage === "pt") {
         element.textContent = "Prevenir é melhor que remediar.";
-        } else if (selectedLanguage === "ar") {
+      } else if (selectedLanguage === "ar") {
         element.textContent = "الوقاية خير من العلاج.";
-        }
+      }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(4)}')`;
@@ -1274,13 +1315,14 @@ assignClickHandler(q5r1, function () {
     bonneReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
       if (selectedLanguage === "fr") {
-      element.textContent = "Suivre les pictogrammes, c'est éviter les drames!";
+        element.textContent =
+          "Suivre les pictogrammes, c'est éviter les drames!";
       } else if (selectedLanguage === "en") {
-      element.textContent = "Following the pictograms is avoiding dramas!";
+        element.textContent = "Following the pictograms is avoiding dramas!";
       } else if (selectedLanguage === "pt") {
-      element.textContent = "Seguir os pictogramas é evitar dramas!";
+        element.textContent = "Seguir os pictogramas é evitar dramas!";
       } else if (selectedLanguage === "ar") {
-      element.textContent = "اتباع الرموز التوضيحية يعني تجنب الدراما!";
+        element.textContent = "اتباع الرموز التوضيحية يعني تجنب الدراما!";
       }
     });
     QCM_image.forEach((element) => {
@@ -1304,14 +1346,15 @@ assignClickHandler(q5r2, function () {
     mauvaiseReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
       if (selectedLanguage === "fr") {
-        element.textContent = "Suivre les pictogrammes, c'est éviter les drames!";
-        } else if (selectedLanguage === "en") {
+        element.textContent =
+          "Suivre les pictogrammes, c'est éviter les drames!";
+      } else if (selectedLanguage === "en") {
         element.textContent = "Following the pictograms is avoiding dramas!";
-        } else if (selectedLanguage === "pt") {
+      } else if (selectedLanguage === "pt") {
         element.textContent = "Seguir os pictogramas é evitar dramas!";
-        } else if (selectedLanguage === "ar") {
+      } else if (selectedLanguage === "ar") {
         element.textContent = "اتباع الرموز التوضيحية يعني تجنب الدراما!";
-        }
+      }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(5)}')`;
@@ -1334,14 +1377,15 @@ assignClickHandler(q5r3, function () {
     mauvaiseReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
       if (selectedLanguage === "fr") {
-        element.textContent = "Suivre les pictogrammes, c'est éviter les drames!";
-        } else if (selectedLanguage === "en") {
+        element.textContent =
+          "Suivre les pictogrammes, c'est éviter les drames!";
+      } else if (selectedLanguage === "en") {
         element.textContent = "Following the pictograms is avoiding dramas!";
-        } else if (selectedLanguage === "pt") {
+      } else if (selectedLanguage === "pt") {
         element.textContent = "Seguir os pictogramas é evitar dramas!";
-        } else if (selectedLanguage === "ar") {
+      } else if (selectedLanguage === "ar") {
         element.textContent = "اتباع الرموز التوضيحية يعني تجنب الدراما!";
-        }
+      }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(5)}')`;
@@ -1366,17 +1410,15 @@ assignClickHandler(q6r1, function () {
     mauvaiseReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
       if (selectedLanguage === "fr") {
-      element.textContent =
-        "Respecter l'environnement, pour un avenir éclatant!";
+        element.textContent =
+          "Respecter l'environnement, pour un avenir éclatant!";
       } else if (selectedLanguage === "en") {
-      element.textContent =
-        "Respect the environment, for a bright future!";
+        element.textContent = "Respect the environment, for a bright future!";
       } else if (selectedLanguage === "pt") {
-      element.textContent =
-        "Respeitar o meio ambiente, para um futuro brilhante!";
+        element.textContent =
+          "Respeitar o meio ambiente, para um futuro brilhante!";
       } else if (selectedLanguage === "ar") {
-      element.textContent =
-        "احترام البيئة ، من أجل مستقبل مشرق!";
+        element.textContent = "احترام البيئة ، من أجل مستقبل مشرق!";
       }
     });
     QCM_image.forEach((element) => {
@@ -1402,16 +1444,14 @@ assignClickHandler(q6r2, function () {
       if (selectedLanguage === "fr") {
         element.textContent =
           "Respecter l'environnement, pour un avenir éclatant!";
-        } else if (selectedLanguage === "en") {
-        element.textContent =
-          "Respect the environment, for a bright future!";
-        } else if (selectedLanguage === "pt") {
+      } else if (selectedLanguage === "en") {
+        element.textContent = "Respect the environment, for a bright future!";
+      } else if (selectedLanguage === "pt") {
         element.textContent =
           "Respeitar o meio ambiente, para um futuro brilhante!";
-        } else if (selectedLanguage === "ar") {
-        element.textContent =
-          "احترام البيئة ، من أجل مستقبل مشرق!";
-        }
+      } else if (selectedLanguage === "ar") {
+        element.textContent = "احترام البيئة ، من أجل مستقبل مشرق!";
+      }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(8)}')`;
@@ -1436,16 +1476,14 @@ assignClickHandler(q6r3, function () {
       if (selectedLanguage === "fr") {
         element.textContent =
           "Respecter l'environnement, pour un avenir éclatant!";
-        } else if (selectedLanguage === "en") {
-        element.textContent =
-          "Respect the environment, for a bright future!";
-        } else if (selectedLanguage === "pt") {
+      } else if (selectedLanguage === "en") {
+        element.textContent = "Respect the environment, for a bright future!";
+      } else if (selectedLanguage === "pt") {
         element.textContent =
           "Respeitar o meio ambiente, para um futuro brilhante!";
-        } else if (selectedLanguage === "ar") {
-        element.textContent =
-          "احترام البيئة ، من أجل مستقبل مشرق!";
-        }
+      } else if (selectedLanguage === "ar") {
+        element.textContent = "احترام البيئة ، من أجل مستقبل مشرق!";
+      }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(8)}')`;
@@ -1470,17 +1508,16 @@ assignClickHandler(q7r1, function () {
     mauvaiseReponse.style.animation = "appear 1s forwards";
     descriptif.forEach((element) => {
       if (selectedLanguage === "fr") {
-      element.textContent =
-        "Garder le dos droit, c'est éviter bien des tracas!";
+        element.textContent =
+          "Garder le dos droit, c'est éviter bien des tracas!";
       } else if (selectedLanguage === "en") {
-      element.textContent =
-        "Keeping your back straight avoids many troubles!";
+        element.textContent =
+          "Keeping your back straight avoids many troubles!";
       } else if (selectedLanguage === "pt") {
-      element.textContent =
-        "Manter as costas retas evita muitos problemas!";
+        element.textContent = "Manter as costas retas evita muitos problemas!";
       } else if (selectedLanguage === "ar") {
-      element.textContent =
-        "الحفاظ على ظهرك مستقيمًا يجنبك العديد من المشاكل!";
+        element.textContent =
+          "الحفاظ على ظهرك مستقيمًا يجنبك العديد من المشاكل!";
       }
     });
     QCM_image.forEach((element) => {
@@ -1507,16 +1544,15 @@ assignClickHandler(q7r2, function () {
       if (selectedLanguage === "fr") {
         element.textContent =
           "Garder le dos droit, c'est éviter bien des tracas!";
-        } else if (selectedLanguage === "en") {
+      } else if (selectedLanguage === "en") {
         element.textContent =
           "Keeping your back straight avoids many troubles!";
-        } else if (selectedLanguage === "pt") {
-        element.textContent =
-          "Manter as costas retas evita muitos problemas!";
-        } else if (selectedLanguage === "ar") {
+      } else if (selectedLanguage === "pt") {
+        element.textContent = "Manter as costas retas evita muitos problemas!";
+      } else if (selectedLanguage === "ar") {
         element.textContent =
           "الحفاظ على ظهرك مستقيمًا يجنبك العديد من المشاكل!";
-        }
+      }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(7)}')`;
@@ -1542,16 +1578,15 @@ assignClickHandler(q7r3, function () {
       if (selectedLanguage === "fr") {
         element.textContent =
           "Garder le dos droit, c'est éviter bien des tracas!";
-        } else if (selectedLanguage === "en") {
+      } else if (selectedLanguage === "en") {
         element.textContent =
           "Keeping your back straight avoids many troubles!";
-        } else if (selectedLanguage === "pt") {
-        element.textContent =
-          "Manter as costas retas evita muitos problemas!";
-        } else if (selectedLanguage === "ar") {
+      } else if (selectedLanguage === "pt") {
+        element.textContent = "Manter as costas retas evita muitos problemas!";
+      } else if (selectedLanguage === "ar") {
         element.textContent =
           "الحفاظ على ظهرك مستقيمًا يجنبك العديد من المشاكل!";
-        }
+      }
     });
     QCM_image.forEach((element) => {
       element.style.background = `url('${getImagePath(7)}')`;
@@ -1667,7 +1702,6 @@ finishButton.addEventListener("click", function () {
 
   elapsedTime = Math.floor((new Date() - startTime) / 1000); // Temps en secondes
   let minutes = Math.floor(elapsedTime / 60);
-
 
   const dataToSend = {
     ...formData,
