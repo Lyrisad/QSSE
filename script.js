@@ -2,8 +2,11 @@ let next = document.getElementById("next");
 let loadingPage = document.getElementById("loading_page");
 let login_page = document.getElementById("login_page");
 let language_select = document.getElementById("language-select");
+let startTime;
+let elapsedTime = 0;
 
 next.addEventListener("click", function () {
+  startTime = new Date();
   language_select.style.animation = "disappearToTop 0.6s";
   setTimeout(function () {
     language_select.style.opacity = "0";
@@ -1641,15 +1644,20 @@ finishButton.addEventListener("click", function () {
 
   let goodAnswers = countGoodAnswers(); // This will count the correct answers
 
+  elapsedTime = Math.floor((new Date() - startTime) / 1000); // Temps en secondes
+  let minutes = Math.floor(elapsedTime / 60);
+
+
   const dataToSend = {
     ...formData,
     goodAnswers: goodAnswers + "/7",
     result: goodAnswers >= 4 ? "Validé" : "Non validé",
+    time: minutes + " min " + (elapsedTime % 60) + " s",
   };
 
   // Send the combined data to Google Drive
   fetch(
-    "https://script.google.com/macros/s/AKfycbxEZAjH-mIei53unNUN6aMBByEEQRKucJGpHeGYATU9lLPBszFPjNGgw2Z9C8Gkwt8/exec",
+    "https://script.google.com/macros/s/AKfycbyJTxKA3dpSU4v8b3qog3BNjz_nR6RUYve7f0EFsa7P5qkQoXbPVZz4P91fc_NgLrs/exec",
     {
       method: "POST",
       body: JSON.stringify(dataToSend),
