@@ -377,6 +377,16 @@ let nextPGC = document.getElementById("nextPGC");
 let backPGC = document.getElementById("backPGC");
 let PGCSlide1 = document.getElementById("PGCSlide1");
 let PGCSlide2 = document.getElementById("PGCSlide2");
+let pastilleLH = document.getElementById("pastilleLH");
+let pastilleRouen = document.getElementById("pastilleRouen");
+let pastilleCaen = document.getElementById("pastilleCaen");
+let pastilleVDR = document.getElementById("pastilleVDR");
+let pastilleDieppe = document.getElementById("pastilleDieppe");
+let pastilleDescriptionBoxLH = document.getElementById("pastilleDescriptionBoxLH");
+let pastilleDescriptionBoxRouen = document.getElementById("pastilleDescriptionBoxRouen");
+let pastilleDescriptionBoxCaen = document.getElementById("pastilleDescriptionBoxCaen");
+let pastilleDescriptionBoxVDR = document.getElementById("pastilleDescriptionBoxVDR");
+let pastilleDescriptionBoxDieppe = document.getElementById("pastilleDescriptionBoxDieppe");
 
 nextPGC.addEventListener("click", function () {
   PGCSlide1.style.display = "none";
@@ -401,6 +411,46 @@ nextPGC3.addEventListener("click", function () {
   PGCSlide2.style.display = "none";
   PGCSlide3.style.display = "flex";
   PGCSlide4.style.display = "none";
+});
+
+pastilleCaen.addEventListener("click", function () {
+  pastilleDescriptionBoxCaen.style.display = "flex";
+  pastilleDescriptionBoxLH.style.display = "none";
+  pastilleDescriptionBoxRouen.style.display = "none";
+  pastilleDescriptionBoxVDR.style.display = "none";
+  pastilleDescriptionBoxDieppe.style.display = "none";
+});
+
+pastilleLH.addEventListener("click", function () {
+  pastilleDescriptionBoxLH.style.display = "flex";
+  pastilleDescriptionBoxCaen.style.display = "none";
+  pastilleDescriptionBoxRouen.style.display = "none";
+  pastilleDescriptionBoxVDR.style.display = "none";
+  pastilleDescriptionBoxDieppe.style.display = "none";
+});
+
+pastilleRouen.addEventListener("click", function () {
+  pastilleDescriptionBoxRouen.style.display = "flex";
+  pastilleDescriptionBoxLH.style.display = "none";
+  pastilleDescriptionBoxCaen.style.display = "none";
+  pastilleDescriptionBoxVDR.style.display = "none";
+  pastilleDescriptionBoxDieppe.style.display = "none";
+});
+
+pastilleVDR.addEventListener("click", function () {
+  pastilleDescriptionBoxVDR.style.display = "flex";
+  pastilleDescriptionBoxLH.style.display = "none";
+  pastilleDescriptionBoxRouen.style.display = "none";
+  pastilleDescriptionBoxCaen.style.display = "none";
+  pastilleDescriptionBoxDieppe.style.display = "none";
+});
+
+pastilleDieppe.addEventListener("click", function () {
+  pastilleDescriptionBoxDieppe.style.display = "flex";
+  pastilleDescriptionBoxLH.style.display = "none";
+  pastilleDescriptionBoxRouen.style.display = "none";
+  pastilleDescriptionBoxVDR.style.display = "none";
+  pastilleDescriptionBoxCaen.style.display = "none";
 });
 
 let PGCSlide4 = document.getElementById("PGCSlide4");
