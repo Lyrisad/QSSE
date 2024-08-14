@@ -119,8 +119,10 @@ document.addEventListener("DOMContentLoaded", () => {
       } else if (selectedLanguage === "en") {
         v1.style.backgroundImage = "url('images/PGCImages/PGCAnglais/one.png')";
         v2.style.backgroundImage = "url('images/PGCImages/PGCAnglais/two.png')";
-        v3.style.backgroundImage = "url('images/PGCImages/PGCAnglais/three.png')";
-        v4.style.backgroundImage = "url('images/PGCImages/PGCAnglais/four.png')";
+        v3.style.backgroundImage =
+          "url('images/PGCImages/PGCAnglais/three.png')";
+        v4.style.backgroundImage =
+          "url('images/PGCImages/PGCAnglais/four.png')";
         one.style.backgroundImage = "url('images/PGCImages/PGCAnglais/1.png')";
         two.style.backgroundImage = "url('images/PGCImages/PGCAnglais/2.png')";
         three.style.backgroundImage =
@@ -142,10 +144,14 @@ document.addEventListener("DOMContentLoaded", () => {
         SE2.style.backgroundImage =
           "url('images/Comportement/SE_ANGLAIS/les10regles2.png')";
       } else if (selectedLanguage === "pt") {
-        v1.style.backgroundImage = "url('images/PGCImages/PGCPortugais/one.png')";
-        v2.style.backgroundImage = "url('images/PGCImages/PGCPortugais/two.png')";
-        v3.style.backgroundImage = "url('images/PGCImages/PGCPortugais/three.png')";
-        v4.style.backgroundImage = "url('images/PGCImages/PGCPortugais/four.png')";
+        v1.style.backgroundImage =
+          "url('images/PGCImages/PGCPortugais/one.png')";
+        v2.style.backgroundImage =
+          "url('images/PGCImages/PGCPortugais/two.png')";
+        v3.style.backgroundImage =
+          "url('images/PGCImages/PGCPortugais/three.png')";
+        v4.style.backgroundImage =
+          "url('images/PGCImages/PGCPortugais/four.png')";
         one.style.backgroundImage =
           "url('images/PGCImages/PGCPortugais/1.png')";
         two.style.backgroundImage =
@@ -880,6 +886,8 @@ let nom = document.getElementById("nom");
 let prenom = document.getElementById("prenom");
 let email = document.getElementById("email");
 let entite = document.getElementById("entite");
+let entite2 = document.getElementById("entite2");
+let entite3 = document.getElementById("entite3");
 let cadre = document.getElementById("cadre");
 let dateNaissance = document.getElementById("ddn");
 
@@ -891,10 +899,13 @@ submitForm.addEventListener("click", function (e) {
     formData = {
       date: new Date().toLocaleString(),
       entite: entite.value,
+      entite2: entite2.value,
+      entite3: entite3.value,
       nom: nom.value,
       prenom: prenom.value,
       email: email.value,
       dateNaissance: dateNaissance.value,
+      handicap: document.querySelector('input[name="handicap"]:checked').value,
       cadre: cadre.value,
     };
     questionnaireForm.style.display = "none";
@@ -1772,7 +1783,7 @@ finishButton.addEventListener("click", function () {
 
   // Send the combined data to Google Drive
   fetch(
-    "https://script.google.com/macros/s/AKfycbyJTxKA3dpSU4v8b3qog3BNjz_nR6RUYve7f0EFsa7P5qkQoXbPVZz4P91fc_NgLrs/exec",
+    "https://script.google.com/macros/s/AKfycbzwrXJGrMk0rjpLK7sM6E98e5YymvF2M4F_g5cp7eOCxHcnziK6PqBKkCwzfnjtCeM/exec",
     {
       method: "POST",
       body: JSON.stringify(dataToSend),
