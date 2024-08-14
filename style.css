@@ -3329,6 +3329,12 @@ body::-webkit-scrollbar {
   font-size: 15px;
 }
 
+#radioHandicap{
+  color: white;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
 .triEntite {
   display: flex;
   justify-content: center;
@@ -3457,6 +3463,7 @@ body::-webkit-scrollbar {
     border-radius: 10px;
     color: black;
   }
+
 
   #entiteRow {
     width: 100%;
