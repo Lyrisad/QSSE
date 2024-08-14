@@ -3329,8 +3329,25 @@ body::-webkit-scrollbar {
   font-size: 15px;
 }
 
+.triEntite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 20%;
+}
+
+#entiteRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  width: 55%;
+}
+
 #entite {
-  width: 10%;
+  width: 80%;
   height: 30px;
   border-radius: 10px;
   text-align: center;
@@ -3339,6 +3356,32 @@ body::-webkit-scrollbar {
 }
 
 #entite option {
+  font-weight: 600;
+}
+
+#entite2 {
+  width: 80%;
+  height: 30px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+#entite2 option {
+  font-weight: 600;
+}
+
+#entite3 {
+  width: 80%;
+  height: 30px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+#entite3 option {
   font-weight: 600;
 }
 
@@ -3415,9 +3458,27 @@ body::-webkit-scrollbar {
     color: black;
   }
 
+  #entiteRow {
+    width: 100%;
+  }
+
+  .triEntite {
+    width: 30%;
+  }
+
   #entite {
     color: black;
-    width: 30%;
+    width: 80%;
+  }
+
+  #entite2 {
+    color: black;
+    width: 80%;
+  }
+
+  #entite3 {
+    color: black;
+    width: 80%;
   }
 
   #cadre {
