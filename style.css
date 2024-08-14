@@ -3419,6 +3419,7 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 1000px) {
   #questionnaireForm {
     position: fixed;
+    margin-top: 20px;
     width: 100%;
     height: fit-content;
     overflow: hidden;
@@ -3437,6 +3438,7 @@ body::-webkit-scrollbar {
   }
 
   #questionnaireForm h2 {
+    display: none;
     width: 90%;
     font-size: 20px;
   }
@@ -3464,6 +3466,15 @@ body::-webkit-scrollbar {
     color: black;
   }
 
+  #radioHandicap{
+    width: 110px;
+    display: flex;
+    color: white;
+    font-weight: 600;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
 
   #entiteRow {
     width: 100%;
