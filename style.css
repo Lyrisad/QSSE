@@ -439,7 +439,6 @@ body::-webkit-scrollbar {
   }
 }
 
-
 .language-switcher {
   background-color: transparent;
   position: fixed;
@@ -471,7 +470,6 @@ body::-webkit-scrollbar {
   opacity: 0;
   animation: appear 2s ease-out 1s forwards;
 }
-
 
 #home_page_intro {
   display: none;
@@ -545,7 +543,6 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 1000px) {
-
   .language-switcher {
     position: fixed;
     width: fit-content;
@@ -558,7 +555,7 @@ body::-webkit-scrollbar {
     border: none;
     outline: none;
   }
-  
+
   #language-select {
     position: fixed;
     width: 48px;
@@ -569,7 +566,7 @@ body::-webkit-scrollbar {
     font-style: italic;
     border: none;
     outline: none;
-  }  
+  }
 
   #home_page_intro {
     display: none;
@@ -1129,8 +1126,8 @@ body::-webkit-scrollbar {
   background-color: #d15f2a;
 }
 
-#ModContainer{
-  display: flex;  
+#ModContainer {
+  display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
@@ -1153,7 +1150,6 @@ body::-webkit-scrollbar {
 #NEM:hover {
   background-color: #c33aae;
 }
-
 
 #EE {
   display: flex;
@@ -1183,7 +1179,7 @@ body::-webkit-scrollbar {
   background-color: #d5a126;
 }
 
-#checkedPGC{
+#checkedPGC {
   border-radius: 180px;
   background-color: #15d773;
   position: absolute;
@@ -1202,7 +1198,7 @@ body::-webkit-scrollbar {
   animation: appear 0.5s ease-out 1s forwards;
 }
 
-#checkedESS{
+#checkedESS {
   border-radius: 180px;
   background-color: #15d773;
   position: absolute;
@@ -1221,7 +1217,7 @@ body::-webkit-scrollbar {
   animation: appear 0.5s ease-out 1s forwards;
 }
 
-#checkedNEM{
+#checkedNEM {
   border-radius: 180px;
   background-color: #15d773;
   position: absolute;
@@ -1240,7 +1236,7 @@ body::-webkit-scrollbar {
   animation: appear 0.5s ease-out 1s forwards;
 }
 
-#checkedEE{
+#checkedEE {
   border-radius: 180px;
   background-color: #15d773;
   position: absolute;
@@ -1259,7 +1255,7 @@ body::-webkit-scrollbar {
   animation: appear 0.5s ease-out 1s forwards;
 }
 
-#checkedSE{
+#checkedSE {
   border-radius: 180px;
   background-color: #15d773;
   position: absolute;
@@ -1277,7 +1273,6 @@ body::-webkit-scrollbar {
   opacity: 0;
   animation: appear 0.5s ease-out 1s forwards;
 }
-
 
 #TVC {
   display: flex;
@@ -1289,7 +1284,7 @@ body::-webkit-scrollbar {
   /*background-color: #4930e8;*/
   background-color: rgba(192, 192, 192, 0.704);
   animation: appearFromTop 0.5s ease-out 1s forwards;
-  cursor:default;
+  cursor: default;
 }
 
 #TVC:hover {
@@ -1358,12 +1353,14 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 1000px) {
-
-  #checkedPGC, #checkedESS, #checkedNEM, #checkedEE, #checkedSE {
+  #checkedPGC,
+  #checkedESS,
+  #checkedNEM,
+  #checkedEE,
+  #checkedSE {
     top: -10px;
     right: -5%;
   }
-  
 
   #condorMed {
     height: 350px;
@@ -1378,8 +1375,8 @@ body::-webkit-scrollbar {
     justify-content: space-evenly;
   }
 
-  #ModContainer{
-    display: flex;  
+  #ModContainer {
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 43%;
@@ -1693,7 +1690,7 @@ body::-webkit-scrollbar {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#leaderH1{
+#leaderH1 {
   position: relative;
   width: 30%;
   height: 10%;
@@ -1714,13 +1711,45 @@ body::-webkit-scrollbar {
   font-style: oblique;
 }
 
-.pastillePGC{
-  position: relative;
+.pastillePGC {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 4%;
-  height: 4%;
-  background-image: url("images/cf6bd530-52b7-482c-a388-d88fcec1d661.png");
-  background-size: contain;
+  height: 5%;
+  background-image: url("images/punaise.png");
+  background-size: cover;
   background-repeat: no-repeat;
+}
+
+#pastilleVDR {
+  position: relative;
+  top: 9%;
+  left: 15.8%;
+}
+
+#pastilleRouen {
+  position: relative;
+  top: 4.6%;
+  left: 6.2%;
+}
+
+#pastilleDieppe {
+  position: relative;
+  top: -4.5%;
+  left: -2.7%;
+}
+
+#pastilleCaen {
+  position: relative;
+  top: 8.5%;
+  left: -11%;
+}
+
+#pastilleLH {
+  position: relative;
+  top: 2.8%;
+  left: 1.3%;
 }
 
 #backPGC2 {
@@ -1895,8 +1924,8 @@ body::-webkit-scrollbar {
     bottom: 5%;
   }
 
-  #leaderH1{
-    display:flex;
+  #leaderH1 {
+    display: flex;
     align-items: center;
     justify-content: center;
     font-size: 4vw;
@@ -1921,12 +1950,40 @@ body::-webkit-scrollbar {
     left: 45.5%;
   }
 
-  .pastillePGC{
+  .pastillePGC {
     width: 6%;
     height: 6%;
   }
 
-  
+  #pastilleDieppe {
+    position: relative;
+    top: -5.5%;
+    left: 12.3%;
+  }
+
+  #pastilleRouen {
+    position: relative;
+    top: 3.6%;
+    left: 25.2%;
+  }
+
+  #pastilleVDR {
+    position: relative;
+    top: 8%;
+    left: 38.8%;
+  }
+
+  #pastilleLH {
+    position: relative;
+    top: 1.8%;
+    left: 22.3%;
+  }
+
+  #pastilleCaen {
+    position: relative;
+    top: 7.5%;
+    left: 6%;
+  }
 
   #backPGC1,
   #backPGC2,
@@ -2078,7 +2135,7 @@ body::-webkit-scrollbar {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#ESS4{
+#ESS4 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3158,8 +3215,8 @@ body::-webkit-scrollbar {
   cursor: pointer;
   background-color: #3a1b08;
 }
- /* Style des divs */
- #video1 {
+/* Style des divs */
+#video1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3183,7 +3240,6 @@ body::-webkit-scrollbar {
 
 #video1:hover {
   background-color: #00005a;
-
 }
 
 #video2 {
@@ -3210,9 +3266,7 @@ body::-webkit-scrollbar {
 
 #video2:hover {
   background-color: #1c1c30;
-
 }
-
 
 /* Style du modal */
 #video-modal {
@@ -3243,7 +3297,6 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 768px) {
-
   #video1 {
     font-size: 2.5vw;
     border-radius: 10px;
@@ -3251,7 +3304,7 @@ body::-webkit-scrollbar {
     height: 14%;
   }
 
-  #video2{
+  #video2 {
     font-size: 2.5vw;
     border-radius: 10px;
     width: 24%;
@@ -3378,7 +3431,7 @@ body::-webkit-scrollbar {
   font-size: 15px;
 }
 
-#radioHandicap{
+#radioHandicap {
   color: white;
   font-weight: 600;
   margin-top: 10px;
@@ -3515,7 +3568,7 @@ body::-webkit-scrollbar {
     color: black;
   }
 
-  #radioHandicap{
+  #radioHandicap {
     width: 110px;
     display: flex;
     color: white;
