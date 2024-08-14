@@ -1695,12 +1695,32 @@ body::-webkit-scrollbar {
 
 #leaderH1{
   position: relative;
+  width: 30%;
+  height: 10%;
   bottom: 40.2%;
-  left: 25.7%;
+  left: 57%;
   color: #005d72;
   font-size: 2.1vw;
   font-weight: bold;
   font-style: oblique;
+}
+
+#leaderp {
+  position: relative;
+  bottom: 37%;
+  left: 21%;
+  color: #005d72;
+  font-size: 1.1vw;
+  font-style: oblique;
+}
+
+.pastillePGC{
+  position: relative;
+  width: 4%;
+  height: 4%;
+  background-image: url("images/cf6bd530-52b7-482c-a388-d88fcec1d661.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 #backPGC2 {
@@ -1876,8 +1896,37 @@ body::-webkit-scrollbar {
   }
 
   #leaderH1{
-    font-size: 3.5vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    width: fit-content;
+    bottom: 40.5%;
+    left: 41%;
   }
+
+  #leaderp {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-size: 2vw;
+    font-weight: 600;
+    top: 17%;
+    width: fit-content;
+    height: fit-content;
+    left: 45.5%;
+  }
+
+  .pastillePGC{
+    width: 6%;
+    height: 6%;
+  }
+
+  
 
   #backPGC1,
   #backPGC2,
