@@ -1833,7 +1833,7 @@ finishButton.addEventListener("click", function () {
 
   // Send the combined data to Google Drive
   fetch(
-    "https://script.google.com/macros/s/AKfycbzwrXJGrMk0rjpLK7sM6E98e5YymvF2M4F_g5cp7eOCxHcnziK6PqBKkCwzfnjtCeM/exec",
+    "https://script.google.com/macros/s/AKfycbxTNzmLSRYBQzFQaOhTjHIVa9NOlnLKn2Zj4njuAM_RuGfVCAJR-HsA-FRDAedndAEt/exec",
     {
       method: "POST",
       body: JSON.stringify(dataToSend),
