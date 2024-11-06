@@ -17,8 +17,223 @@ body::-webkit-scrollbar {
   display: none; /* Hide scrollbar in WebKit browsers */
 }
 
-#loading_page {
+#choose_your_flag{
   display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #073c49;
+  z-index: 1000;
+}
+
+#choose_your_flag p{
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+#title_language{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+#flag_row_1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-evenly;
+  width: 100%;
+  height: 40%;
+}
+
+#flag_row_2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 40%;
+}
+
+#fr_flag_card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 20%;
+}
+
+#fr_flag{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 12vw;
+  background: url(images/french_flag.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: #000000 0px 5px 50px;
+  border-radius: 15px;
+  border: 2px solid #ffffff;
+  transition: all 0.3s ease-out;
+}
+
+#fr_flag:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  border: 3px solid #ceaf25;
+}
+
+#en_flag_card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 20%;
+}
+
+#en_flag{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 12vw;
+  background: url(images/british_flag.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: #000000 0px 5px 50px;
+  border-radius: 15px;
+  border: 2px solid #ffffff;
+  transition: all 0.3s ease-out;
+}
+
+#en_flag:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  border: 3px solid #ceaf25;
+}
+
+#ar_flag_card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 20%;
+}
+
+#ar_flag{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 12vw;
+  background: url(images/arabic_flag.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: #000000 0px 5px 50px;
+  border-radius: 15px;
+  border: 2px solid #ffffff;
+  transition: all 0.3s ease-out;
+}
+
+#ar_flag:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  border: 3px solid #ceaf25;
+}
+
+#pt_flag_card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 20%;
+}
+
+#pt_flag{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 12vw;
+  background: url(images/portugal_flag.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: #000000 0px 5px 50px;
+  border-radius: 15px;
+  border: 2px solid #ffffff;
+  transition: all 0.3s ease-out;
+}
+
+#pt_flag:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  border: 3px solid #ceaf25;
+}
+
+@media screen and (max-width: 1000px){
+  #choose_your_flag p{
+    font-size: 15px;
+  }
+
+  #title_language{
+    font-size: 20px;
+  }
+
+  #fr_flag_card{
+    width: 40%;
+  }
+
+  #fr_flag{
+    height: 30vw;
+  }
+
+  #en_flag_card{
+    width: 40%;
+  }
+
+  #en_flag{
+    height: 30vw;
+  }
+
+  #ar_flag_card{
+    width: 40%;
+  }
+
+  #ar_flag{
+    height: 30vw;
+  }
+
+  #pt_flag_card{
+    width: 40%;
+  }
+
+  #pt_flag{
+    height: 30vw;
+  }
+
+}
+
+#loading_page {
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -3141,10 +3356,12 @@ body::-webkit-scrollbar {
   height: auto;
   padding: 15px;
   border: none;
-  background-color: orangered;
+  background-color: rgba(230, 64, 4, 0.804);
   color: white;
   border-radius: 20px;
   font-size: 15px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   transition: all 0.3s ease-out;
 }
 
@@ -3320,6 +3537,17 @@ body::-webkit-scrollbar {
 #nextNEM2:hover {
   cursor: pointer;
   background-color: #5a0f4e;
+}
+
+#warningCard{
+  display: none;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
 }
 
 #nextNEM3 {

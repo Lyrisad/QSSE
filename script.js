@@ -4,6 +4,8 @@ let login_page = document.getElementById("login_page");
 let language_select = document.getElementById("language-select");
 let startTime;
 let elapsedTime = 0;
+let languageSelect = document.getElementById("language-select");
+let selectedLanguage = languageSelect.value;
 
 next.addEventListener("click", function () {
   startTime = new Date();
@@ -61,9 +63,44 @@ condor_logo.addEventListener("click", function () {
   location.href = "https://groupecandor.com/";
 });
 
+let fr_flag = document.getElementById("fr_flag");
+let en_flag = document.getElementById("en_flag");
+let pt_flag = document.getElementById("pt_flag");
+let ar_flag = document.getElementById("ar_flag");
+let choose_language = document.getElementById("choose_your_flag");
+
 document.addEventListener("DOMContentLoaded", () => {
   const languageSelect = document.getElementById("language-select");
   languageSelect.addEventListener("change", switchLanguage);
+
+  fr_flag.addEventListener("click", function () {
+    languageSelect.value = "fr";
+    switchLanguage();
+    choose_language.style.display = "none";
+    loadingPage.style.display = "flex";
+    console.log("fr");
+  });
+
+  en_flag.addEventListener("click", function () {
+    languageSelect.value = "en";
+    switchLanguage();
+    choose_language.style.display = "none";
+    loadingPage.style.display = "flex";
+  });
+
+  pt_flag.addEventListener("click", function () {
+    languageSelect.value = "pt";
+    switchLanguage();
+    choose_language.style.display = "none";
+    loadingPage.style.display = "flex";
+  });
+
+  ar_flag.addEventListener("click", function () {
+    languageSelect.value = "ar";
+    switchLanguage();
+    choose_language.style.display = "none";
+    loadingPage.style.display = "flex";
+  });
 
   function switchLanguage() {
     const selectedLanguage = languageSelect.value;
@@ -212,6 +249,7 @@ document.addEventListener("DOMContentLoaded", () => {
     languageSelect.value = "fr"; // Default to French
   }
   switchLanguage(); // Initialize the page with the selected language
+  getImagePath();
 });
 
 let login_button = document.getElementById("login_button");
@@ -220,7 +258,7 @@ let mdp = document.getElementById("mdp");
 let errorMsg = document.getElementById("errorMsg");
 
 login_button.addEventListener("click", function () {
-  if (auth.value == "MACQSSE2024" && mdp.value == "QSSE#2024Secure!") {
+  if (auth.value == "CANDOR" && mdp.value == "QSSE1234") {
     if (window.matchMedia("(max-width: 1000px)").matches) {
       language_select.style.animation = "appear 1s forwards 2s";
       language_select.style.left = "33%";
@@ -247,7 +285,7 @@ login_button.addEventListener("click", function () {
 document.addEventListener("keydown", function (e) {
   if (e.key === "Enter") {
     if (login_page.style.display != "none") {
-      if (auth.value == "MACQSSE2024" && mdp.value == "QSSE#2024Secure!") {
+      if (auth.value == "CANDOR" && mdp.value == "QSSE1234") {
         if (window.matchMedia("(max-width: 1000px)").matches) {
           language_select.style.animation = "appear 1s forwards 2s";
           language_select.style.left = "33%";
@@ -350,13 +388,14 @@ back.addEventListener("click", function () {
   securitySpeach.style.animation = "appear 1s forwards";
 });
 
-const languageSelect = document.getElementById("language-select");
-let selectedLanguage = languageSelect.value;
+
+
 
 console.log(selectedLanguage);
 
 languageSelect.addEventListener("change", () => {
   selectedLanguage = languageSelect.value;
+  getImagePath();
   console.log(selectedLanguage);
 });
 
@@ -382,11 +421,21 @@ let pastilleRouen = document.getElementById("pastilleRouen");
 let pastilleCaen = document.getElementById("pastilleCaen");
 let pastilleVDR = document.getElementById("pastilleVDR");
 let pastilleDieppe = document.getElementById("pastilleDieppe");
-let pastilleDescriptionBoxLH = document.getElementById("pastilleDescriptionBoxLH");
-let pastilleDescriptionBoxRouen = document.getElementById("pastilleDescriptionBoxRouen");
-let pastilleDescriptionBoxCaen = document.getElementById("pastilleDescriptionBoxCaen");
-let pastilleDescriptionBoxVDR = document.getElementById("pastilleDescriptionBoxVDR");
-let pastilleDescriptionBoxDieppe = document.getElementById("pastilleDescriptionBoxDieppe");
+let pastilleDescriptionBoxLH = document.getElementById(
+  "pastilleDescriptionBoxLH"
+);
+let pastilleDescriptionBoxRouen = document.getElementById(
+  "pastilleDescriptionBoxRouen"
+);
+let pastilleDescriptionBoxCaen = document.getElementById(
+  "pastilleDescriptionBoxCaen"
+);
+let pastilleDescriptionBoxVDR = document.getElementById(
+  "pastilleDescriptionBoxVDR"
+);
+let pastilleDescriptionBoxDieppe = document.getElementById(
+  "pastilleDescriptionBoxDieppe"
+);
 
 nextPGC.addEventListener("click", function () {
   PGCSlide1.style.display = "none";
@@ -787,11 +836,19 @@ backNEM1.addEventListener("click", function () {
   NEMSlide2.style.display = "none";
   NEMSlide3.style.display = "none";
 });
+// Flag to track if the video has been watched
+let videoWatched = false;
+let video2Watched = false;
 
+// Event listener for the button to change slide
 nextNEM2.addEventListener("click", function () {
-  NEMSlide1.style.display = "none";
-  NEMSlide2.style.display = "none";
-  NEMSlide3.style.display = "flex";
+  if (!videoWatched) {
+    document.getElementById("warningCard").style.display = "flex";
+  } else {
+    NEMSlide1.style.display = "none";
+    NEMSlide2.style.display = "none";
+    NEMSlide3.style.display = "flex";
+  }
 });
 
 backNEM2.addEventListener("click", function () {
@@ -803,27 +860,31 @@ backNEM2.addEventListener("click", function () {
 let checkedNEM = document.getElementById("checkedNEM");
 
 nextNEM3.addEventListener("click", function () {
-  setTimeout(function () {
-    NEMSlide3.style.display = "none";
-    NEMZone.style.display = "none";
-    testZone.style.display = "flex";
-    NEMZone.style.animation = "appear 1s forwards";
-    testZone.style.animation = "appear 1s forwards";
-    if (
-      checkedNEM.style.display == "flex" &&
-      checkedSE.style.display == "flex" &&
-      checkedEE.style.display == "flex" &&
-      checkedESS.style.display == "flex" &&
-      checkedPGC.style.display == "flex"
-    ) {
-      console.log("all checked");
-      TVC.style.color = "white";
-      TVC.style.backgroundColor = "#4930e8";
-      TVC.style.cursor = "pointer";
-    }
-  }, 1000);
-  checkedNEM.style.display = "flex";
-  NEMZone.style.animation = "disappear 1s forwards";
+  if (!video2Watched) {
+    document.getElementById("warningCard").style.display = "flex";
+  } else {
+    setTimeout(function () {
+      NEMSlide3.style.display = "none";
+      NEMZone.style.display = "none";
+      testZone.style.display = "flex";
+      NEMZone.style.animation = "appear 1s forwards";
+      testZone.style.animation = "appear 1s forwards";
+      if (
+        checkedNEM.style.display == "flex" &&
+        checkedSE.style.display == "flex" &&
+        checkedEE.style.display == "flex" &&
+        checkedESS.style.display == "flex" &&
+        checkedPGC.style.display == "flex"
+      ) {
+        console.log("all checked");
+        TVC.style.color = "white";
+        TVC.style.backgroundColor = "#4930e8";
+        TVC.style.cursor = "pointer";
+      }
+    }, 1000);
+    checkedNEM.style.display = "flex";
+    NEMZone.style.animation = "disappear 1s forwards";
+  }
 });
 
 // URLs des vidéos
@@ -840,18 +901,25 @@ function openVideo(url) {
   videoModal.style.display = "flex";
 }
 
-// Événements de clic sur les divs
+// Event for the video button to open the video
 document.getElementById("video1").onclick = function () {
   openVideo(video1Url);
+  videoWatched = true; // Set the flag to true when the video is opened
 };
 
 document.getElementById("video2").onclick = function () {
   openVideo(video2Url);
+  video2Watched = true; // Set the flag to true when the video is opened
 };
 
 document.querySelector("#video-modal .close").onclick = function () {
   closeModal();
 };
+
+// Event listener to close the warning message
+document.getElementById("closeWarning").addEventListener("click", function () {
+  document.getElementById("warningCard").style.display = "none";
+});
 
 // Fermeture du modal en cliquant en dehors de la vidéo
 document.getElementById("video-modal").onclick = function (event) {
@@ -1024,6 +1092,8 @@ function countGoodAnswers() {
 
 // Function to get the correct image path based on the selected language
 function getImagePath(questionNumber) {
+  console.log(selectedLanguage, "QCM images");
+  selectedLanguage = languageSelect.value;
   let basePath = "images/QCM_images/";
   if (selectedLanguage === "en") {
     basePath = "images/QCM_images/images_anglais/";
