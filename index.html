@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/Médaillon_Candor_Logo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preload" href="images/IntroImage.png" as="image" />
     <title>Module Q.S.S.E</title>
@@ -343,24 +346,18 @@
       </div>
     </div>
     <div id="testZone">
-      <div id="back">⮐</div>
-      <div id="condorLogoDownRight"></div>
-      <div id="moduleSection">
-        <div id="condorMed"></div>
-        <div id="ModContainer">
-          <div
-            id="PGC"
-            class="moduleBtn"
-            data-lang-en="Candor Group Presentation"
-            data-lang-fr="Présentation du groupe CANDOR"
-            data-lang-ar="عرض مجموعة كاندور"
-            data-lang-pt="Apresentação do Grupo CANDOR"
-          >
-            Présentation du groupe CANDOR
-          </div>
-          <div id="checkedPGC">✔</div>
+      <div id="testZone_header">
+        <div id="back">←</div>
+        <div id="testZone_headerContent">
+          <div id="condorLogoDownRight"></div>
+          <h1 id="testZone_title" data-lang-fr="Modules de formation" data-lang-en="Training Modules" data-lang-ar="وحدات التدريب" data-lang-pt="Módulos de formação">Modules de formation</h1>
+          <p id="testZone_subtitle" data-lang-fr="Parcourez les modules puis testez vos connaissances." data-lang-en="Browse the modules then test your knowledge." data-lang-ar="تصفح الوحدات ثم اختبر معرفتك." data-lang-pt="Navegue pelos módulos e teste seus conhecimentos.">Parcourez les modules puis testez vos connaissances.</p>
         </div>
-        <div id="ModContainer">
+      </div>
+      <div id="moduleSection">
+        <div class="moduleCard">
+          <span class="moduleBadge moduleBadge--obligatoire" data-lang-fr="Obligatoire" data-lang-en="Required" data-lang-ar="إلزامي" data-lang-pt="Obrigatório">Obligatoire</span>
+          <div class="moduleCard_icon">🛡️</div>
           <div
             id="ESS"
             class="moduleBtn"
@@ -373,7 +370,9 @@
           </div>
           <div id="checkedESS">✔</div>
         </div>
-        <div id="ModContainer">
+        <div class="moduleCard">
+          <span class="moduleBadge moduleBadge--obligatoire" data-lang-fr="Obligatoire" data-lang-en="Required" data-lang-ar="إلزامي" data-lang-pt="Obrigatório">Obligatoire</span>
+          <div class="moduleCard_icon">💼</div>
           <div
             id="NEM"
             class="moduleBtn"
@@ -386,7 +385,22 @@
           </div>
           <div id="checkedNEM">✔</div>
         </div>
-        <div id="ModContainer">
+        <div class="moduleCard moduleCard--quiz">
+          <div class="moduleCard_icon">📝</div>
+          <div
+            id="TVC"
+            class="moduleBtn"
+            data-lang-en="Test your knowledge"
+            data-lang-fr="Testons vos connaissances"
+            data-lang-ar="اختبر معرفتك"
+            data-lang-pt="Teste seus conhecimentos"
+          >
+            Testons vos connaissances
+          </div>
+        </div>
+        <div class="moduleCard">
+          <span class="moduleBadge moduleBadge--optionnel" data-lang-fr="Optionnel" data-lang-en="Optional" data-lang-ar="اختياري" data-lang-pt="Opcional">Optionnel</span>
+          <div class="moduleCard_icon">🌱</div>
           <div
             id="EE"
             class="moduleBtn"
@@ -399,7 +413,9 @@
           </div>
           <div id="checkedEE">✔</div>
         </div>
-        <div id="ModContainer">
+        <div class="moduleCard">
+          <span class="moduleBadge moduleBadge--optionnel" data-lang-fr="Optionnel" data-lang-en="Optional" data-lang-ar="اختياري" data-lang-pt="Opcional">Optionnel</span>
+          <div class="moduleCard_icon">🤝</div>
           <div
             id="SE"
             class="moduleBtn"
@@ -412,17 +428,20 @@
           </div>
           <div id="checkedSE">✔</div>
         </div>
-        <div id="ModContainer">
+        <div class="moduleCard">
+          <span class="moduleBadge moduleBadge--optionnel" data-lang-fr="Optionnel" data-lang-en="Optional" data-lang-ar="اختياري" data-lang-pt="Opcional">Optionnel</span>
+          <div class="moduleCard_icon">🏢</div>
           <div
-            id="TVC"
+            id="PGC"
             class="moduleBtn"
-            data-lang-en="Test your knowledge"
-            data-lang-fr="Testons vos connaissances"
-            data-lang-ar="اختبر معرفتك"
-            data-lang-pt="Teste seus conhecimentos"
+            data-lang-en="Candor Group Presentation"
+            data-lang-fr="Présentation du groupe CANDOR"
+            data-lang-ar="عرض مجموعة كاندور"
+            data-lang-pt="Apresentação do Grupo CANDOR"
           >
-            Testons vos connaissances
+            Présentation du groupe CANDOR
           </div>
+          <div id="checkedPGC">✔</div>
         </div>
       </div>
       <div id="reseaux">
@@ -863,48 +882,43 @@
         </h2>
         <label
           for="nom"
-          style="color: white"
           data-lang-en="Name"
           data-lang-fr="Nom"
           data-lang-ar="اسم"
           data-lang-pt="Nome"
           >Nom</label
         >
-        <input type="text" id="nom" name="nom" required />
+        <input type="text" id="nom" name="nom" required placeholder="Votre nom" />
         <label
           for="prenom"
-          style="color: white"
           data-lang-en="First Name"
           data-lang-fr="Prénom"
           data-lang-ar="الاسم الاول"
           data-lang-pt="Primeiro Nome"
           >Prénom</label
         >
-        <input type="text" id="prenom" name="prenom" required />
+        <input type="text" id="prenom" name="prenom" required placeholder="Votre prénom" />
         <label
           for="email"
-          style="color: white"
           data-lang-en="Email"
           data-lang-fr="Email"
           data-lang-ar="البريد الإلكتروني"
           data-lang-pt="Email"
           >Email</label
         >
-        <input type="email" id="email" name="email" required />
+        <input type="email" id="email" name="email" required placeholder="exemple@email.com" />
         <label
           for="ddn"
-          style="color: white"
           data-lang-en="Date of Birth"
-          data-lang-fr="Date de Naissance"
+          data-lang-fr="Date de naissance"
           data-lang-ar="تاريخ الميلاد"
           data-lang-pt="Data de Nascimento"
-          >Date de Naissance</label
+          >Date de naissance</label
         >
         <input type="date" id="ddn" name="ddn" required />
 
         <label
           for="handicap"
-          style="color: white; margin-top: 20px"
           data-lang-en="Do you have a disability worker recognition?"
           data-lang-fr="Avez-vous une reconnaissance de travailleur handicapé ?"
           data-lang-ar="هل لديك اعتراف كعامل معاق؟"
@@ -956,93 +970,39 @@
           <div class="triEntite">
             <label
               for="entite"
-              style="color: white"
               data-lang-en="Company"
-              data-lang-fr="Société :"
-              data-lang-ar="شركة :"
-              data-lang-pt="Empresa:"
-              >Société :</label
+              data-lang-fr="Société"
+              data-lang-ar="شركة"
+              data-lang-pt="Empresa"
+              >Société</label
             >
             <select name="entite" id="entite">
-              <option value="TERNETT">TERNETT</option>
-              <option value="ERNETT">ERNETT</option>
-              <option value="GAMMA">GAMMA</option>
-              <option value="RIE">RIE</option>
-              <option value="DAKIN">DAKIN</option>
-              <option value="ECLANET">ECLANET</option>
+              <option value="Candor DELTA">Candor DELTA</option>
+              <option value="Candor COPRO">Candor COPRO</option>
               <option value="PRATIS">PRATIS</option>
+              <option value="PNS">PNS</option>
               <option value="CREABAT">CREABAT</option>
               <option value="ALPHA">ALPHA</option>
-              <option value="PNS">PNS</option>
-            </select>
-          </div>
-          <div class="triEntite">
-            <label
-              for="entite2"
-              style="color: white"
-              data-lang-en="Company 2"
-              data-lang-fr="Société 2:"
-              data-lang-ar="شركة 2:"
-              data-lang-pt="Empresa 2:"
-              >Société 2:</label
-            >
-            <select name="entite2" id="entite2">
-              <option value="AUCUN">(AUCUN)</option>
-              <option value="TERNETT">TERNETT</option>
-              <option value="ERNETT">ERNETT</option>
-              <option value="GAMMA">GAMMA</option>
-              <option value="RIE">RIE</option>
-              <option value="DAKIN">DAKIN</option>
-              <option value="ECLANET">ECLANET</option>
-              <option value="PRATIS">PRATIS</option>
-              <option value="CREABAT">CREABAT</option>
-              <option value="ALPHA">ALPHA</option>
-              <option value="PNS">PNS</option>
-            </select>
-          </div>
-          <div class="triEntite">
-            <label
-              for="entite3"
-              style="color: white"
-              data-lang-en="Company 3"
-              data-lang-fr="Société 3:"
-              data-lang-ar="شركة 2:"
-              data-lang-pt="Empresa 3:"
-              >Société 3:</label
-            >
-            <select name="entite3" id="entite3">
-              <option value="AUCUN">(AUCUN)</option>
-              <option value="TERNETT">TERNETT</option>
-              <option value="ERNETT">ERNETT</option>
-              <option value="GAMMA">GAMMA</option>
-              <option value="RIE">RIE</option>
-              <option value="DAKIN">DAKIN</option>
-              <option value="ECLANET">ECLANET</option>
-              <option value="PRATIS">PRATIS</option>
-              <option value="CREABAT">CREABAT</option>
-              <option value="ALPHA">ALPHA</option>
-              <option value="PNS">PNS</option>
             </select>
           </div>
         </div>
         <label
           for="cadre"
-          style="color: white; margin-top: 20px"
           data-lang-en="In what context are you taking the training:"
-          data-lang-fr="Dans quel cadre effectuez-vous la formation :"
-          data-lang-ar="في أي سياق تقوم بالتدريب:"
-          data-lang-pt="Em que contexto você está fazendo o treinamento:"
-          >Dans quel cadre effectuez-vous la formation :</label
+          data-lang-fr="Cadre de la formation"
+          data-lang-ar="في أي سياق تقوم بالتدريب"
+          data-lang-pt="Contexto da formação"
+          >Cadre de la formation</label
         >
         <select name="cadre" id="cadre">
           <option
             value="Nouveau collaborateur"
             data-lang-en="New employee (default)"
-            data-lang-fr="Nouveau collaborateur (par defaut)"
+            data-lang-fr="Nouveau collaborateur (par défaut)"
             data-lang-ar="موظف جديد (افتراضي)"
             data-lang-pt="Novo colaborador (padrão)"
           >
-            Nouveau collaborateur (par defaut)
+            Nouveau collaborateur (par défaut)
           </option>
           <option
             value="Formation continue"
@@ -1096,6 +1056,7 @@
         </button>
       </div>
       <div id="question1">
+        <div class="quizProgress"><div class="quizProgressBar" style="width: 14%"></div></div>
         <h2
           data-lang-en="What color microfiber should be used for disinfection (e.g., handle, switch, etc.)?"
           data-lang-fr="Quelle est la couleur de la microfibre à utiliser pour la désinfection (ex: poignée, interrupteur, etc ...) ?"
@@ -1143,6 +1104,7 @@
         </div>
       </div>
       <div id="question2">
+        <div class="quizProgress"><div class="quizProgressBar" style="width: 28%"></div></div>
         <h2
           data-lang-en="What is the name of the method to follow for floor cleaning?"
           data-lang-fr="Quel est le nom de la méthode à suivre pour le nettoyage des sols ?"
@@ -1189,6 +1151,7 @@
         </div>
       </div>
       <div id="question3">
+        <div class="quizProgress"><div class="quizProgressBar" style="width: 43%"></div></div>
         <h2
           data-lang-en="What is the mandatory work equipment?"
           data-lang-fr="Quelle est la tenue de travail obligatoire ?"
@@ -1235,6 +1198,7 @@
         </div>
       </div>
       <div id="question4">
+        <div class="quizProgress"><div class="quizProgressBar" style="width: 57%"></div></div>
         <h2
           data-lang-en="What to do before cleaning the floor to avoid a slip?"
           data-lang-fr="Que faire avant de nettoyer le sol pour éviter une glissade ?"
@@ -1281,6 +1245,7 @@
         </div>
       </div>
       <div id="question5">
+        <div class="quizProgress"><div class="quizProgressBar" style="width: 71%"></div></div>
         <div id="pictogrammeQ5"></div>
         <h2
           id="q5row"
@@ -1329,6 +1294,7 @@
         </div>
       </div>
       <div id="question6">
+        <div class="quizProgress"><div class="quizProgressBar" style="width: 86%"></div></div>
         <h2
           data-lang-en="What action protects my planet?"
           data-lang-fr="Quel geste protège ma planète ?"
@@ -1375,6 +1341,7 @@
         </div>
       </div>
       <div id="question7">
+        <div class="quizProgress"><div class="quizProgressBar" style="width: 100%"></div></div>
         <h2
           data-lang-en="What is the proper posture to adopt when picking up an object from the ground?"
           data-lang-fr="Quelle est la posture adaptée à adopter lorsque vous ramassez un objet posé au sol ?"

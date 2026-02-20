@@ -261,11 +261,13 @@ login_button.addEventListener("click", function () {
   if (auth.value == "CANDOR" && mdp.value == "QSSE1234") {
     if (window.matchMedia("(max-width: 1000px)").matches) {
       language_select.style.animation = "appear 1s forwards 2s";
-      language_select.style.left = "33%";
-      language_select.style.top = "5%";
+      language_select.style.left = "auto";
+      language_select.style.right = "1rem";
+      language_select.style.top = "1rem";
     } else {
       language_select.style.animation = "appear 1s forwards 2s";
-      language_select.style.right = "3%";
+      language_select.style.right = "2rem";
+      language_select.style.top = "1.5rem";
     }
     login_page.style.animation = "disappearToLeft 1s forwards";
     language_select.style.opacity = "0";
@@ -288,10 +290,12 @@ document.addEventListener("keydown", function (e) {
       if (auth.value == "CANDOR" && mdp.value == "QSSE1234") {
         if (window.matchMedia("(max-width: 1000px)").matches) {
           language_select.style.animation = "appear 1s forwards 2s";
-          language_select.style.left = "33%";
-          language_select.style.top = "5%";
+          language_select.style.left = "auto";
+          language_select.style.right = "1rem";
+          language_select.style.top = "1rem";
         } else {
-          language_select.style.right = "3%";
+          language_select.style.right = "2rem";
+          language_select.style.top = "1.5rem";
         }
         login_page.style.animation = "disappearToLeft 1s forwards";
         language_select.style.opacity = "0";
@@ -351,15 +355,14 @@ suivantSecurite.addEventListener("click", function () {
   }, 1000);
   if (window.matchMedia("(max-width: 1000px)").matches) {
     language_select.style.animation = "appear 1s forwards 1s";
-    language_select.style.left = "85%";
-    language_select.style.top = "2%";
+    language_select.style.left = "auto";
+    language_select.style.right = "1rem";
+    language_select.style.top = "1rem";
   } else {
     language_select.style.animation = "appear 1s forwards 1s";
-    language_select.style.right = "3%";
+    language_select.style.right = "2rem";
+    language_select.style.top = "1.5rem";
   }
-  language_select.style.color = "black";
-  language_select.style.backgroundColor = "white";
-  language_select.style.borderRadius = "15px";
   header_module.style.animation = "disappearToTop 1s forwards";
   securitySpeach.style.animation = "disappear 1s forwards";
 });
@@ -370,26 +373,23 @@ back.addEventListener("click", function () {
   header_module.style.display = "flex";
   securitySpeach.style.display = "flex";
   testZone.style.display = "none";
-  language_select.style.color = "black";
-  language_select.style.backgroundColor = "transparent";
   language_select.style.opacity = "0";
   setTimeout(function () {
     language_select.style.opacity = "1";
     language_select.style.animation = "appearFromTop 1s";
   }, 1000);
   if (window.matchMedia("(max-width: 1000px)").matches) {
-    language_select.style.left = "33%";
-    language_select.style.top = "5%";
+    language_select.style.left = "auto";
+    language_select.style.right = "1rem";
+    language_select.style.top = "1rem";
   } else {
-    language_select.style.right = "3%";
+    language_select.style.right = "2rem";
+    language_select.style.top = "1.5rem";
   }
   language_select.style.animation = "none";
   header_module.style.animation = "appearFromTop 1s forwards";
   securitySpeach.style.animation = "appear 1s forwards";
 });
-
-
-
 
 console.log(selectedLanguage);
 
@@ -422,19 +422,19 @@ let pastilleCaen = document.getElementById("pastilleCaen");
 let pastilleVDR = document.getElementById("pastilleVDR");
 let pastilleDieppe = document.getElementById("pastilleDieppe");
 let pastilleDescriptionBoxLH = document.getElementById(
-  "pastilleDescriptionBoxLH"
+  "pastilleDescriptionBoxLH",
 );
 let pastilleDescriptionBoxRouen = document.getElementById(
-  "pastilleDescriptionBoxRouen"
+  "pastilleDescriptionBoxRouen",
 );
 let pastilleDescriptionBoxCaen = document.getElementById(
-  "pastilleDescriptionBoxCaen"
+  "pastilleDescriptionBoxCaen",
 );
 let pastilleDescriptionBoxVDR = document.getElementById(
-  "pastilleDescriptionBoxVDR"
+  "pastilleDescriptionBoxVDR",
 );
 let pastilleDescriptionBoxDieppe = document.getElementById(
-  "pastilleDescriptionBoxDieppe"
+  "pastilleDescriptionBoxDieppe",
 );
 
 nextPGC.addEventListener("click", function () {
@@ -541,13 +541,9 @@ nextPGC5.addEventListener("click", function () {
     PGCZone.style.animation = "appear 1s forwards";
     testZone.style.animation = "appear 1s forwards";
     if (
-      checkedNEM.style.display == "flex" &&
-      checkedSE.style.display == "flex" &&
-      checkedEE.style.display == "flex" &&
       checkedESS.style.display == "flex" &&
-      checkedPGC.style.display == "flex"
+      checkedNEM.style.display == "flex"
     ) {
-      console.log("all checked");
       TVC.style.color = "white";
       TVC.style.backgroundColor = "#4930e8";
       TVC.style.cursor = "pointer";
@@ -658,13 +654,9 @@ nextESS5.addEventListener("click", function () {
     ESSZone.style.animation = "appear 1s forwards";
     testZone.style.animation = "appear 1s forwards";
     if (
-      checkedNEM.style.display == "flex" &&
-      checkedSE.style.display == "flex" &&
-      checkedEE.style.display == "flex" &&
       checkedESS.style.display == "flex" &&
-      checkedPGC.style.display == "flex"
+      checkedNEM.style.display == "flex"
     ) {
-      console.log("all checked");
       TVC.style.color = "white";
       TVC.style.backgroundColor = "#4930e8";
       TVC.style.cursor = "pointer";
@@ -708,13 +700,9 @@ nextEE2.addEventListener("click", function () {
     EEZone.style.animation = "appear 1s forwards";
     testZone.style.animation = "appear 1s forwards";
     if (
-      checkedNEM.style.display == "flex" &&
-      checkedSE.style.display == "flex" &&
-      checkedEE.style.display == "flex" &&
       checkedESS.style.display == "flex" &&
-      checkedPGC.style.display == "flex"
+      checkedNEM.style.display == "flex"
     ) {
-      console.log("all checked");
       TVC.style.color = "white";
       TVC.style.backgroundColor = "#4930e8";
       TVC.style.cursor = "pointer";
@@ -786,13 +774,9 @@ nextSE3.addEventListener("click", function () {
     SEZone.style.animation = "appear 1s forwards";
     testZone.style.animation = "appear 1s forwards";
     if (
-      checkedNEM.style.display == "flex" &&
-      checkedSE.style.display == "flex" &&
-      checkedEE.style.display == "flex" &&
       checkedESS.style.display == "flex" &&
-      checkedPGC.style.display == "flex"
+      checkedNEM.style.display == "flex"
     ) {
-      console.log("all checked");
       TVC.style.color = "white";
       TVC.style.backgroundColor = "#4930e8";
       TVC.style.cursor = "pointer";
@@ -870,13 +854,9 @@ nextNEM3.addEventListener("click", function () {
       NEMZone.style.animation = "appear 1s forwards";
       testZone.style.animation = "appear 1s forwards";
       if (
-        checkedNEM.style.display == "flex" &&
-        checkedSE.style.display == "flex" &&
-        checkedEE.style.display == "flex" &&
         checkedESS.style.display == "flex" &&
-        checkedPGC.style.display == "flex"
+        checkedNEM.style.display == "flex"
       ) {
-        console.log("all checked");
         TVC.style.color = "white";
         TVC.style.backgroundColor = "#4930e8";
         TVC.style.cursor = "pointer";
@@ -940,11 +920,8 @@ let TVCzone = document.getElementById("TVCzone");
 
 TVC.addEventListener("click", function () {
   if (
-    checkedNEM.style.display == "flex" &&
-    checkedSE.style.display == "flex" &&
-    checkedEE.style.display == "flex" &&
     checkedESS.style.display == "flex" &&
-    checkedPGC.style.display == "flex"
+    checkedNEM.style.display == "flex"
   ) {
     setTimeout(function () {
       testZone.style.display = "none";
@@ -1004,8 +981,6 @@ let nom = document.getElementById("nom");
 let prenom = document.getElementById("prenom");
 let email = document.getElementById("email");
 let entite = document.getElementById("entite");
-let entite2 = document.getElementById("entite2");
-let entite3 = document.getElementById("entite3");
 let cadre = document.getElementById("cadre");
 let dateNaissance = document.getElementById("ddn");
 
@@ -1017,8 +992,6 @@ submitForm.addEventListener("click", function (e) {
     formData = {
       date: new Date().toLocaleString(),
       entite: entite.value,
-      entite2: entite2.value,
-      entite3: entite3.value,
       nom: nom.value,
       prenom: prenom.value,
       email: email.value,
@@ -1033,6 +1006,7 @@ submitForm.addEventListener("click", function (e) {
 });
 
 start.addEventListener("click", function () {
+  goodAnswersCount = 0; // Réinitialiser le compteur au début du questionnaire
   setTimeout(function () {
     ready.style.display = "none";
     question1.style.display = "flex";
@@ -1048,6 +1022,7 @@ let descriptif = document.querySelectorAll(".descriptif");
 let nextQuestion = document.querySelectorAll(".nextQuestion");
 let QCM_image = document.querySelectorAll(".QCM_image");
 let questionCount = 0;
+let goodAnswersCount = 0; // Compteur de bonnes réponses (incrémenté au clic sur la bonne réponse)
 console.log(descriptif);
 // Function to disable other buttons in the same question group
 // Function to disable other buttons in the same question group
@@ -1064,30 +1039,7 @@ function assignClickHandler(button, clickHandler) {
 }
 
 function countGoodAnswers() {
-  let goodAnswers = 0;
-  if (q1r2.style.backgroundColor == "green") {
-    goodAnswers++;
-  }
-  if (q2r2.style.backgroundColor == "green") {
-    goodAnswers++;
-  }
-  if (q3r3.style.backgroundColor == "green") {
-    goodAnswers++;
-  }
-  if (q4r2.style.backgroundColor == "green") {
-    goodAnswers++;
-  }
-  if (q5r1.style.backgroundColor == "green") {
-    goodAnswers++;
-  }
-  if (q6r2.style.backgroundColor == "green") {
-    goodAnswers++;
-  }
-  if (q7r3.style.backgroundColor == "green") {
-    goodAnswers++;
-  }
-  console.log(goodAnswers);
-  return goodAnswers;
+  return goodAnswersCount;
 }
 
 // Function to get the correct image path based on the selected language
@@ -1111,7 +1063,7 @@ function getImagePath(questionNumber) {
 let q1Buttons = [q1r1, q1r2, q1r3];
 assignClickHandler(q1r1, function () {
   disableQuestionButtons(q1Buttons);
-  q1r1.style.backgroundColor = "red";
+  q1r1.style.background = "#dc2626"; // rouge erreur
   q1r1.style.animation = "blinking 0.2s infinite";
   setTimeout(function () {
     question1.style.display = "none";
@@ -1143,7 +1095,8 @@ assignClickHandler(q1r1, function () {
 
 assignClickHandler(q1r2, function () {
   disableQuestionButtons(q1Buttons);
-  q1r2.style.backgroundColor = "green";
+  q1r2.style.background = "#16a34a"; // vert bonne réponse
+  goodAnswersCount++;
   q1r2.style.animation = "blinking 0.2s infinite";
   setTimeout(function () {
     question1.style.display = "none";
@@ -1175,7 +1128,7 @@ assignClickHandler(q1r2, function () {
 
 assignClickHandler(q1r3, function () {
   disableQuestionButtons(q1Buttons);
-  q1r3.style.backgroundColor = "red";
+  q1r3.style.background = "#dc2626";
   q1r3.style.animation = "blinking 0.2s infinite";
   setTimeout(function () {
     question1.style.display = "none";
@@ -1209,7 +1162,7 @@ assignClickHandler(q1r3, function () {
 let q2Buttons = [q2r1, q2r2, q2r3];
 assignClickHandler(q2r1, function () {
   disableQuestionButtons(q2Buttons);
-  q2r1.style.backgroundColor = "red";
+  q2r1.style.background = "#dc2626";
   q2r1.style.animation = "blinking 0.2s infinite";
   setTimeout(function () {
     question2.style.display = "none";
@@ -1239,7 +1192,8 @@ assignClickHandler(q2r1, function () {
 
 assignClickHandler(q2r2, function () {
   disableQuestionButtons(q2Buttons);
-  q2r2.style.backgroundColor = "green";
+  q2r2.style.background = "#16a34a";
+  goodAnswersCount++;
   q2r2.style.animation = "blinking 0.2s infinite";
   setTimeout(function () {
     question2.style.display = "none";
@@ -1269,7 +1223,7 @@ assignClickHandler(q2r2, function () {
 
 assignClickHandler(q2r3, function () {
   disableQuestionButtons(q2Buttons);
-  q2r3.style.backgroundColor = "red";
+  q2r3.style.background = "#dc2626";
   q2r3.style.animation = "blinking 0.2s infinite";
   setTimeout(function () {
     question2.style.display = "none";
@@ -1301,7 +1255,7 @@ assignClickHandler(q2r3, function () {
 let q3Buttons = [q3r1, q3r2, q3r3];
 assignClickHandler(q3r1, function () {
   disableQuestionButtons(q3Buttons);
-  q3r1.style.backgroundColor = "red";
+  q3r1.style.background = "#dc2626";
   q3r1.style.animation = "blinking 0.2s infinite";
   setTimeout(function () {
     question3.style.display = "none";
@@ -1335,7 +1289,7 @@ assignClickHandler(q3r1, function () {
 
 assignClickHandler(q3r2, function () {
   disableQuestionButtons(q3Buttons);
-  q3r2.style.backgroundColor = "red";
+  q3r2.style.background = "#dc2626";
   q3r2.style.animation = "blinking 0.2s infinite";
   setTimeout(function () {
     question3.style.display = "none";
@@ -1369,7 +1323,8 @@ assignClickHandler(q3r2, function () {
 
 assignClickHandler(q3r3, function () {
   disableQuestionButtons(q3Buttons);
-  q3r3.style.backgroundColor = "green";
+  q3r3.style.background = "#16a34a";
+  goodAnswersCount++;
   q3r3.style.animation = "blinking 0.2s infinite";
   setTimeout(function () {
     question3.style.display = "none";
@@ -1405,7 +1360,7 @@ assignClickHandler(q3r3, function () {
 let q4Buttons = [q4r1, q4r2, q4r3];
 assignClickHandler(q4r1, function () {
   disableQuestionButtons(q4Buttons);
-  q4r1.style.backgroundColor = "red";
+  q4r1.style.background = "#dc2626";
   q4r1.style.animation = "blinking 0.2s infinite";
   setTimeout(function () {
     question4.style.display = "none";
@@ -1435,7 +1390,8 @@ assignClickHandler(q4r1, function () {
 
 assignClickHandler(q4r2, function () {
   disableQuestionButtons(q4Buttons);
-  q4r2.style.backgroundColor = "green";
+  q4r2.style.background = "#16a34a";
+  goodAnswersCount++;
   q4r2.style.animation = "blinking 0.2s infinite";
   setTimeout(function () {
     question4.style.display = "none";
@@ -1465,7 +1421,7 @@ assignClickHandler(q4r2, function () {
 
 assignClickHandler(q4r3, function () {
   disableQuestionButtons(q4Buttons);
-  q4r3.style.backgroundColor = "red";
+  q4r3.style.background = "#dc2626";
   q4r3.style.animation = "blinking 0.2s infinite";
   setTimeout(function () {
     question4.style.display = "none";
@@ -1497,7 +1453,8 @@ assignClickHandler(q4r3, function () {
 let q5Buttons = [q5r1, q5r2, q5r3];
 assignClickHandler(q5r1, function () {
   disableQuestionButtons(q5Buttons);
-  q5r1.style.backgroundColor = "green";
+  q5r1.style.background = "#16a34a";
+  goodAnswersCount++;
   q5r1.style.animation = "blinking 0.2s infinite";
   setTimeout(function () {
     question5.style.display = "none";
@@ -1528,7 +1485,7 @@ assignClickHandler(q5r1, function () {
 
 assignClickHandler(q5r2, function () {
   disableQuestionButtons(q5Buttons);
-  q5r2.style.backgroundColor = "red";
+  q5r2.style.background = "#dc2626";
   q5r2.style.animation = "blinking 0.2s infinite";
   setTimeout(function () {
     question5.style.display = "none";
@@ -1559,7 +1516,7 @@ assignClickHandler(q5r2, function () {
 
 assignClickHandler(q5r3, function () {
   disableQuestionButtons(q5Buttons);
-  q5r3.style.backgroundColor = "red";
+  q5r3.style.background = "#dc2626";
   q5r3.style.animation = "blinking 0.2s infinite";
   setTimeout(function () {
     question5.style.display = "none";
@@ -1592,7 +1549,7 @@ assignClickHandler(q5r3, function () {
 let q6Buttons = [q6r1, q6r2, q6r3];
 assignClickHandler(q6r1, function () {
   disableQuestionButtons(q6Buttons);
-  q6r1.style.backgroundColor = "red";
+  q6r1.style.background = "#dc2626";
   q6r1.style.animation = "blinking 0.2s infinite";
   setTimeout(function () {
     question6.style.display = "none";
@@ -1624,7 +1581,8 @@ assignClickHandler(q6r1, function () {
 
 assignClickHandler(q6r2, function () {
   disableQuestionButtons(q6Buttons);
-  q6r2.style.backgroundColor = "green";
+  q6r2.style.background = "#16a34a";
+  goodAnswersCount++;
   q6r2.style.animation = "blinking 0.2s infinite";
   setTimeout(function () {
     question6.style.display = "none";
@@ -1656,7 +1614,7 @@ assignClickHandler(q6r2, function () {
 
 assignClickHandler(q6r3, function () {
   disableQuestionButtons(q6Buttons);
-  q6r3.style.backgroundColor = "red";
+  q6r3.style.background = "#dc2626";
   q6r3.style.animation = "blinking 0.2s infinite";
   setTimeout(function () {
     question6.style.display = "none";
@@ -1690,7 +1648,7 @@ assignClickHandler(q6r3, function () {
 let q7Buttons = [q7r1, q7r2, q7r3];
 assignClickHandler(q7r1, function () {
   disableQuestionButtons(q7Buttons);
-  q7r1.style.backgroundColor = "red";
+  q7r1.style.background = "#dc2626";
   q7r1.style.animation = "blinking 0.2s infinite";
   setTimeout(function () {
     question7.style.display = "none";
@@ -1724,7 +1682,7 @@ assignClickHandler(q7r1, function () {
 
 assignClickHandler(q7r2, function () {
   disableQuestionButtons(q7Buttons);
-  q7r2.style.backgroundColor = "red";
+  q7r2.style.background = "#dc2626";
   q7r2.style.animation = "blinking 0.2s infinite";
   setTimeout(function () {
     question7.style.display = "none";
@@ -1758,7 +1716,8 @@ assignClickHandler(q7r2, function () {
 
 assignClickHandler(q7r3, function () {
   disableQuestionButtons(q7Buttons);
-  q7r3.style.backgroundColor = "green";
+  q7r3.style.background = "#16a34a";
+  goodAnswersCount++;
   q7r3.style.animation = "blinking 0.2s infinite";
   setTimeout(function () {
     question7.style.display = "none";
@@ -1903,11 +1862,11 @@ finishButton.addEventListener("click", function () {
 
   // Send the combined data to Google Drive
   fetch(
-    "https://script.google.com/macros/s/AKfycbxnr3olqWbXJ9y-ZTSgfloRYWZHMBz0fezg4vSaCfnIIBiz36snl8jYRHEK1Z_TkN2t/exec",
+    "https://script.google.com/macros/s/AKfycbx1mWSBV8WY5ziF1VVxidQN780wcgw1QJ_lGq_rUyMtOjMgcPM-iMXtAa0z8zzFapYU/exec",
     {
       method: "POST",
       body: JSON.stringify(dataToSend),
-    }
+    },
   )
     .then((response) => response.text())
     .then((data) => {
