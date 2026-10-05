@@ -540,14 +540,7 @@ nextPGC5.addEventListener("click", function () {
     testZone.style.display = "flex";
     PGCZone.style.animation = "appear 1s forwards";
     testZone.style.animation = "appear 1s forwards";
-    if (
-      checkedESS.style.display == "flex" &&
-      checkedNEM.style.display == "flex"
-    ) {
-      TVC.style.color = "white";
-      TVC.style.backgroundColor = "#4930e8";
-      TVC.style.cursor = "pointer";
-    }
+    unlockQuizIfReady();
   }, 1000);
   checkedPGC.style.display = "flex";
   PGCZone.style.animation = "disappear 1s forwards";
@@ -653,14 +646,7 @@ nextESS5.addEventListener("click", function () {
     testZone.style.display = "flex";
     ESSZone.style.animation = "appear 1s forwards";
     testZone.style.animation = "appear 1s forwards";
-    if (
-      checkedESS.style.display == "flex" &&
-      checkedNEM.style.display == "flex"
-    ) {
-      TVC.style.color = "white";
-      TVC.style.backgroundColor = "#4930e8";
-      TVC.style.cursor = "pointer";
-    }
+    unlockQuizIfReady();
   }, 1000);
   checkedESS.style.display = "flex";
   ESSZone.style.animation = "disappear 1s forwards";
@@ -699,14 +685,7 @@ nextEE2.addEventListener("click", function () {
     testZone.style.display = "flex";
     EEZone.style.animation = "appear 1s forwards";
     testZone.style.animation = "appear 1s forwards";
-    if (
-      checkedESS.style.display == "flex" &&
-      checkedNEM.style.display == "flex"
-    ) {
-      TVC.style.color = "white";
-      TVC.style.backgroundColor = "#4930e8";
-      TVC.style.cursor = "pointer";
-    }
+    unlockQuizIfReady();
   }, 1000);
   checkedEE.style.display = "flex";
   EEZone.style.animation = "disappear 1s forwards";
@@ -773,14 +752,7 @@ nextSE3.addEventListener("click", function () {
     testZone.style.display = "flex";
     SEZone.style.animation = "appear 1s forwards";
     testZone.style.animation = "appear 1s forwards";
-    if (
-      checkedESS.style.display == "flex" &&
-      checkedNEM.style.display == "flex"
-    ) {
-      TVC.style.color = "white";
-      TVC.style.backgroundColor = "#4930e8";
-      TVC.style.cursor = "pointer";
-    }
+    unlockQuizIfReady();
   }, 1000);
   checkedSE.style.display = "flex";
   SEZone.style.animation = "disappear 1s forwards";
@@ -853,14 +825,7 @@ nextNEM3.addEventListener("click", function () {
       testZone.style.display = "flex";
       NEMZone.style.animation = "appear 1s forwards";
       testZone.style.animation = "appear 1s forwards";
-      if (
-        checkedESS.style.display == "flex" &&
-        checkedNEM.style.display == "flex"
-      ) {
-        TVC.style.color = "white";
-        TVC.style.backgroundColor = "#4930e8";
-        TVC.style.cursor = "pointer";
-      }
+      unlockQuizIfReady();
     }, 1000);
     checkedNEM.style.display = "flex";
     NEMZone.style.animation = "disappear 1s forwards";
@@ -918,11 +883,23 @@ function closeModal() {
 let TVC = document.getElementById("TVC");
 let TVCzone = document.getElementById("TVCzone");
 
+// Modules obligatoires à valider avant d'accéder au QCM
+function requiredModulesDone() {
+  return [checkedESS, checkedNEM, checkedEE, checkedSE].every(function (checked) {
+    return checked.style.display == "flex";
+  });
+}
+
+function unlockQuizIfReady() {
+  if (requiredModulesDone()) {
+    TVC.style.color = "white";
+    TVC.style.backgroundColor = "#4930e8";
+    TVC.style.cursor = "pointer";
+  }
+}
+
 TVC.addEventListener("click", function () {
-  if (
-    checkedESS.style.display == "flex" &&
-    checkedNEM.style.display == "flex"
-  ) {
+  if (requiredModulesDone()) {
     setTimeout(function () {
       testZone.style.display = "none";
       TVCzone.style.display = "flex";
